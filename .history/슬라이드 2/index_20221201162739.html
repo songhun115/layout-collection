@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<style>
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .swiper-slide {
+        border-radius: 20px;
+    }
+    .container{max-width: 1200px; width: 100%; margin: 400px auto; }
+    .slide-wrap{width: 100%;}
+    .slide-wrap .slide-right,.slide-wrap .slide-left{width: 50%;}
+</style>
+
+<body>
+    <div class="container">
+        <div class="slide-wrap">
+            <div class="slide-tab"></div>
+            <div class="slide-left">
+                <div class="slide-right">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <div class="slide-content-tit">평범하듯 특별하게, 내추럴 하우스를 꿈꾸다</div>
+                                    <div class="slide-content-description">일상의 소소한 즐거움을 소망하며 완성한 집. </div> 
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <div class="slide-content-tit">평범하듯 특별하게, 내추럴 하우스를 꿈꾸다</div>
+                                    <div class="slide-content-description">일상의 소소한 즐거움을 소망하며 완성한 집. </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-right">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="mask02.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mask01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

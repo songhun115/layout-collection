@@ -1,0 +1,236 @@
+/**/@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+:root {
+  --baseBackground1: #7430F9;
+  --baseBackground2: #7430F9;
+  --baseForeground1: #000;
+  --baseForeground1: #000;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+   body{
+    padding-bottom: 50px;
+   }
+  }
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 14px;
+  color: var(--colorBg1);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f4f7ff;
+  word-break: keep-all;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+.common-inner {
+  margin: 0 160px;
+  padding: 0 50px;
+}
+.sc-visual {
+  background: var(--baseBackground1);
+  overflow: hidden;
+  position: relative;
+}
+.sc-visual .title-area {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.sc-visual .intro-title {
+  color: #f0ff36;
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+.sc-visual .title-box {
+  font-size: 50px;
+  color: #fff;
+  margin: 50px 0 40px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+
+.sc-visual .title-box .text:not(.active) {
+  opacity: 0.5;
+  font-weight: 300;
+}
+.sc-visual .title-box .text:hover {
+  opacity: 1;
+}
+.sc-visual .desc {
+  color: #fff;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.sc-visual .right-area {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sc-visual .right-area::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(5, 0, 253, 0) 0%, rgba(5, 0, 253, 0.99) 99%, rgb(5, 0, 253) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#ffffff",GradientType=1 );
+}
+
+.sc-visual .right-area .link-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+.sc-visual .visual-wrap {
+  display: flex;
+  gap: 0 10px;
+  position: absolute;
+  bottom: -13vw;
+  right: -16vw;
+  transform: rotate(18deg);
+}
+.sc-visual .title-box .text {
+  transition: opacity 0.3s;
+  display: block;
+}
+.sc-visual .visual-wrap .works-list {
+  width: 13vw;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sc-visual .visual-wrap .works-item {
+  background: #f00;
+  height: 20vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sc-visual .visual-wrap .works-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1600px) {
+  .common-inner {
+    margin: 0 5%;
+  }
+}
+@media (max-width: 1300px) {
+  .common-inner {
+    margin: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .sc-visual .right-area::after {
+    background: linear-gradient(to bottom, rgba(5, 0, 253, 0) -75%, rgba(5, 0, 253, 0.99) 99%, rgb(5, 0, 253) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#ffffff",GradientType=1 );
+  }
+  .sc-visual .title-area {
+    height: auto;
+    padding: 50px 0;
+  }
+  .sc-visual .right-area {
+    position: relative;
+    height: 40vw;
+    width: 100%;
+  }
+  .sc-visual .visual-wrap {
+    transform: rotate(90deg);
+    bottom: -69vw;
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .sc-visual .desc {
+    font-size: 14px;
+  }
+  .sc-visual .desc .br {
+    display: block;
+  }
+  .sc-visual .visual-wrap .works-list {
+    width: 18vw;
+  }
+  .common-inner {
+    padding: 0 15px;
+  }
+  .sc-visual .title-box {
+    font-size: 7vw;
+  }
+  .sc-visual .right-area {
+    height: 80vw;
+  }
+  .sc-visual .visual-wrap {
+    bottom: -123vw;
+  }
+  .sc-visual .visual-wrap .works-item {
+    height: 40vw;
+  }
+}
