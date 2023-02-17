@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Orbitron:wght@400;500&display=swap"
+		rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+
+	<!-- custom -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/respons.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous"></script>
+	<!-- font-awesome -->
+	<script src="jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<script src="swiper-bundle.min.js"></script>
+	
+	<!-- gsap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+</head>
+<style>
+	html,
+	body {
+		position: relative;
+		height: 100%;
+	}
+
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+
+
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+</style>
+
+<body>
+	<script>
+		alert("안녕하세요! 포트폴리오 확인 감사합니다. \n 이포트폴리오 사이트는 크롬에 최적화 되어있습니다. \n원활한 확인을 위해 크롬 브라우조 사용을 권장드립니다.");
+	</script>
+
+	<div class="content_wrap">
+		<header id="header">
+			<div class="logo_box">
+				<div class="logo">
+
+				</div>
+			</div>
+			<nav class="nav_wrap">
+				<ul class="nav_list">
+					<li class="nav_item on" data-target="#section01">HOME</li>
+					<li class="nav_item nav_item2" data-target="#section02">ABOUT</li>
+					<li class="nav_item" data-target="#section03">PROJECT</li>
+					<li class="nav_item" data-target="#section04">ABILITY</li>
+					<li class="nav_item" data-target="#section05">WORK PROJECT </li>
+				</ul>
+			</nav>
+			<div class="mb_nav_wrap">
+				<div class="mb_nav_btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+
+		<section class="main_visuare" id="section01">
+			<div class="main_visual_wrap">
+				<div class="main_visuare_title">
+					<div class="main_visuare_title_bg">
+						
+					</div>
+					<div class="main_visuare_title_text">
+					CREATIVE
+					<p>
+						SUNG HUN JUNG <br class="bt_tag"> PROTFOLIO
+					</p>
+				</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro" id="section02">
+			<div class="intro_wrap">
+				<ul class="intro_list">
+					<li class="intro_item">
+						<div class="intro_item_bg intro_item_bg1 "></div>
+						<h3>Publilshing</h3>
+						<p>- 퍼블리싱 스킬(Html5 , CSS3, JS)에 대한 이해도가 높고, 웹 표준성을 준수하여 코드를 작성합니다. 팀원 또는 코드 형상관리를 위해 Github 사용하며
+							플러그인 사용에 능합니다.</p>
+						<b>RAND MORE</b>
+						<div class="intro_item_num">01</div>
+					</li>
+					<li class="intro_item">
+						<div class="intro_item_bg intro_item_bg2 "></div>
+						<h3>Design</h3>
+						<p>- Adobe의 대표적인 디자인툴 Photoshop, illustrator, Adobe XD 를 사용할 수 있습니다. 포트폴리오 사이트의 디자인 및 코딩은 전부 제가 직접 했습니다.</p>
+						<b>RAND MORE</b>
+						<div class="intro_item_num">02</div>
+					</li>
+					<li class="intro_item">
+						<div class="intro_item_bg intro_item_bg3 "></div>
+						<h3>Back-end</h3>
+						<p>- 백엔드 언어(java,asp,jsp) 를 사용한 경험이 있습니다. 팀의 협업을 위해 각 포지션의 입장에서 생각합니다</p>
+						<b>RAND MORE</b>
+						<div class="intro_item_num">03</div>
+					</li>
+					<li class="intro_item">
+						<div class="intro_item_bg intro_item_bg4 "></div>
+						<h3>Aability</h3>
+						<p>- 각각의 위 능력들을 조화롭게 사용하여 보다 깔끔하고 감각적인 디자인과 UI/IX를 잘 구성할 수 있으며 팀원들과의 협업도 매끄럽게 해나갈 수 있습니다.</p>
+						<b>RAND MORE</b>
+						<div class="intro_item_num">04</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="intro_title">
+
+				<div class="content_box">
+
+					<div class="left_box">
+						<div>
+							<h3>01</h3>
+							<h1>디자인 잘합니다.<br>코딩도 잘합니다.</h1>
+						</div>
+					</div>
+					<script>
+							// var content = document.getElementsByClassName('left_box');
+							// TweenMax.fromTo(content, 1, {opacity: 0, y: 500}, {opacity: 1, y: 0});
+
+							gsap.registerPlugin(ScrollTrigger);
+							gsap.from(".content_box", {
+							scrollTrigger: ".content_box", opacity: 0, duration: 0.5, }, {opacity: 1, duration: 0.5,})
+					</script>
+					<div class="right_box">
+						<div class="section_box con">
+							<div>
+								<h5>코딩 좋아하는 웹 퍼블리셔 <br>디자인 좋아하는 퍼블리셔</h5>
+								<p>
+									좋아하는 일을 위해 정체되어있지 않고
+									더 발전하기 위해 항상 노력하고자 합니다.
+									웹표준 및 웹접근성 퍼블리셔입니다.
+									'Semantic Markup'을 할수 있으며,
+									최신 기술을 알기위해 끊임없이 공부중입니다.
+								</p>
+								<p>
+									빠른 변화에 언제나 준비가 되어있는 창의적이고
+									더 나은 디자인을 위해 언제나 노력하며 한 발 앞서 생각하 수
+									있도록 항상 준비되어 있는 저는 디자인을 좋아하는 퍼블리셔 정성훈입니다.
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Project -->
+		<section class="section02" id="section03">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide main_project_bg1">
+						<div class="project_content_wrap">
+							<h2 class="content_title">Portfolio</h2>
+							<p class="content_name"><b>JUNG</b>SUNGHUN</p>
+							<div class="content_detail">
+								<span>#01</span>
+								<h1 class="content_title_name1">EDIYA</h1>
+								<span>RESPONSIVE WEBSITE</span>
+								<ul class="content_detail_list">
+									<li class="content_detail_item">반응형 웹</li>
+									<li class="content_detail_item">퍼블리싱 100%</li>
+									<li class="content_detail_item">Main Page, Sub Pag1, Sub Pag2</li>
+									<li class="content_detail_item">다양한 유형의 슬라이드, 현재 페이지 표시, <br>
+										레이어 팝업창, 체크박스를 활용한 갤러리</li>
+								</ul>
+								<div class="view_btn">
+									<div class="btn_top">
+										<div class="show_btn">
+											<a href="projects/ediya/index.html" target="_blank"> MAIN PAGE</a>
+										</div>
+										<div class="show_btn">
+											<a href="projects/ediya/sub01.html"target="_blank">SUB PAGE01</a>
+										</div>
+									</div>
+									<div class="btn_bottom">
+										<div class="show_btn">
+											<a href="projects/ediya/sub02.html" target="_blank">SUB PAGE02</a>
+										</div>
+
+									<div class="show_btn">
+										<a href="https://github.com/songhun115/ediya" target="_blank">VIEW CODE</a>
+									</div>
+									</div>
+								</div>
+								<p class="content_detail_notice">*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다. <br>
+									개인적인 작업물로 해당기업과는 관련 없습니다.</p>
+							</div>
+						</div>
+						<div class="content_img content_img1"></div>
+					</div>
+					<div class="swiper-slide main_project_bg2">
+						<div class="project_content_wrap">
+							<h2 class="content_title">Portfolio</h2>
+							<p class="content_name"><b>JUNG</b>SUNGHUN</p>
+							<div class="content_detail">
+								<span>#01</span>
+								<h1 class="content_title_name2">ILOOM</h1>
+								<span>RESPONSIVE WEBSITE</span>
+								<ul class="content_detail_list">
+									<li class="content_detail_item">반응형 웹</li>
+									<li class="content_detail_item">퍼블리싱 100%</li>
+									<li class="content_detail_item">Main Page, Sub Pag1</li>
+									<li class="content_detail_item">FaedIn 유형의 슬라이드 <br>
+									이미지가 직관적인 심플한 홈페이지
+									</li>
+								</ul>
+								<div class="view_btn">
+									<div class="btn_top">
+										<div class="show_btn">
+											<a href="projects/Elum/main.html" target="_blank"> MAIN PAGE</a>
+										</div>
+									<div class="show_btn"><a href="projects/Elum/sub.html" target="_blank">SUB PAGE01</a>
+									</div>
+									</div>
+									<div class="btn_bottom">
+									<div class="show_btn"><a href="https://github.com/songhun115/Elum" target="_blank">VIEW CODE</a></div>
+									</div>
+								</div>
+								<p class="content_detail_notice">*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다. <br>
+									개인적인 작업물로 해당기업과는 관련 없습니다.</p>
+							</div>
+						</div>
+						<div class="content_img content_img2"></div>
+					</div>
+					<div class="swiper-slide main_project_bg3">
+						<div class="project_content_wrap">
+							<h2 class="content_title">Portfolio</h2>
+							<p class="content_name"><b>JUNG</b>SUNGHUN</p>
+							<div class="content_detail">
+								<span>#01</span>
+								<h1 class="content_title_name3">THE HOME</h1>
+								<span>RESPONSIVE WEBSITE</span>
+								<ul class="content_detail_list">
+									<li class="content_detail_item">반응형 웹</li>
+									<li class="content_detail_item">퍼블리싱 100%</li>
+									<li class="content_detail_item">Main Page, Sub Pag1</li>
+									<li class="content_detail_item">OutoPlay 비주얼 슬라이드 <br>
+										깔끔하고 세련된 분위기의 홈페이지</li>
+								</ul>
+								<div class="view_btn">
+									<div class="btn_top">
+										<div class="show_btn">
+											<a href="projects/the_home/index.html" target="_blank"> MAIN PAGE</a></div>
+									<div class="show_btn"><a href="projects/the_home/sub01.html" target="_blank">SUB PAGE01</a></div>
+									</div>
+									<div class="btn_bottom">
+										
+									<div class="show_btn"><a href="https://github.com/songhun115/the_home" target="_blank">VIEW CODE</a></div>
+									</div>
+								</div>
+								<p class="content_detail_notice">*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다. <br>
+									개인적인 작업물로 해당기업과는 관련 없습니다.</p>
+							</div>
+						</div>
+						<div class="content_img content_img3"></div>
+					</div>
+
+
+				</div>
+
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+
+
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					slidesPerView: 1,
+					spaceBetween: 30,
+					speed: 500,
+					loop: true,
+
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+			</script>
+		</section>
+
+		<!-- about -->
+		<section class="about " id="section04">
+			<div class="about_wrap">
+				<div class="title_area">
+					<h1>Ability</h1>
+				</div>
+				<div class="keywords">
+					<ul class="keywords_list">
+						<li class="keywords_item">
+							<h3>RESPONSIBILITY
+								<!--Responsibility-->
+							</h3>
+							<p>주어진 일은 최선을 다해 끝까지</p>
+						</li>
+						<li class="keywords_item">
+							<h3>METICULOIS
+								<!--Meticulous-->
+							</h3>
+							<p>설계부터 예외처리까지 꼼꼼하게</p>
+						</li>
+						<li class="keywords_item">
+							<h3>INTUITIVE
+								<!--Intuitive-->
+							</h3>
+							<p>사용하기 쉽고 직관적인 UX/UI</p>
+						</li>
+					</ul>
+				</div>
+				<script>
+					// var content = document.getElementsByClassName('left_box');
+					// TweenMax.fromTo(content, 1, {opacity: 0, y: 500}, {opacity: 1, y: 0});
+
+					gsap.registerPlugin(ScrollTrigger);
+					gsap.from(".keywords", {
+					scrollTrigger: ".keywords", opacity: 0, duration: 1, }, {opacity: 1, duration: 1,})
+			</script>
+				<div class="about_content">
+					<div class="about_left_box">
+						<div class="about_left_box_img"></div>
+					</div>
+					<div class="about_right_box">
+						<ul class="skill_box">
+							<li class="right_box_item">
+								<div class="skill_bar html_bar">
+									<h5 class="skill_title">HTML</h5>
+									<span>85%</span>
+								</div>
+								<!-- <p class="skill_content">웹 표준 준수 및 효율적인  크로스 브라우징 이슈에 대해 인지하고 있습니다</p> -->
+							</li>
+							<li class="right_box_item">
+								
+								<div class="skill_bar css_bar">
+									<h5 class="skill_title">CSS</h5>
+									<span>85%</span>
+								</div>
+								<!-- <p class="skill_content">Animate와 transform을 활용하여 브라우저 크기에 대응하는 미디어쿼리 사용이 가능합니다</p> -->
+							</li>
+							<li class="right_box_item">
+								
+								<div class="skill_bar js_bar">
+									<h5 class="skill_title">JS</h5>
+									<span>70%</span>
+								</div>
+								<!-- <p class="skill_content">Jquery plug-in 사용 및 직접 구현이 가능하고 javascript에 대한 이해도가 높습니다.</p> -->
+							</li>
+							<li class="right_box_item">
+								
+								<div class="skill_bar ps_bar">
+									<h5 class="skill_title">PS</h5>
+									<span>80%</span>
+								</div>
+								<!-- <p class="skill_content">합성, 사진 편집 등의 2D 그래픽 작업을 비롯한 다양한 웹 시안 작업이 가능합니다.</p> -->
+							</li>
+							<li class="right_box_item">
+								
+								<div class="skill_bar ai_bar">
+									<h5 class="skill_title">AI</h5>
+									<span>85%</span>
+								</div>
+								<!-- <p class="skill_content">아이콘 제작 등 벡터 소스의 자유로운 제작과 편집이 가능합니다.</p> -->
+							</li>
+							
+						</ul>
+					</div>
+					<script>
+						// var content = document.getElementsByClassName('left_box');
+						// TweenMax.fromTo(content, 1, {opacity: 0, y: 500}, {opacity: 1, y: 0});
+	
+						gsap.registerPlugin(ScrollTrigger);
+						gsap.from(".about_content", {
+						scrollTrigger: ".about_content", opacity: 0, duration: 1, }, {opacity: 1, duration: 1,})
+				</script>
+					<script>
+						
+							 
+					</script>
+				</div>
+			</div>
+		</section>
+
+		<!-- Work project  -->
+		<section class="section section_container section5" id="section05">
+			<h1 class="avility_title project_wrap_title">WORK PROJECTS </h1>
+			<div class="work_categories">
+				<button class="category__btn selected" data-filter="*" style="font-weight: 600;">
+					All
+				</button>
+				<button class="category__btn" data-filter="responsive" style="font-weight: 600;">
+					RESPONSIVE
+				</button>
+				<button class="category__btn" data-filter="adaptive" style="font-weight: 600;">
+					ADAPTIVE
+				</button>
+				
+			</div>
+
+			<ul class="work__projects">
+				<li class="project project01" data-type="responsive">
+					<img src="images/National-Geographic.jpg" alt="responsive" class="project__img" />
+					<div class="project__description">
+						<h3>내셔널지오그래픽</h3>
+						<span>Clone coding with and CSS</span>
+						<p class="responsive_p"style="color:#fff; margin: 5px 0;">반응형</p>
+						<button class="skew-button"><a href="project_detail/national/index.html" target="_blank"><span>VIEW SITE</span></a></button>
+					</div>
+				</li>
+				
+				<li class="project project03" data-type="responsive">
+						<img src="images/excel.jpg" alt="responsive" class="project__img" />
+						<div class="project__description">
+							<h3>엑셀세라퓨틱스</h3>
+							<span>Clone coding with and CSS</span>
+						<p class="responsive_p" style="color:#fff; margin: 5px 0;">반응형</p>
+
+							<button class="skew-button"><a href="project_detail/excel/index.html" target="_blank"><span>VIEW SITE</span></a></button>
+						</div>
+				</li>
+				<li class="project project07" data-type="responsive">
+						<img src="images/KMD.jpg" alt="responsive" class="project__img" />
+						<div class="project__description">
+							<h3>KMD바이오</h3>
+							<span>Clone coding with and CSS</span>
+						<p  class="responsive_p" style="color:#fff; margin: 5px 0;">반응형</p>
+
+							<button class="skew-button"><a href="project_detail/KMD/index.html" target="_blank"><span>VIEW SITE</span></a></button>
+						</div>	
+				</li>
+				<li class="project project05" data-type="responsive">
+						<img src="images/heames.jpg" alt="responsive" class="project__img" />
+						<div class="project__description">
+							<h3>에르메스</h3>
+							<span>Clone coding with and CSS</span>
+						<p class="responsive_p" style="color:#fff; margin: 5px 0;">반응형</p>
+
+							<button class="skew-button"><a href="project_detail/hermes/index.html" target="_blank"><span>VIEW SITE</span></a></button>
+						</div>
+				</li>
+				<li class="project project02" data-type="adaptive">
+						<img src="images/Chevrolet.jpg" alt="adaptive" class="project__img" />
+						<div class="project__description">
+							<h3>쉐보레</h3>
+							<span>Clone coding with and CSS</span>
+						<p class="responsive_p" style="color:#fff; margin: 5px 0;">적응형</p>
+
+							<button class="skew-button"><a href="project_detail/chevrolet/index.html" target="_blank"><span>VIEW SITE</span></a></button>
+						</div>
+				</li>
+				<li class="project project04" data-type="responsive">
+						<img src="images/delivery.jpg" alt="responsive" class="project__img" />
+						<div class="project__description">
+							<h3>배달의민족</h3>
+							<span>Clone coding with and CSS</span>
+						<p class="responsive_p" style="color:#fff; margin: 5px 0;">반응형</p>
+
+							<button class="skew-button"><a href="project_detail/delivery-human/index.html" target="_blank"><span>VIEW SITE</span></a></button>
+						</div>
+				</li>
+				
+				<li class="project project06" data-type="responsive">
+						<img src="images/todolist.jpg" alt="responsive" class="project__img" />
+						<div class="project__description">
+							<h3>TO DO LIST</h3>
+							<span>Clone coding with and CSS</span>
+						<p class="responsive_p" style="color:#fff; margin: 5px 0;">반응형</p>
+
+							<button class="skew-button"><a href="project_detail/todolist/index.html" target="_blank"><span>VIEW SITE</span></a></button>
+						</div>
+				</li>
+				
+				<li class="project project08" data-type="responsive">
+						<img src="images/portfolio.jpg" alt="responsive" class="project__img" />
+						<div class="project__description">
+							<h3>포트폴리오 첫 작업</h3>
+							<span>Clone coding with and CSS</span>
+						<p class="responsive_p" style="color:#fff; margin: 5px 0;">반응형</p>
+
+							<button class="skew-button"><a href="project_detail/protfolio/index.html" target="_blank"><span>VIEW SITE</span></a></button>
+						</div>
+				</li>
+				
+			</ul>
+		</section>
+	</div>
+
+
+	<!-- footer -->
+	<footer class="footer" id="section06">
+
+		<div class="footer_wrap">
+			<div class="footer_title">
+				<h1>저와 함께 하시겠습니까?</h1>
+			</div>
+			<div class="footer_list">
+				<ul class="footer_box">
+					<li class="footer_item">핸드폰 :
+						<sapn>010-8402-7713</sapn>
+					</li>
+					<li class="footer_item">이메일 :
+						<span>hoho77113@gmail.com</span>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		
+		<div class="footer_bg">
+			<img src="images/bg_footer.png" alt="">
+		</div>
+	</footer>
+	<script>
+		// var content = document.getElementsByClassName('left_box');
+		// TweenMax.fromTo(content, 1, {opacity: 0, y: 500}, {opacity: 1, y: 0});
+
+		gsap.registerPlugin(ScrollTrigger);
+		gsap.from(".footer", {
+		scrollTrigger: ".footer", opacity: 0, duration: 0.5, }, {opacity: 1, duration: 0.5,})
+</script>
+
+	</div>
+	<script src="script.js"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <script src="js/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+
+    <script src="js/fullpage.min.js"></script>
+    <link rel="stylesheet" href="css/fullpage.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <title>엑셀세라퓨틱스</title>
+    
+</head>
+<body>  
+    <!-- menu toggle btn -->
+    <div class="menu_toggle_btn">
+        <div class="menu_toggle_btn_box">
+            <span class="menu_toggle_btn_line"></span>
+            <span class="menu_toggle_btn_line"></span>
+            <span class="menu_toggle_btn_line"></span>
+        </div>
+    </div>
+    <!-- body_bg -->
+    <div class="body_bg"></div>
+    <!-- header -->
+    <nav class="nav_bar">
+        <div class="img_box">
+            <img src="http://xcell.co.kr/img/common/main_logo.png" alt="">
+        </div>
+        <ul class="nav_bar_list">
+            <li class="nav_bar_item">
+                <a href="#">
+                    ABOUT
+                    <div class="nav_bar_sub_box">
+                        <ul class="nav_bar_sub_list">
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    General Information
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    CEO Message
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Organization
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    History
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Contact Us
+                                </a></li>
+                        </ul>
+                        <div class="nav_sub_bg"></div>
+                    </div>
+                </a>
+            </li>
+            <li class="nav_bar_item">
+                <a href="#">
+                    CELLCOR™
+                    <div class="nav_bar_sub_box">
+                        <ul class="nav_bar_sub_list">
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    CellCor™
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Documents
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Inquiry
+                                </a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="nav_bar_item">
+                <a href="#">
+                    PIPELINE
+                    <div class="nav_bar_sub_box">
+                        <ul class="nav_bar_sub_list">
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Next Generation
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Media Clonal Selected MSCs
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Automated Mass Cell Culture Platform
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    MSC-derived Exosomes
+                                </a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="nav_bar_item">
+                <a href="#">
+                    GMP
+                    <div class="nav_bar_sub_box">
+                        <ul class="nav_bar_sub_list">
+                            <li class="nav_bar_sub_item">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="nav_bar_item">
+                <a href="#">
+                    NOTICE
+                    <div class="nav_bar_sub_box">
+                        <ul class="nav_bar_sub_list">
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Notice
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    News
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Recruit
+                                </a></li>
+                            <li class="nav_bar_sub_item"><a href="#">
+                                    Q&A
+                                </a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="nav_right">
+            <div class="language">
+                <ul class="language_list">
+                    <li class="language_item"><a href="#">EN</a></li>
+                    <li class="language_item"><a href="#">KR</a></li>
+                </ul>
+            </div>
+            <div class="menu_toggle">
+                <div class="menu_toggle_box">
+                    <span class="menu_toggle_line"></span>
+                    <span class="menu_toggle_line"></span>
+                    <span class="menu_toggle_line"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- menu_btn_in_page -->
+    <div class="all_menu">
+        <div class="body_bg">
+        </div>
+        <div class="all_menu_language">
+            <span class="all_menu_language_text"><a href="#">EN</a></span>
+            <span class="all_menu_language_text"><a href="#">KR</a></span>
+        </div>
+        <div class="all_menu_box">
+
+            <div class="all_menu_item">
+                <h2 class="all_menu_item_h2">ABOUT</h2>
+                <ul class="all_menu_sub_list">
+                    <li class="all_menu_sub_item"><a href="#">
+                            General Information
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            CEO Message
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            Organization
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            History
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            Contact Us
+                        </a></li>
+                </ul>
+            </div>
+            <div class="all_menu_item">
+                <h2 class="all_menu_item_h2">CELLCOR™</h2>
+                <ul class="all_menu_sub_list">
+                    <li class="all_menu_sub_item"><a href="#">
+                            CellCor™
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            Documents
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            Inquiry
+                        </a></li>
+                </ul>
+            </div>
+            <div class="all_menu_item">
+                <h2 class="all_menu_item_h2">PIPELINE</h2>
+                <ul class="all_menu_sub_list">
+                    <li class="all_menu_sub_item"><a href="#">
+                            Next Generation
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            Media Clonal Selected MSCs
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            Automated Mass Cell Culture Platform
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            MSC-derived Exosomes
+                        </a></li>
+                </ul>
+            </div>
+            <div class="all_menu_item">
+                <h2 class="all_menu_item_h2">GMP</h2>
+                <ul class="all_menu_sub_list">
+                    <li class="all_menu_sub_item"><a href="#">GMP</a></li>
+                </ul>
+            </div>
+            <div class="all_menu_item">
+                <h2 class="all_menu_item_h2">NOTICE</h2>
+                <ul class="all_menu_sub_list">
+                    <li class="all_menu_sub_item"><a href="#">
+                            Notice
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            News
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            Recruit
+                        </a></li>
+                    <li class="all_menu_sub_item"><a href="#">
+                            Q&A
+                        </a></li>
+                </ul>
+            </div>
+            <div class="all_menu_bg">
+                <img src="imgs/all_menu_bg.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <div class="section_box">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider_bg bg1">
+                                <div class="main_text_box">
+                                    <p>
+                                        The CellCor
+                                        <br>
+                                        the fruit of tenacious efforts
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider_bg bg2">
+                                <div class="main_text_box">
+                                    <p>
+                                        The CellCor
+                                        <br>
+                                        the fruit of tenacious efforts
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider_bg bg3">
+                                <div class="main_text_box">
+                                    <p>
+                                        The CellCor
+                                        <br>
+                                        the fruit of tenacious efforts
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination slider_navigation"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section1" id="section1">
+            <div class="slide" id="slide1">
+                <div class="section_box section_box1">
+                    <div class="section_contents_box">
+                        <div class="section_img_box">
+                            <span class="section1_img_item section1_img1">
+                                <img src="imgs/section22.png" alt="">
+                            </span>
+                            <span class="section1_img_item section1_img2">
+                                <img src="imgs/section2.png" alt="">
+                            </span>
+                        </div>
+                        <div class="section_text_box text_box1">
+                            <h2 class="aa section_intro">
+                                PRODUCT
+                            </h2>
+                            <p class="aa main_text_title">
+                                CellCor™
+                            </p>
+                            <p class="aa main_text_sbj">
+                                CellCor™는 Serum-free Defined 와 Serum-free Chemically Defined로 구분됩니다. CellCor™는 효율적인 세포 증식을 위한 환경과 최상의 결과를 제공하며, 임상 시험까지 접근성을 높여줍니다. CellCor™와 함께하세요.
+                            </p>
+                            <div class="aa section_text_btn">
+                                MORE INFORMATION
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section2" id="section1">
+            <div class="slide" id="slide1">
+                <div class="section_box section_box2 ">
+                    <div class="section_text_box2">
+                        <div class="section_content text_box2">
+                            <h2 class="aa section_intro">
+                                PIPELINE
+                            </h2>
+                            <p class="aa main_kr_text_title">
+                                글로벌 경쟁을 위한 혁신
+                            </p>
+                            <p class="aa main_text_sbj">
+                                우리는 급성장하는 재생 의학 시장에서 글로벌 혁신을 촉진하기 위해 시너지 기술을 개발하고 있습니다.
+                            </p>
+                            <ul class="aa section_icon_list">
+                                <li>
+                                    <a href="#">
+                                        <span class="section_icon icon1">
+                                           </span>
+                                        <p>Media <br> Development </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="section_icon icon2"></span>
+                                        <p>Automated<br> Mass Cell <br>Culture System</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="section_icon icon3"></span>
+                                        <p>Exosome <br>Research</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="section_icon icon4"></span>
+                                        <p> Clonal<br> Selection</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section_bg section_bg_img3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section3" id="section1">
+            <div class="slide" id="slide1">
+                <div class="section_box advantages_box">
+                    <div class="section_bg section_bg_img4">
+                        <div class="section_content section_content3">
+                            <div class="section_text_box2">
+                                <h2 class="aa section_intro">
+                                    ADVANTAGES
+                                </h2>
+                                <p class="aa main_kr_text_title">
+                                    품질, 속도, 효율
+                                </p>
+                                <p class="aa main_text_sbj">
+                                    10년의 연구 끝에, 더 빠르고, 효율적인 무혈청 화학조성 배지를 개발하였습니다.<br>가격대비 효율이 좋은 최고의 제품을 보장합니다.
+                                </p>
+                                <ul class="aa section4_icon_list">
+                                    <li>
+                                        <div>
+                                            <span class="section4_icon section4_icon1">
+                                                <img src="imgs/section4_icon1.png" alt="">
+                                            </span>
+                                            <div class="li_title">
+                                                <span>1</span>
+                                                <span>in-Class</span>
+                                            </div>
+                                            <p>Serum Free Chemically<br>Defined media for hMSC</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="section4_icon section4_icon2">
+                                                <img src="imgs/main_merit_icon2.png" alt="">
+                                            </span>
+                                            <div class="li_title">
+                                                <span>2</span>
+                                                <span>x</span>
+                                            </div>
+                                            <p>Culture Yield</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="section4_icon section4_icon3">
+                                                <img src="imgs/asection4_icon4.png" alt="">
+                                            </span>
+                                            <div class="li_title">
+                                                <span>10</span>
+                                                <span>years</span>
+                                            </div>
+                                            <p>Research Period</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="section4_icon section4_icon4">
+                                                <img src="imgs/section4_icon4.png" alt="">
+                                            </span>
+                                            <div class="li_title">
+                                                <span>1000</span>
+                                                <span>+</span>
+                                            </div>
+                                            <p>Raw Material Database for<br>Media Development</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section4" id="section1">
+            <div class="slide" id="slide1">
+                <div class="section_box">
+                    <div class="section_bg section_bg_img5">
+                        <div class="section_text_box2">
+                            <div class="section_content">
+                                <h2 class="section_intro">
+                                    ECO-FRIENDLY
+                                </h2>
+                                <p class="main_kr_text_title">
+                                    <span>CellCor™ 는</span>
+                                    <span>온난화를 방지</span>
+                                    <span>할 수 있습니다.</span>
+                                </p>
+                                <p class="main_text_sbj">
+                                    CellCor™ 는 메탄가스 배출을 감소시켜 지구 온난화를 방지 할 수 있습니다. 소의 방귀와 트림은 대량의 메탄가스를 배출하며 전세계 메탄가스 배출량의 15~20% 를 차지합니다. 메탄은 이산화탄소 보다 온난화를 23배 빨리 진행시키는 물질입니다. CellCor™ 는 소혈청을 생산하기 위해 사용되는 소의 수를 감소시킬 수 있습니다. ㈜ 엑셀세라퓨틱스는 환경친화적 기업이 되기 위해 끊임없는 노력을 할 것입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section5" id="section1">
+            <div class="slide" id="slide1">
+                <div class="section_box">
+                    <div class="section_bg section_bg_img6">
+                        <div class="section_text_box2">
+                            <div class="section_content">
+                               <div class="nitice">
+                                   <div class="notice_title">
+                                       <span>NOTICE</span>
+                                       <span>
+                                           <div class="notice_bnt"><i class="fas fa-chevron-left"></i></div>
+                                           <div class="notice_bnt"><i class="fas fa-chevron-right"></i></div>
+                                       </span>
+                                   </div>
+                                   <div class="notice_content">
+                                       <span> 05.27</span>
+                                       <span>CellCor™  Promotion </span>
+                                   </div>
+                               </div>
+                               <div class="news">
+                                <div class="notice_title">
+                                    <span>NEWS</span>
+                                    <span>
+                                        <div class="notice_bnt"><i class="fas fa-chevron-left"></i></div>
+                                           <div class="notice_bnt"><i class="fas fa-chevron-right"></i></div>
+                                    </span>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <img src="imgs/section6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section_footer fp-auto-height" id="section1">
+            <div class="slide" id="slide1">
+                <div class="footer_box1">
+                    <div class="footer_logo">
+                        <a href="#">
+                            <img src="imgs/footer_logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer_info">
+                        <div><p>(08394)서울시 구로구 디지털로 242 한화비즈메트로 1차 13층</p></div>
+                        <ul>
+                            <li><a href="#">TEL (+82-2) 863-1331</a></li>
+                            <li><a href="#">FAX 02-863-0832</a></li>
+                            <li><a href="#">E-MAIL xcell@xcell.co.kr</a></li>
+                        </ul>
+                        <div><p>© 2020 Xcell Therapeutics Inc., Copyright</p></div>
+                        <div><p>개인정보처리방침</p></div>
+                        
+                    </div>         
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <script src="js/animation.js"></script>
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+        navigation: true,
+        navigationPosition: 'right',
+    });
+    </script>
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>

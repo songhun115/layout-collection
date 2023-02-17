@@ -1,0 +1,4 @@
+.menu-list{display: flex;}
+.menu-item-tit{display: flex;align-items: center;}
+
+.arrow-right img{width: 40px;}

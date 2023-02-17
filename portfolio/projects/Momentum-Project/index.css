@@ -1,0 +1,176 @@
+body,
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  color: #1c1c1c;
+}
+
+body {
+  color: #1c1c1c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form,
+.greetings,
+.icon__box {
+  display: none;
+}
+
+/* 시계 시작 */
+.js-clock > h1 {
+  color: #1c1c1c;
+}
+
+.js-clock {
+  display: column;
+  justify-content: center;
+}
+
+.js-clock > h1,
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/* 시계 끝 */
+
+/* 입력 폼 시작  */
+.js__toDoForm {
+  text-align: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.js-form {
+  color: #1c1c1c;
+}
+.showing {
+  display: block;
+}
+.js__greetings {
+  color: #1c1c1c;
+}
+/* 입력 폼 끝  */
+
+/* 리스트 시작  */
+
+.js__toDoList > li {
+  padding: 10px 0;
+  color: #1c1c1c;
+  font-weight: bold;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 5px;
+}
+.js__toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.js__toDoList > li {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.js__toDoList .delBtn {
+}
+.js__toDoList > li:hover {
+  background-color: #dfdfdf;
+  transition: 0.3s;
+}
+/* 리스트 끝  */
+
+/* 이미지 애니메이션 시작 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.js__weather {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #1c1c1c;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.inputing {
+  width: 225px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+/* 이미지 애니메이션 끝 */
+
+.greetings {
+}
+.js__toDoForm {
+  margin-top: 25px;
+}
+
+.js-form {
+  text-align: center;
+}
+.user__Form {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.delBtn {
+  cursor: pointer;
+}
+.icon {
+  color: black;
+  font-size: 1.5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon__box > a > .icon {
+  margin-left: 10px;
+  cursor: pointer;
+}

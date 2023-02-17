@@ -1,0 +1,109 @@
+
+
+  @media screen and (max-width: 1400px) {
+    .intro_item{padding: 2em;}
+  }
+  @media screen and (max-width: 1200px) {}
+  /*! 스와이퍼  */
+  @media screen and (max-width: 768px) {
+    .intro_item_num {position: absolute;bottom: 0px;transform-origin: bottom left;user-select: none;right: 0;transform: none;font-size: 80px;color: #e7e7e7;z-index: -2;line-height: 0.65;}
+    .mo_none {
+      display: none !important;
+    }
+  
+    .mo_only {
+      display: block !important;
+    }
+  
+    .layout1 {
+      padding: 0 20px;
+    }
+  
+    .layout2 {
+      padding: 0 20px;
+    }
+ 
+    #main .main_slide_tabmenu .tab {
+      font-size: 14px;
+      padding-left: 12px;
+    }
+    #main .sect_magazine .mag_thumbnail .swiper-slide.video .mo_video_link {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  
+    #main .sect_magazine .mag_text .mo_video_link {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  
+    #main .sect_magazine {
+      padding: 75px 0;
+    }
+  
+    #main .sect_magazine .mag_thumbnail {
+      position: static;
+      margin-left: 0;
+      width: calc(100% + 40px);
+    }
+  
+    #main .sect_magazine .mag_thumbnail .swiper-container {
+      width: 100%;
+    }
+  
+    #main .sect_magazine .mag_thumbnail .thumbnail {
+      border-radius: 10px 0 0 10px;
+    }
+  
+    #main .sect_magazine .mag_text {
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      padding-top: 10px;
+      margin-bottom: 35px;
+    }
+  
+    #main .sect_magazine .mag_text .swiper-container {
+      height: auto;
+    }
+  
+    #main .sect_magazine .mag_text .tag {
+      font-size: 12px;
+    }
+  
+    #main .sect_magazine .mag_text .tit {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  
+    #main .sect_magazine .mag_text .desc {
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 10px;
+    }
+  
+    #main .sect_magazine .swiper-tools {
+      text-align: left;
+    }
+  
+    #main .sect_magazine .swiper-tools .swiper-pagination {
+      width: 150px;
+    }
+  
+  
+  
+  
+  
+  }
+  
+

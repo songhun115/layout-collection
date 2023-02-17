@@ -1,0 +1,136 @@
+:root {
+  /* Color*/
+  --color-blue: #00a4db;
+  --color-white: #fff;
+  --color-black: #3f454d;
+  --color-gray: #555555;
+  /* Size */
+  --size-small: 14px;
+  --size-normal: 18px;
+  --size-large: 28px;
+  --size-extraLarge: 36px;
+}
+/* Normalize */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav_bar > .nav_box > ul li > a {
+  font-size: var(--size-normal);
+}
+.nav_bar > .nav_box > ul li > a,
+.i {
+  color: white;
+}
+.nav_bar > .nav_box > .nav_list > .nav_item:hover > a,
+.nav_bar
+  > .nav_box
+  > .nav_list
+  > .nav_item
+  > .nav_sub_list
+  > .nav_sub_item:hover
+  > a {
+  color: var(--color-blue);
+}
+a {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  margin-left: 7px;
+  border: 1px solid transparent;
+  background: transparent;
+}
+.swiper-pagination-bullet::after {
+  clear: both;
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 110px;
+  right: 140px;
+  z-index: 10;
+}
+.swiper-pagination-bullet-active::after {
+  clear: both;
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  top: 55%;
+  left: 50%;
+  border: 1px solid transparent;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  border: 1px solid white;
+}
+
+.slider_img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg_img {
+  height: 100vh;
+  position: relative;
+  background: no-repeat center/cover;
+  transition: 0.3s;
+}

@@ -1,0 +1,152 @@
+
+
+  
+  @media screen and (max-width: 768px) {
+    .mo_none {
+      display: none !important;
+    }
+  
+    .mo_only {
+      display: block !important;
+    }
+  
+    .layout1 {
+      padding: 0 20px;
+    }
+  
+    .layout2 {
+      padding: 0 20px;
+    }
+ 
+    #main .main_slide_tabmenu .tab {
+      font-size: 14px;
+      padding-left: 12px;
+    }
+  
+  
+  
+    #main .sect_magazine .mag_thumbnail .swiper-slide.video .mo_video_link {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  
+    #main .sect_magazine .mag_text .mo_video_link {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  
+    #main .sect_magazine {
+      padding: 75px 0;
+    }
+  
+    #main .sect_magazine .mag_thumbnail {
+      position: static;
+      margin-left: 0;
+      width: calc(100% + 40px);
+    }
+  
+    #main .sect_magazine .mag_thumbnail .swiper-container {
+      width: 100%;
+    }
+  
+    #main .sect_magazine .mag_thumbnail .thumbnail {
+      border-radius: 10px 0 0 10px;
+    }
+  
+    #main .sect_magazine .mag_text {
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      padding-top: 10px;
+      margin-bottom: 35px;
+    }
+  
+    #main .sect_magazine .mag_text .swiper-container {
+      height: auto;
+    }
+  
+    #main .sect_magazine .mag_text .tag {
+      font-size: 12px;
+    }
+  
+    #main .sect_magazine .mag_text .tit {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  
+    #main .sect_magazine .mag_text .desc {
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 10px;
+    }
+  
+    #main .sect_magazine .swiper-tools {
+      text-align: left;
+    }
+  
+    #main .sect_magazine .swiper-tools .swiper-pagination {
+      width: 150px;
+    }
+  
+  
+  
+  
+    #main .sect_use .wrap_use_slide .swiper-slide .wrap_txt .tit {
+      font-size: 20px;
+    }
+  
+    #main .sect_use .wrap_use_slide .swiper-slide .wrap_txt .desc {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  
+    #main .sect_use .wrap_use_slide .swiper-slide:hover {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    #main .sect_use .wrap_use_slide .swiper-slide-active .wrap_txt {
+      opacity: 1;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+    }
+  
+    #main .sect_use .wrap_use_slide .swiper-slide-active .thumbnail .img {
+      -webkit-transform: scale(1.1) rotate(0.001deg);
+      -ms-transform: scale(1.1) rotate(0.001deg);
+      transform: scale(1.1) rotate(0.001deg);
+      -webkit-transition: -webkit-transform 3.5s linear;
+      transition: -webkit-transform 3.5s linear;
+      transition: transform 3.5s linear;
+      transition: transform 3.5s linear, -webkit-transform 3.5s linear;
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+    }
+  
+    #main .sect_use .wrap_use_slide .swiper-tools {
+      position: static;
+      text-align: left;
+      margin-top: 40px;
+    }
+  
+    #main .sect_use .wrap_use_slide .swiper-tools .swiper-pagination {
+      width: 150px;
+    }
+  
+  }
+  
+
