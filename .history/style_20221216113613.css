@@ -1,0 +1,133 @@
+
+.section02 {
+    height: 100vh;
+  }
+  
+  .project_content_wrap {
+    position: absolute;
+    top: 79px;
+    left: 60px;
+    width: 40%;
+    height: calc(100% - 120px);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .content_img {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    height: 70%;
+    transform: translate(0, -50%);
+    max-width: 900px;
+    width: 45%;
+    min-width: 250px;
+    box-shadow: 30px 40px 40px rgb(0 0 0 / 60%);
+  }
+  .content_img1 {
+    background-image: url("https://ejungle.co.kr/LocalUser/jungleseoul/WPPP_seoul_02/Sonhyesu/portfolio/img/bg-ediya.png");
+  }
+  .content_img2 {
+    background-image: url("../images/slide_img_02.jpg");
+  }
+  .content_img3 {
+    background-image: url("../images/slide_img_03.jpg");
+  }
+  
+  .content_detail {
+    position: absolute;
+    bottom: 100px;
+    left: 30%;
+    padding: 0 10px;
+    opacity: 1;
+    text-align: left;
+  }
+  .content_detail h1 {
+    margin: 0;
+    font-size: 70px;
+    text-indent: -5px;
+  }
+  .content_detail_item {
+    padding: 5px 0;
+  }
+  .content_detail_list {
+    margin: 10px 0;
+  }
+  .content_detail_notice {
+    font-size: 11px;
+  }
+  
+  .content_title {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    padding-right: 43px;
+    font-size: 17px;
+    margin: 0;
+  }
+  .content_title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 1px;
+    background: #222;
+  }
+  .content_name {
+    position: absolute;
+    bottom: 80%;
+    left: 5%;
+    padding-right: 43px;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .view_btn .skew-button {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: translate(0);
+    margin: 10px 10px 10px 0;
+  }
+  .view_btn {
+    display: flex;
+  }
+  
+  .main_project_bg1 {
+    background: url(img/bg-01.jpg) no-repeat center center/cover;
+  }
+  .main_project_bg2 {
+    background: url(img/bg-02.jpg) no-repeat center center/cover;
+  }
+  .main_project_bg3 {
+    background: url(img/bg-03.jpg) no-repeat center center/cover;
+  }
+  
+  .view_btn {
+    white-space: wrap;
+    display: block;
+  }
+  .show_btn {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  .show_btn a {
+    padding: 10px;
+    display: block;
+  }
+  .btn_top,
+  .btn_bottom {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .show_btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  }

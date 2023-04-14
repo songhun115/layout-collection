@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&subset=korean");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,900");
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+/*reset*/
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+p {
+  margin: 0;
+  padding: 0;
+}
+header,
+main,
+footer,
+article,
+section,
+aside,
+nav {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a img {
+  border: none;
+}
+li {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+}
+address,
+em {
+  font-style: normal;
+}
+
+/*common*/
+body {
+  font: 13px "Noto Sans KR", "나눔고딕", "돋움", Dotum, Helvetica,
+    "Apple SD Gothic Neo", "sans-serif";
+  color: #222;
+  background: #fff;
+}
+#skip-nav {
+  position: fixed;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  transition: 0.3s;
+}
+#skip-nav:focus {
+  top: 0;
+}
+#wrapper {
+  width: 100%;
+  min-width: 337px;
+  overflow: hidden;
+}
+#layer-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 11;
+}
+br.only-m {
+  content: "";
+}
+br.only-m:after {
+  content: "\00a0";
+}
+.pc {
+  display: none;
+}
+.large {
+  display: block;
+}
+.small {
+  display: none;
+}

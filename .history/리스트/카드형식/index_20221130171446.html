@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+<style>
+    img{width: 100%;}
+    h2{z-index: 1;}
+    .card-item{position: relative; max-width: 500px; padding: 20px; border-radius: 20px; box-shadow: 0 3.2px 2.2px rgb(0 0 0 / 2%), 0 7px 5.4px rgb(0 0 0 / 3%), 0 12.1px 10.1px rgb(0 0 0 / 4%), 0 19.8px 18.1px rgb(0 0 0 / 4%), 0 34.7px 33.8px rgb(0 0 0 / 5%), 0 81px 81px rgb(0 0 0 / 7%);; background-color: #fff;  box-sizing: border-box; overflow: hidden;}
+    .card-item::before{content: "";position: absolute; top:-20%; left:-25%; width: 300px; height: 300px; border-radius: 100%; background-color: #f6c90e; z-index: 0;}
+    .card-item img{transform: rotate(-20deg);}
+</style>
+<body>` 
+    <div class="list-wrap">
+        
+        <ul class="card-list">
+            <li class="card-item">
+                <h2>Picked Items</h2>
+                <div class="card-container">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-mens-running-shoe-wide-D24Mcz-removebg-preview.png"
+                        alt="">
+                    <div class="content-name">Nike Air Zoom Pegasus 36</div>
+                    <p>The iconic Nike Air Zoom Pegasus 36 offers more cooling and mesh that targets breathability
+                        across high-heat areas. A slimmer heel collar and tongue reduce bulk, while exposed cables give
+                        you a snug fit at higher speeds.</p>
+                    <div class="bottom-area">
+                        <div class="button-price">$108.97</div>
+                        <div class="button-confrim">ADD TO CART</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

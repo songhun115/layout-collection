@@ -1,0 +1,66 @@
+body{overflow: hidden; overflow-y:auto ;}
+* {
+    font-family: "Rajdhani", sans-serif;
+    transition: 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .main_visuare {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  
+  body,
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Rajdhani", sans-serif;
+    cursor: default;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  :root {
+    /* color */
+    --color-white: #6F6F6Ffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-black: #4d4d4d;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #6F6F6F7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+    /*Global End*/
+  
+    /* font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-mrcro: 14px;
+  
+    /* font weight*/
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+  
+    /* size */
+    --size-border-radius: 4px;
+  
+    /* Annimation */
+    --animation-duration: 300ms;
+  }

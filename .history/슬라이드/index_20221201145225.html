@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>현대백화점그룹 통합멤버십 | H.Point</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Pragma" content="no-Cache" />
+    <meta http-equiv="Cache-Control" content="no-Cache" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, target-densitydpi=medium-dpi" />
+    <meta name="keywords" content="H.Point,현대백화점,통합멤버십,h포인트,hpoint" />
+    <meta name="description" content="현대백화점그룹 통합멤버십 H.Point! 쇼핑부터 여행/문화 혜택까지 고객님의 라이프스타일을 케어합니다." />
+    <meta name="name" content="현대백화점그룹 통합 멤버십" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="현대백화점그룹 통합 멤버십" />
+    <meta property="og:title" content="현대백화점그룹 통합 멤버십" />
+    <meta property="og:description" content="현대백화점그룹 통합 멤버십" />
+    <meta property="og:image" content="https://www.h-point.co.kr/images_customer/logo/invite_201127.png" />
+
+    <link rel="stylesheet" href="swiper.css"><!-- RENEWAL 2021 -->
+    <link rel="stylesheet" href="ui.css" /><!-- RENEWAL 2021 -->
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="swiper.js"></script>
+    <script src="common.js"></script>
+    <script src="page.js"></script>
+
+
+
+    <nav>
+        <div class="branch-journeys-top" style="display:none;"></div>
+    </nav>
+
+</head>
+
+<body>
+
+  
+    <div id="wrapper">
+        <script type="text/javascript" src="/js/jquery/jquery-barcode.js"></script>
+        <form id="ssoLogin" name="ssoLogin" method="post" action="/cu/login/submitJsSsoMcust.nhd">
+            <input type="hidden" name="mcustNo" id="mcustNo" />
+            <input type="hidden" name="hmallRetUrl">
+            <input type="hidden" name="hmallRetPage">
+            <input type="hidden" name="hmallHtmlYn">
+            <input type="hidden" name="targetUrl" id="targetUrl" value="/cu/main/index.nhd" />
+        </form>
+
+        <!----- 모바일 메뉴버튼 ----->
+
+        <!----- [S] 모바일 lnb ----->
+        <div id="lnb">
+            <div class="dim"></div>
+            <div class="container">
+                <div class="top_area">
+                    <a href="/cu/main/index.nhd" class="logo"><span class="hidden">H.Point</span></a>
+                    <div class="util">
+                        <ul class="clear">
+
+                            <li><a href="/cu/login.nhd" onclick="GA_Event('MO_메뉴', '헤더', '로그인');">로그인</a></li>
+
+
+                            <!-- <li><button type="button" class="app_down" onclick="commonPub.modalPopOpen(this);" data-pop="pop_app_download">APP</button></li> -->
+                            <li>
+                                <a class="app_down" href="/cma/invite.nhd?scheme=appMain"
+                                    onclick="GA_Event('MO_메뉴', '헤더', '앱다운로드');" target="_blank">APP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="my_area">
+
+                    <!-- 로그인 전 -->
+                    <div class="guest">
+                        <p class="txt"><a class="c_bl" href="/cu/login.nhd"
+                                onclick="GA_Event('MO_메뉴', '헤더', '로그인');">로그인</a>하고 쉽고 편한 <br>포인트혜택을 누려보세요.</p>
+                    </div>
+                    <!--// 로그인 전 -->
+
+
+                </div>
+                <div class="app_area">
+                    <a href="/cma/invite.nhd?scheme=appMain" target="_blank"
+                        onclick="GA_Event('MO_메뉴', '헤더', '앱다운로드');"><span>포인트의 모든것! H.Point APP 다운받기</span></a>
+                </div>
+
+                <!-- 모바일 메뉴 -->
+                <nav id="mobileGnb">
+                    <ul>
+                        <li class="introduce">
+                            <div class="depth1"><span>소개</span></div>
+                            <ul class="depth2">
+                                <li><a href="/introduce/intro.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '소개_H.Point소개');">H.Point소개</a></li>
+                                <li><a href="/introduce/shopping.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '소개_사용처안내');">사용처안내</a></li>
+                                <li><a href="/introduce/benefit.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '소개_가입혜택');">가입혜택</a></li>
+                            </ul>
+                        </li>
+                        <li class="collect">
+                            <div class="depth1"><span>쌓기</span></div>
+                            <ul class="depth2">
+                                <li><a href="/stack/joy.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쌓기_즐길거리');">즐길거리</a></li>
+                                <li><a href="/stack/change.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쌓기_전환하기');">전환하기</a>
+                                </li>
+                                <li><a href="/stack/charge.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쌓기_충전하기');">충전하기</a>
+                                </li>
+                                <li><a href="/stack/coupon.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '쌓기_영수증쿠폰');">영수증/쿠폰</a></li>
+                            </ul>
+                        </li>
+                        <li class="use">
+                            <div class="depth1"><span>쓰기</span></div>
+                            <ul class="depth2">
+                                <li><a href="/friend/point.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쓰기_포인트샵');">포인트샵</a>
+                                </li>
+                                <li><a href="/friend/gift.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쓰기_선물하기');">선물하기</a>
+                                </li>
+                                <li><a href="/friend/donate.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쓰기_기부하기');">기부하기</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="benefit">
+                            <div class="depth1"><span>혜택</span></div>
+                            <ul class="depth2">
+                                <li><a href="/benefit/evntList.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '혜택_이벤트');">이벤트</a>
+                                </li>
+                                <li><a href="/benefit/copnList.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '혜택_쿠폰');">쿠폰</a>
+                                </li>
+                                <li><a href="/benefit/plsPntList.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '혜택_플러스포인트');">플러스포인트</a></li>
+                                <li><a href="/friend/mission.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '혜택_미션');">미션</a>
+                                </li>
+                                <!-- <li><a href="/benefit/hMagazin.nhd">H매거진</a></li> -->
+                                <li><a href="/benefit/alliCrd.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '혜택_제휴카드안내');">제휴카드안내</a></li>
+                                <li><a href="/benefit/hook.nhd">후크체험단</a></li>
+                            </ul>
+                        </li>
+                        <li class="club">
+                            <div class="depth1"><span>클럽</span></div>
+                            <ul class="depth2">
+                                <li><a href="/benefit/clubFriend.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽프렌즈');">클럽프렌즈</a></li>
+                                <li><a href="/benefit/clubWedding.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽웨딩');">클럽웨딩</a></li>
+                                <li><a href="/benefit/clubMoms.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '클럽_맘스클럽');">맘스클럽</a></li>
+                                <li><a href="/benefit/clubBeauty.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '클럽_헤이마이뷰티');">헤이, 마이 뷰티</a></li>
+                                <li><a href="/benefit/clubAdidas.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽아디다스');">클럽아디다스</a></li>
+                                <li><a href="/benefit/clubTravel.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽트래블');">클럽트래블</a></li>
+                                <li><a href="/benefit/clubMeat.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽트래블');">클럽육학다식</a></li>
+                            </ul>
+                        </li>
+                        <li class="hpay">
+                            <div class="depth1"><a href="/benefit/hPay.nhd"
+                                    onclick="GA_Event('MO_메뉴', '메뉴', 'H.Pay_H.Pay');">H.Point Pay</a></div>
+                        </li>
+                        <li class="hmagazine">
+                            <div class="depth1"><span>H.매거진</span></div>
+                            <ul class="depth2">
+
+                                <li><a href="/benefit/hMagazin.nhd?ctgrId=006022&tabIndex=0">사운드핏</a></li>
+
+                                <li><a href="/benefit/hMagazin.nhd?ctgrId=006002&tabIndex=1">패션</a></li>
+
+                                <li><a href="/benefit/hMagazin.nhd?ctgrId=006003&tabIndex=2">리빙</a></li>
+
+                                <li><a href="/benefit/hMagazin.nhd?ctgrId=006021&tabIndex=3">Hip Tok</a></li>
+
+                                <li><a href="/benefit/hMagazin.nhd?ctgrId=006005&tabIndex=4">푸드</a></li>
+
+                                <li><a href="/benefit/hMagazin.nhd?ctgrId=006011&tabIndex=5">트렌드</a></li>
+
+                                <li><a href="/benefit/hMagazin.nhd?ctgrId=006018&tabIndex=6">Edit.H</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="customer">
+                            <div class="depth1"><span>고객센터</span></div>
+                            <ul class="depth2">
+                                <li><a href="/cu/cmct/faqDtlList.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_FAQ');">FAQ</a></li>
+                                <li><a href="/cu/cmct/mtmInqrWrite.shd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_1:1문의');">1:1문의</a></li>
+                                <li><a href="/cu/cmct/ancmDtlList.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_공지사항');">공지사항</a></li>
+                                <!-- <li><a href="https://api.happytalk.io/api/kakao/chat_open?yid=%40%ED%98%84%EB%8C%80%EB%B0%B1%ED%99%94%EC%A0%90%EA%B7%B8%EB%A3%B9hpoint&site_id=4000000675&category_id=82707&division_id=82714&parameter1=$" target="_blank">상담톡 문의</a></li> -->
+                                <!-- <li><a href="/cu/cmct/cnslChat.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_상담톡문의');"></a></li> -->
+                                <li><a href="/cu/cmct/pntAlli.nhd"
+                                        onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_제휴문의');">제휴문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!--// 모바일 메뉴 -->
+
+                <div class="bnr_area">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+
+                            <li class="swiper-slide">
+                                <a href="https://www.h-point.co.kr/introduce/benefit.nhd"
+                                    onclick="GA_Event('MO_메뉴', 'GNB하단배너', '좌측배너');">
+
+                                    <img src="/cma/image/1000468699.nhd" alt="GNB 배너 1번 이미지">
+
+                                </a>
+                            </li>
+
+
+                            <li class="swiper-slide">
+                                <a href="https://www.h-point.co.kr/stack/joy.nhd"
+                                    onclick="GA_Event('MO_메뉴', 'GNB하단배너', '우측배너');">
+
+                                    <img src="/cma/image/1000468700.nhd" alt="GNB 배너 2번 이미지">
+
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="swiper-pagination type1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----- [E] 모바일 lnb ----->
+        <!--// header/gnb -->
+
+        <!-- 플로팅 퀵메뉴 -->
+        <div id="quickMenu">
+            <div class="container">
+                <div class="box">
+                    <!-- 211103 퍼블수정 QUICK > Quick -->
+                    <div class="btn_quick">Quick</div>
+                    <ul class="quick_list">
+
+                        <li class="join"><a href="/cu/join/start.nhd"
+                                onclick="GA_Event('PC_메인', '플로팅', '회원가입')">Join</a></li>
+
+
+                        <li class="app pc_only"><a
+                                onclick="commonPub.modalPopOpen(this); GA_Event('PC_메인', '플로팅', '앱다운로드');"
+                                data-pop="pop_app_download">앱다운</a></li>
+                        <li class="app pc_none"><a href="/cma/invite.nhd?scheme=appMain"
+                                onclick="GA_Event('MO_메인', '플로팅', '앱다운로드');" target="_blank">앱다운</a></li>
+                        <li class="event"><a href="/benefit/evntList.nhd">이벤트</a></li>
+                        <li class="customer"><a href="/cu/cmct/faqDtlList.nhd">고객센터</a></li>
+                        <!-- <li class="customer"><a href="https://bizmessage.kakao.com/chat/open/@현대백화점그룹hpoint?extra=">상담톡</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--// 플로팅 퀵메뉴 -->
+
+
+
+
+
+
+        <div id="contents">
+            <div id="main">
+
+
+
+
+
+                <!--------------- H매거진 --------------->
+                <section class="sect_magazine">
+                    <div class="layout1">
+                        <h2 class="sect_tit">H.매거진</h2>
+
+                        <!-- tab -->
+                        <div class="slide_tab_align">
+                            <div class="main_slide_tabmenu">
+                                <div class="swiper-container magTabSwiper">
+                                    <ul class="swiper-wrapper">
+
+                                        <li class="swiper-slide tab active">Edit.H</li>
+
+                                        <li class="swiper-slide tab ">사운드핏</li>
+
+                                        <li class="swiper-slide tab ">푸드</li>
+
+                                        <li class="swiper-slide tab ">패션</li>
+
+                                        <li class="swiper-slide tab ">Hip Tok</li>
+
+                                        <li class="swiper-slide tab ">트렌드</li>
+
+                                        <li class="swiper-slide tab ">리빙</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// tab -->
+
+                        <!-- 썸네일 -->
+                        <div class="mag_thumbnail">
+                            <div class="swiper-container magThumbSwiper">
+                                <ul class="swiper-wrapper">
+
+
+
+
+
+
+                                    <li class="swiper-slide">
+                                        <a href="javascript:mgzDtl('0000000502', '006018', '0')">
+                                            <figure class="thumbnail">
+                                                <img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">
+                                                <span class="img"
+                                                    style="background-image:url('https://h-point.co.kr:443/cma/imgAtfl/1000774912.nhd');"></span>
+                                            </figure>
+                                        </a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide">
+                                        <a href="javascript:mgzDtl('0000000296', '006022', '1')">
+                                            <figure class="thumbnail">
+                                                <img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">
+                                                <span class="img"
+                                                    style="background-image:url('https://h-point.co.kr:443/cma/imgAtfl/1000776537.nhd');"></span>
+                                            </figure>
+                                        </a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide video">
+                                        <button type="button" onclick="openVideo('2',this);" data-pop="pop_video">
+                                            <figure class="thumbnail">
+                                                <img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">
+                                                <span class="img"
+                                                    style="background-image:url('https://h-point.co.kr:443/cma/imgAtfl/1000716821.nhd');"></span>
+                                            </figure>
+                                        </button>
+                                        <a class="mo_video_link" href="https://youtu.be/kLgCVzAkfWg"
+                                            id="videoUrl_2"></a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide video">
+                                        <button type="button" onclick="openVideo('3',this);" data-pop="pop_video">
+                                            <figure class="thumbnail">
+                                                <img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">
+                                                <span class="img"
+                                                    style="background-image:url('https://h-point.co.kr:443/cma/imgAtfl/1000742174.nhd');"></span>
+                                            </figure>
+                                        </button>
+                                        <a class="mo_video_link" href="https://youtu.be/WQueQILfIQs"
+                                            id="videoUrl_3"></a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide">
+                                        <a href="javascript:mgzDtl('0000000500', '006021', '4')">
+                                            <figure class="thumbnail">
+                                                <img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">
+                                                <span class="img"
+                                                    style="background-image:url('https://h-point.co.kr:443/cma/imgAtfl/1000772616.nhd');"></span>
+                                            </figure>
+                                        </a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide video">
+                                        <button type="button" onclick="openVideo('5',this);" data-pop="pop_video">
+                                            <figure class="thumbnail">
+                                                <img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">
+                                                <span class="img"
+                                                    style="background-image:url('https://h-point.co.kr:443/cma/imgAtfl/1000612956.nhd');"></span>
+                                            </figure>
+                                        </button>
+                                        <a class="mo_video_link" href="https://www.youtube.com/watch?v=-8iKztUhfzw"
+                                            id="videoUrl_5"></a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide">
+                                        <a href="javascript:mgzDtl('0000000499', '006003', '6')">
+                                            <figure class="thumbnail">
+                                                <img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">
+                                                <span class="img"
+                                                    style="background-image:url('https://h-point.co.kr:443/cma/imgAtfl/1000772545.nhd');"></span>
+                                            </figure>
+                                        </a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// 썸네일 -->
+
+                        <!-- 텍스트 -->
+                        <div class="mag_text">
+                            <div class="swiper-container magTextSwiper">
+                                <ul class="swiper-wrapper">
+
+
+
+
+
+
+                                    <li class="swiper-slide swiper-slide-active">
+                                        <a href="javascript:mgzDtl('0000000502', '006018', '0')">
+                                            <div class="inner">
+                                                <p class="tit" id="title_0">[H_Artist : 취하다]
+                                                    아티스트, ＇선Line＇에 취하다</p>
+                                                <p class="desc"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide swiper-slide-active">
+                                        <a href="javascript:mgzDtl('0000000296', '006022', '1')">
+                                            <div class="inner">
+                                                <p class="tit" id="title_1">[사운드핏] 사운드 코치와 스트레칭하고 생활 속 활력 찾아보아요!</p>
+                                                <p class="desc">H.Point 사운드핏과 스트레칭하고
+                                                    생활속 활력 찾아볼까요~</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide swiper-slide-active">
+                                        <button type="button" onclick="openVideo('2',this);" data-pop="pop_video">
+                                            <div class="inner">
+                                                <p class="tit" id="title_2">[야외정찬]제철 새우 한 가득, 흰다리새우 편백찜</p>
+                                                <p class="desc">[야외정찬]제철 새우 한 가득, 흰다리새우 편백찜</p>
+                                            </div>
+                                        </button>
+                                        <a class="mo_video_link" href="https://youtu.be/kLgCVzAkfWg"
+                                            id="videoUrl_2"></a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide swiper-slide-active">
+                                        <button type="button" onclick="openVideo('3',this);" data-pop="pop_video">
+                                            <div class="inner">
+                                                <p class="tit" id="title_3">[한섬]청바지 한 장 만드는데, 물 000리터나 사용된다?!?
+                                                    - 핸써미와 함께하는 ESG EP.03</p>
+                                                <p class="desc">누구나 가지고 있는 옷장 속 필수템, 청바지.
+                                                    그런데 청바지 생김새가 모두 다른 이유 알고 계신가요?!
+                                                    바로, ＇데님 워싱＇ 가공을 통해 새롭게 디자인 되기 때문입니다.
+
+                                                    그런데, 데님 워싱 과정에서 약품처리된 많은 양의 물이 사용되고 이에 따라 폐수도 발생하는데요!
+                                                    한섬은 정화설비인 ＇분리막＇ 설치 지원 사업을 통해
+                                                    폐수는 줄이고! 물 재활용량은 늘리는! 친환경 노력을 하고 있습니다.
+
+                                                    내가 입는 청바지에 과연 얼마나 많은 물이 필요한지, 영상을 통해 확인하고
+                                                    한섬의 ESG를 직접 경험해보세요!</p>
+                                            </div>
+                                        </button>
+                                        <a class="mo_video_link" href="https://youtu.be/WQueQILfIQs"
+                                            id="videoUrl_3"></a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide swiper-slide-active">
+                                        <a href="javascript:mgzDtl('0000000500', '006021', '4')">
+                                            <div class="inner">
+                                                <p class="tit" id="title_4">레트로아이템 자랑하고
+                                                    H.Point 선물받기</p>
+                                                <p class="desc"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide swiper-slide-active">
+                                        <button type="button" onclick="openVideo('5',this);" data-pop="pop_video">
+                                            <div class="inner">
+                                                <p class="tit" id="title_5">더현대 서울에서 LP로 듣는 1990 서울 플레이리스트</p>
+                                                <p class="desc"></p>
+                                            </div>
+                                        </button>
+                                        <a class="mo_video_link" href="https://www.youtube.com/watch?v=-8iKztUhfzw"
+                                            id="videoUrl_5"></a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="swiper-slide swiper-slide-active">
+                                        <a href="javascript:mgzDtl('0000000499', '006003', '6')">
+                                            <div class="inner">
+                                                <p class="tit" id="title_6">평범하듯 특별하게, 내추럴 하우스를 꿈꾸다</p>
+                                                <p class="desc">일상의 소소한 즐거움을 소망하며 완성한 집. </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// 텍스트 -->
+
+                        <!-- PC용 화살표 버튼 -->
+                        <div class="slide_navi mo_none">
+                            <div class="swiper-button-prev type2"></div>
+                            <div class="swiper-button-next type2"></div>
+                        </div>
+
+                        <!-- 모바일용 swiper pagination -->
+                        <div class="swiper-tools mo_only">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-count">
+                                <span class="active_num"></span>
+                                <span>-</span>
+                                <span class="all_num"></span>
+                            </div>
+                            <button type="button" class="btn-swiper-play paused"><span>재생/정지</span></button>
+                        </div>
+                    </div>
+                </section>
+                <!---------------// H매거진 --------------->
+
+
+                <!---------------// 포인트 쓰기 --------------->
+            </div>
+        </div>
+
+        <!-- 팝업 : ie9이하 안내 팝업 -->
+        <div class="popup_ui type_modal pop_browser_update" style="display: none;">
+            <div class="dim_full"></div>
+            <div class="pop_container">
+                <div class="pop_layer">
+                    <div class="pop_tit2">H.Point 브라우저 업데이트 안내</div>
+                    <div class="pop_body">
+                        <p class="txt1">현재 H.Point 홈페이지는 <span class="under">인터넷 익스플로러 9버전 이상에 최적화</span>
+                            되어있습니다.<br>익스플로러 9이하 버전의 사용자께서는 아래 방법으로 호환성보기 설정을 추가하여 사용하거나 새로운 버전으로 업그레이드 해주세요.</p>
+
+                        <p class="tit1">호환성보기 설정</p>
+                        <p class="txt1">인터넷 익스플로러 [도구] 메뉴의 호환성보기 설정에서 [이 웹사이트 추가]에서<br>http://을 추가하여 서비스 이용</p>
+                        <img class="ex_img" src="/assets/app/img/main/img_ie9_pop.jpg" alt="">
+                        <p class="cmt_guide1 mark1">호환성보기 설정 후에도 정상 작동을 하지 않거나 익스플로러 버전 다운이 어려울 경우에는 <br>크롬 브라우저 사용을
+                            부탁드립니다.</p>
+
+                        <p class="tit1">브라우저 다운로드</p>
+                        <div class="wrap_btn clear">
+                            <a href="https://support.microsoft.com/ko-kr/help/17621/internet-explorer-downloads"
+                                class="btn_down ie" target="_blank"><span>익스플로러</span></a>
+                            <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank"
+                                class="btn_down chrome"><span>구글 크롬</span></a>
+                        </div>
+
+                    </div>
+                    <button class="btn_pop_close" type="button" id="notTodaybrowserPop"><span class="hidden">레이어
+                            닫기</span></button>
+                </div>
+            </div>
+        </div>
+        <!--// 팝업 : ie9이하 안내 팝업 -->
+
+
+        <!-- 팝업 : H매거진 동영상 팝업 -->
+        <div class="popup_ui type_modal pop_video" style="display: none;">
+            <div class="dim_full"></div>
+            <div class="pop_container">
+                <div class="pop_layer">
+                    <div class="pop_tit" id="title"></div>
+                    <div class="pop_body">
+
+                        <!-- 영상 -->
+                        <div class="video_container" id="videoContainer">
+                            <!-- <iframe id="youtube_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            <!-- <iframe id="videoUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                        <!--// -->
+
+                    </div>
+                    <button class="btn_pop_close" type="button" onclick="closeVideo(this);"><span class="hidden">레이어
+                            닫기</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- // 팝업 : H매거진 동영상 팝업 -->
+
+        <script>
+            page.main.onLoad();
+            page.main.onScroll(); // 211103 퍼블수정 메인 onScroll 추가
+            $("#wrapper").addClass("mainWrapper");
+            $('#notTodaybrowserPop').on('click', function () {
+                setCookie("browserUpdate", "IE9", 1);
+                commonPub.layerPopClose($(".pop_browser_update"));
+            })
+
+            // 211103 퍼블수정 메인 onScroll 추가
+            $(function () {
+                setTimeout(function () {
+                    $(window).on('scroll', function () {
+                        page.main.onScroll();
+                    })
+
+                }, 350);
+            })
+
+        </script>
+
+           
+
+                <div class="stnd_bar"></div>
+
+                <script type="text/javascript">
+                    document.msCapsLockWarningOff = true;
+
+                    $(function () {
+                        //CAPS LOCK감지
+                        $("input[type=password]").keypress(function (event) {
+                            var keyCode = 0;
+                            var shiftKey = false;
+                            keyCode = event.keyCode;
+                            shiftKey = event.shiftKey;
+                            if ($(this).next().attr("class") == "img caps") {
+                                if (((keyCode >= 65 && keyCode <= 90) && !shiftKey) || ((keyCode >= 97 && keyCode <= 122) && shiftKey)) {
+                                    $(this).next().show();
+                                    //$(".capsLockImg").show();
+                                }
+                                else {
+                                    $(this).next().hide();
+                                    //$(".capsLockImg").hide();
+                                }
+                            }
+                        });
+
+
+                        //CAPS LOCK감지
+                        $("input[type=password]").blur(function (event) {
+                            if ($(this).next().attr("class") == "img caps") {
+                                $(this).next().hide();
+                            }
+
+                        });
+
+                    });
+
+
+                    function updateCustPwd() {
+                        $("div.pwChgPop p.error").hide();
+                        if ($.trim($("#currentPwd").val()) == "") {
+                            $("#curPwdMsg2").text("현재 비밀번호를 입력해주세요.").show();
+                            return;
+                        }
+
+                        /*
+                        if( $.trim($("#custPwd").val()) != $.trim($("#curPwd2").val()) ) {
+                            $("#curPwdMsg").text("현재 비밀번호가 일치하지 않습니다.").show();
+                            return;
+                        }
+                        */
+                        //입력값 유효.
+                        $.post("/cu/config/checkUserPw.nhd",
+                            {
+                                custPwd: $("#currentPwd").val(),
+                                mcustNo: $("#pwdMcustNo").val()
+                            },
+                            function (data) {
+                                if (data.code != "0000") {
+                                    $("#curPwdMsg2").text(data.message).show();
+                                } else {
+                                    updateUserPassword();
+                                }
+                            }
+                        );
+                    }
+
+                    function updateUserPassword() {
+                        hdgm.validation.preparePasswordValidation($("#pwdMcustId").val(), $("#newPwd2").val(), $("#cfnNewPwd2").val());
+                        if (hdgm.validation.isValidPassword()) {
+                            $.post("/cu/config/updateUserPw.shd",
+                                {
+                                    custId: $("#pwdMcustId").val(),
+                                    custPwd: $("#newPwd2").val()
+                                },
+                                function (data) {
+                                    $("#newPwdMsg2").text(data.message).show();
+                                    if (data.code == "0000") {
+                                        location.href = "/";
+                                    }
+                                }
+                            );
+                        } else {
+                            $("#newPwdMsg2").text(hdgm.validation.getMessage()).show();
+
+                        }
+                    }
+
+                    function logoutDecdSsoToken() {
+                        //토큰 만료 처리
+                        gfnSsoDscdToknReq(dscdCallback1);
+                    }
+                    // 토큰만료 콜백
+                    function dscdCallback1(data) {
+                        //location.href = "/cu/logoutJson.shd";
+
+                        $.post("/cu/logoutJson.shd",
+                            {
+                            },
+                            function (data) {
+                                if (data.code != "C000") {
+                                    location.href = "/cu/main/index.nhd";
+                                }
+                            }
+                        );
+                    }
+
+                    function logoutDecdSsoToken2() {
+                        //토큰 만료 처리
+                        gfnSsoDscdToknReq(dscdCallback2);
+                    }
+                    // 토큰만료 콜백
+                    function dscdCallback2(data) {
+                        location.href = "/cu/memDrotCmpt.shd";
+                    }
+
+                    //로그인 요청(휴면해지)
+                    function submitSsoDormLogin() {
+                        $.post("/cu/login/submitDormMcust.nhd",
+                            {
+                            },
+                            function (data) {
+
+                                if (data.code == "0000") {
+                                    // hmall(모바일 포함)에서 접근한 경우
+                                    if (data.redirect != 'N') {
+                                        $("input[name=hmallHtmlYn]").val(data.htmlYn);
+                                        $("input[name=hmallRetPage]").val(data.retPage);
+                                        $("input[name=hmallRetUrl]").val(data.retUrl);
+                                        $("form[name=ssoLogin]").attr("action", data.redirect);
+                                    }
+                                    if (data.ssoSuccYn == "Y") {
+                                        //alert( "권한코드 발급 완료 mcustNo : " + data.ssoMcustNo)
+                                        gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooter);
+                                    }
+                                    else {
+                                        $("form[name=ssoLogin]").attr("action", "/cu/login/redirect.nhd");
+                                        $("form[name=ssoLogin]").submit();
+                                    }
+
+                                } else if (data.code == "L002") {
+                                    $("#pwdMcustId").val(data.mcustId);
+                                    $("#pwdMcustNo").val(data.mcustNo);
+
+                                    if (data.ssoSuccYn == "Y") {
+                                        //alert( "권한코드 발급 완료 mcustNo : " + data.ssoMcustNo)
+                                        gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooterPwChgPop);
+                                    }
+                                    else {
+                                        /* $("div.pwChgPop").show(); */
+
+                                    }
+
+                                } else if (data.code == "L003" || data.code == "L004" ||
+                                    data.code == "L005" || data.code == "L006") {
+                                    alert(data.message);
+
+                                } else if (data.code == "77777") {
+                                    $("p.loginError > span.red").text(data.message);
+                                    $("p.loginError > span.fail").hide();
+                                    $("p.loginError").show();
+                                } else {
+                                }
+                            }
+                        )
+                    }
+
+                    // 페이지 조회시 항상 실행
+                    // JSTL 구문 : and or 조건  2건 이상 넣으면 인식 안될 수 있음. 유의할 것.
+
+                    gfnSsoReqHttp(fnSsoCallback1);
+
+                    //SSO요청 처리 콜백
+                    //alert(httpRequest.readyState);
+                    function fnSsoCallback1(data) {
+                        //data.mcustNo = '0000000761';
+                        //alert(data);
+                        //alert(data.rtnMsg);
+                        //alert(data.succYn);
+                        //$("#mcustNo").val(data.mcustNo);
+                        //alert("해당 고객번호("+data.mcustNo + ")로 자동 로그인 시도");
+
+                        console.log("res[[[" + JSON.stringify(data) + "]]]");
+
+
+                        if (data == null || data.mcustNo == null || data.mcustNo == '') {
+
+                            // 세션이 있는 상태에서 SSO토큰에 통합고객번호가 없으면 로그아웃 시킨다.
+
+                        }
+                        else {
+                            $("#mcustNo").val(data.mcustNo);
+                            //$("#ssoLogin").submit();
+
+                            $.ajax({
+                                url: "/cu/login/submitJsSsoMcust.nhd"
+                                , type: "post"
+                                , data: $("#ssoLogin").serialize()
+                                , success: function (data) {
+                                    if (data.code == "0000") {
+                                        if (data.ssoSuccYn == "Y") {
+                                            //alert( "권한코드 발급 완료 mcustNo : " + data.ssoMcustNo)
+                                            gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooter);
+                                        }
+                                        else {
+                                            $("form[name=ssoLogin]").attr("action", "/cu/login/redirect.nhd");
+                                            $("form[name=ssoLogin]").submit();
+                                        }
+                                    }
+                                    else if (data.code == "S001") {
+                                        if (!getCookie("dormCheckYn") || getCookie("dormCheckYn") == "N") {
+
+                                            if (confirm(data.message)) {
+                                                submitSsoDormLogin();
+                                            }
+                                            else {
+                                                setCookie("dormCheckYn", "Y", 1);
+                                            }
+                                        }
+                                    } else if (data.code == "L002") {
+                                        $("#pwdMcustId").val(data.mcustId);
+                                        $("#pwdMcustNo").val(data.mcustNo);
+
+                                        if (data.ssoSuccYn == "Y") {
+                                            //alert( "권한코드 발급 완료 mcustNo : " + data.ssoMcustNo)
+                                            //gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooterPwChgPop);
+
+                                            gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooter);
+                                        }
+                                        else {
+                                            /* $("div.pwChgPop").show(); */
+
+                                        }
+
+                                    } else if (data.code == "S100") { // 기존세션과 같은 사용자의 경우 아무것도 액션도 하지 않는다.
+                                    } else {
+                                        alert(data.message);
+                                        location.href = "/";
+                                    }
+
+                                }
+                                , error: function (data) {
+                                    //alert("비정상적인 접근입니다.");
+                                    //location.href = "/";
+                                }
+                            });
+                        }
+                    }
+
+                    function fnCallbackFooterPwChgPop(data) {
+                        /* $("div.pwChgPop").show(); */
+
+                    }
+
+                    function fnCallbackFooter(data) {
+                        //alert(data.succYn); //'Y' 이면 토큰 정상 발급 받은 것임. 토큰 발급시에는
+                        //alert("SSO로그인 테스트용 토큰발급 성공여부 : data.succYn : " +  data.succYn);
+
+                        // #DEP01WORK-1888 20.07.15 1906202
+                        // 메인으로 이동되는 현상 방지하기 위해 sso처리 성공 시, redirect.nhd를 안태우도록 수정
+                        if (data.succYn == null || data.succYn != "Y") {
+                            $("form[name=ssoLogin]").attr("action", "/cu/login/redirect.nhd");
+                            $("form[name=ssoLogin]").submit();
+                        } else {
+                            location.reload();
+                        }
+
+                    }
+
+                    function intSms() {
+                        hdgm.util.cmmClearFormAll("sendUrlForm");
+                    }
+
+                    function sendUrl()	//APP 설치경로 문자 발송
+                    {
+                        if (!/^\d{3}-\d{3,4}-\d{4}$/.test($.trim($("#mblNo").val()))) {
+                            alert("휴대폰 번호를 정확히 입력해주세요.\n");
+                            return;
+                        }
+
+
+                        var uaCk = navigator.userAgent;
+                        var chkCfm = true;
+
+                        //Android 5.0 미만 체크 추가
+                        if (uaCk.indexOf("Android 1.") > 0) {
+                            lowVerMove();
+                        }
+                        else if (uaCk.indexOf("Android 2.") > 0) {
+                            lowVerMove();
+                        }
+                        else if (uaCk.indexOf("Android 3.") > 0) {
+                            lowVerMove();
+                        }
+                        else if (uaCk.indexOf("Android 4.") > 0) {
+                            lowVerMove();
+                        }
+                        else {
+                            //통과
+                        }
+
+                        function lowVerMove() {
+                            if (confirm("안드로이드 OS 5.0 미만 버전은 APP 지원이 종료되어 설치가 불가합니다.\n(갤럭시 S3, 노트2, LG G3 등)\n휴대기기 설정메뉴에서 OS 버전을 확인하시고, 5.0 이상 업그레이드 하신 후 앱을 설치해 주시기 바랍니다.\n\n현재 접속 하신 기기는 5.0미만으로 확인 됩니다. 그래도 입력하신 번호에 대해 설치 SMS를 발송하시겠습니까?")) {
+                                chkCfm = true;
+                            } else {
+                                chkCfm = false;
+                            }
+                        }
+
+                        if (chkCfm) {
+
+                            //기존 발송 로직 
+                            $.ajax({
+                                url: "/cu/cma/sendAppUrl.nhd"
+                                , type: "post"
+                                , data: $("#sendUrlForm").serialize()
+                                , success: function (data) {
+                                    if (data.code == '0000') {
+                                        alert("발송되었습니다.");
+                                        intSms();
+                                        commonPub.layerPopClose($(".pop_app_download"));
+                                    }
+                                    else {
+                                        alert(data.message);
+                                    }
+                                }
+                                , error: function (data) {
+                                    alert("발송실패했습니다.\n다시 시도해주세요.");
+                                }
+                            })
+                        }
+
+                    }
+
+                    //앱다운로드 팝업 OS체크 후 구글스토어 링크 이동
+                    function mvGglStrUrl() {
+
+                        var uaCk2 = navigator.userAgent;
+                        var chkCfm2 = true;
+
+                        //Android 5.0 미만 체크 추가
+                        if (uaCk2.indexOf("Android 1.") > 0) {
+                            lowVerMove2();
+                        }
+                        else if (uaCk2.indexOf("Android 2.") > 0) {
+                            lowVerMove2();
+                        }
+                        else if (uaCk2.indexOf("Android 3.") > 0) {
+                            lowVerMove2();
+                        }
+                        else if (uaCk2.indexOf("Android 4.") > 0) {
+                            lowVerMove2();
+                        }
+                        else {
+                            //통과
+                        }
+
+                        function lowVerMove2() {
+                            alert("안드로이드 OS 5.0 미만 버전은 APP 지원이 종료되어 설치가 불가합니다.\n(갤럭시 S3, 노트2, LG G3 등)\n휴대기기 설정메뉴에서 OS 버전을 확인하시고, 5.0 이상 업그레이드 하신 후 앱을 설치해 주시기 바랍니다.");
+                            chkCfm2 = false;
+                        }
+
+                        if (chkCfm2) {
+                            window.open("https://play.google.com/store/apps/details?id=kr.co.hpoint.hdgm", "_blank");
+                            //window.location.href="https://play.google.com/store/apps/details?id=kr.co.hpoint.hdgm";
+
+                            n_click_logging('https://www.h-point.co.kr/ds/screen?_n_p3=App다운로드&_n_p4=Android링크&_n_p7=WEB_LG0008'); n_click_logging('https://www.h-point.co.kr/ds/appdownload?_n_m1=인바이트&_n_m2=Android&_n_m3=&_n_m4=clickevent&_n_m7=WEB_LG0021');
+                        }
+
+                    }
+
+                    function autoHypenMblNo(objId) {
+                        var mblNo = $("#" + objId).val();
+                        mblNo = mblNo.replace(/[^0-9]/g, '');
+
+                        if (mblNo.length < 4) {
+                            mblNo = mblNo;
+                        }
+                        else if (mblNo.length < 7) {
+                            mblNo = mblNo.substr(0, 3) + "-" + mblNo.substr(3);
+                        }
+                        else if (mblNo.length < 11) {
+                            mblNo = mblNo.substr(0, 3) + "-" + mblNo.substr(3, 3) + "-" + mblNo.substr(6);
+                        }
+                        else {
+                            mblNo = mblNo.substr(0, 3) + "-" + mblNo.substr(3, 4) + "-" + mblNo.substr(7);
+                        }
+                        $("#" + objId).val(mblNo);
+                    }
+
+                    function targetFocus(objId) {
+                        $("#" + objId).focus();
+                    }
+
+                </script>
+
+            </div><!-- // wrapper -->
+</body>
+
+</html>

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 퍼블리셔 포트폴리오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/coustom.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="https://kit.fontawesome.com/3d50e7f878.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/font-awesome.min.css" type="text/css">
+</head>
+<style>
+    .swiper-container-main {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .com_tit {
+        padding: 100px 0 80px;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .com_txt {
+        max-width: 70%;
+        margin: 0 auto;
+        font-size: 30px;
+        text-align: center;
+        ;
+    }
+
+
+    .progress {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        max-width: 200px;
+        width: 100%;
+        height: 20px;
+        border-radius: 50px;
+        margin-left: -35%;
+        border: 1px solid #000;
+        ;
+        text-align: center;
+        z-index: 11;
+    }
+
+    .progress .bar {
+        display: block;
+        width: 0%;
+        height: 100%;
+        ;
+        background-color: #A600FF;
+        border-radius: 50px;
+    }
+
+    .progress .txt {
+        font-size: 14px;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <section class="sc-visual">
+                <div class="common-inner">
+                    <div class="title-area">
+                        <h2 class="intro-title"> 견고한 UI와 기억에 남는 UX를 만드는 </h2>
+                        <h3 class="title-box">
+                            <span class="text active">새로운 시각에서 바라보고</span> <br>
+                            <span class="text">빠르게 변화하는 시대에 맞추며</span><br>
+                            <span class="text">트렌디하고 재밌게</span><br>
+                            <span class="text">항상 도전하는 즐거움을 아는</span><br>
+                            <span class="text">UI/UX 웹&앱 퍼블리셔</span>
+                        </h3>
+                        <p class="desc">하루하루 발빠르게 변화하는 시대에 맞춰 성장하며 <br> 새로운 시각으로 변화하는 트렌드를 흡수하는 퍼블리셔<br> </p>
+                    </div>
+                </div>
+                <div class="right-area">
+                    <a href="#section03" class="link-more"><b>포트폴리오 보러가기</b></a>
+                    <div class="visual-wrap">
+                        <div class="works-list works01">
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/boomtoken.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/slide_img_02.jpg" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/hipple-introduction.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/ediya.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/protfolio03.jpg" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                        </div>
+                        <div class="works-list works03">
+                            <div class="works-item">
+                                <img src="img/slide_img_03.jpg" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/ediya.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/hipple-introduction.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/slide_img_02.jpg" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/boomtoken.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                        </div>
+                        <div class="works-list works02">
+                            <div class="works-item">
+                                <img src="img/hipple-introduction.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/slide_img_02.jpg" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/portfolio01.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/boomtoken.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/ediya.png" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                            <div class="works-item">
+                                <img src="img/slide_img_03.jpg" alt="웹퍼블리셔 포트폴리오 작업물">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="mean_container">
+                <div class="mean_wrap">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="tit">
+                                <p><span class="point tit">소이정</span>의 뜻이</p>
+                                <p>뭐냐고 물으신다면?</p>
+                            </div>
+                            <div class="txt que">
+                                <div class="que_wrap que_wrap01" style="opacity: 1; transform: translate(0px, 0px);">
+                                    <div class="img">
+                                        <img src="img/mean_char_01.png" alt="">
+                                    </div>
+                                    <p>혹시 대표님 이름인가요?</p>
+                                </div>
+                                <div class="que_wrap que_wrap02 reverse"
+                                    style="opacity: 1; transform: translate(0px, 0px);">
+                                    <div class="img">
+                                        <img src="img/mean_char_01.png" alt="">
+                                    </div>
+                                    <p class="reverse">고깃집 이름이랑 비슷하네요!</p>
+                                </div>
+                                <div class="que_wrap que_wrap03" style="opacity: 1; transform: translate(0px, 0px);">
+                                    <div class="img">
+                                        <img src="img/mean_char_01.png" alt="">
+                                    </div>
+                                    <p>소이정씨 택배왔습니다~</p>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <!--                        <p>각양각색 상황에 따라 소이정을 추론하곤</p>-->
+                                <p>
+                                    <span>소이정의 뜻이 정확하게 뭐냐고</span>
+                                    <span>물으시는 분들이 정말 많아요~</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <p>‘소이정’ 은 (少작을 소 , 而이을 이, 精정할 정)</p>
+                                <p><span class="point on">작지만 알차다 소수정예이다.</span> <span>라는 뜻을 가진 한자어입니다.</span></p>
+                            </div>
+                            <div class="txt">
+                                <p>
+                                    <span>작은 시작으로 큰 뜻을 이루고자 하는</span>
+                                    <span>마음이 담겨있답니다.</span>
+                                </p>
+                                <p>소이정은 우리의 뜻이기도,</p>
+                                <p>우리 모두의 이름이기도 합니다.</p>
+                            </div>
+                            <div class="txt">
+                                <p>여러분도 오늘부터 소이정과 함께해요!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <section class="intro">
+                <div class="intro_wrap">
+                    <ul class="intro_list">
+                        <li class="intro_item">
+                            <div class="intro_item_bg intro_item_bg1 "></div>
+                            <h3>Publilshing</h3>
+                            <p>- 퍼블리싱 스킬(Html5 , CSS3, JS)에 대한 이해도가 높고, 웹 표준성을 준수하여 코드를 작성합니다. 팀원 또는 코드 형상관리를 위해 Github
+                                & GitLab 사용하며
+                                플러그인 사용에 능합니다.</p>
+                            <b>RAND MORE</b>
+                            <div class="intro_item_num">01</div>
+                        </li>
+                        <li class="intro_item">
+                            <div class="intro_item_bg intro_item_bg2 "></div>
+                            <h3>Design</h3>
+                            <p>- Adobe의 대표적인 디자인툴 Fimga, Zeppelin, Photoshop, illustrator, Adobe XD를 사용할 수 있습니다. 포트폴리오
+                                사이트의 디자인 및 코딩은 전부 제가 직접 했습니다.</p>
+                            <b>RAND MORE</b>
+                            <div class="intro_item_num">02</div>
+                        </li>
+                        <li class="intro_item">
+                            <div class="intro_item_bg intro_item_bg3 "></div>
+                            <h3>Development</h3>
+                            <p>- 백엔드 언어(java,asp,jsp)개발 경험과 Javascript, React, React Native 사용경험이 있으며 팀의 협업을 위해 각 포지션의
+                                입장에서 생각합니다</p>
+                            <b>RAND MORE</b>
+                            <div class="intro_item_num">03</div>
+                        </li>
+                        <li class="intro_item">
+                            <div class="intro_item_bg intro_item_bg4 "></div>
+                            <h3>Aability</h3>
+                            <p>- 각각의 위 능력들을 조화롭게 사용하여 보다 깔끔하고 감각적인 디자인과 UI/IX를 잘 구성할 수 있으며 팀원들과의 협업도 매끄럽게 해나갈 수 있습니다.
+                            </p>
+                            <b>RAND MORE</b>
+                            <div class="intro_item_num">04</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="intro_title">
+                    <div class="content_box">
+                        <div class="left_box">
+                            <div>
+                                <h3>01</h3>
+                                <h1>디자인 잘합니다.<br>코딩도 잘합니다.</h1>
+                            </div>
+                        </div>
+                        <script>
+                            // var content = document.getElementsByClassName('left_box');
+                            // TweenMax.fromTo(content, 1, {opacity: 0, y: 500}, {opacity: 1, y: 0});
+                            gsap.registerPlugin(ScrollTrigger);
+                            gsap.from(".content_box", {
+                                scrollTrigger: ".content_box", opacity: 0, duration: 0.5,
+                            }, { opacity: 1, duration: 0.5, })
+                        </script>
+                        <div class="right_box">
+                            <div class="section_box con">
+                                <div>
+                                    <h5>코딩 좋아하는 퍼블리셔 <br>디자인 좋아하는 퍼블리셔</h5>
+                                    <p>
+                                        좋아하는 일을 위해 정체되어있지 않고
+                                        더 발전하기 위해 항상 노력하고자 합니다.
+                                        웹표준 및 웹접근성 퍼블리셔입니다.
+                                        'Semantic Markup'을 할수 있으며,
+                                        최신 기술을 알기위해 끊임없이 공부중입니다.
+                                    </p>
+                                    <p>
+                                        빠른 변화에 언제나 준비가 되어있는 창의적이고
+                                        더 나은 디자인을 위해 언제나 노력하며 한 발 앞서 생각하 수
+                                        있도록 항상 준비되어 있는 저는 디자인을 좋아하는 퍼블리셔 정성훈입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section class="section02" id="section03">
+                <div class="swiper-container-main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main_project_bg1">
+                            <div class="project_content_wrap">
+                                <h2 class="content_title">Portfolio</h2>
+                                <p class="content_name"><b>JUNG</b>SUNGHUN</p>
+                                <div class="content_detail">
+                                    <span>#01</span>
+                                    <h1 class="content_title_name1">EDIYA</h1>
+                                    <span>RESPONSIVE WEBSITE</span>
+                                    <ul class="content_detail_list">
+                                        <li class="content_detail_item">반응형 웹</li>
+                                        <li class="content_detail_item">퍼블리싱 100%</li>
+                                        <li class="content_detail_item">Main Page, Sub Pag1, Sub Pag2</li>
+                                        <li class="content_detail_item">다양한 유형의 슬라이드, 현재 페이지 표시, <br>
+                                            레이어 팝업창, 체크박스를 활용한 갤러리</li>
+                                    </ul>
+                                    <div class="view_btn">
+                                        <div class="btn_top">
+                                            <div class="show_btn">
+                                                <a href="projects/ediya/index.html" target="_blank"> MAIN PAGE</a>
+                                            </div>
+                                            <div class="show_btn">
+                                                <a href="projects/ediya/sub01.html" target="_blank">SUB PAGE01</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_bottom">
+                                            <div class="show_btn">
+                                                <a href="projects/ediya/sub02.html" target="_blank">SUB PAGE02</a>
+                                            </div>
+
+                                            <div class="show_btn">
+                                                <a href="https://github.com/songhun115/ediya" target="_blank">VIEW
+                                                    CODE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="content_detail_notice">*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다. <br>
+                                        개인적인 작업물로 해당기업과는 관련 없습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content_img content_img1"></div>
+                        </div>
+                        <div class="swiper-slide main_project_bg2">
+                            <div class="project_content_wrap">
+                                <h2 class="content_title">Portfolio</h2>
+                                <p class="content_name"><b>JUNG</b>SUNGHUN</p>
+                                <div class="content_detail">
+                                    <span>#01</span>
+                                    <h1 class="content_title_name2">ILOOM</h1>
+                                    <span>RESPONSIVE WEBSITE</span>
+                                    <ul class="content_detail_list">
+                                        <li class="content_detail_item">반응형 웹</li>
+                                        <li class="content_detail_item">퍼블리싱 100%</li>
+                                        <li class="content_detail_item">Main Page, Sub Pag1</li>
+                                        <li class="content_detail_item">FaedIn 유형의 슬라이드 <br>
+                                            이미지가 직관적인 심플한 홈페이지
+                                        </li>
+                                    </ul>
+                                    <div class="view_btn">
+                                        <div class="btn_top">
+                                            <div class="show_btn">
+                                                <a href="projects/Elum/main.html" target="_blank"> MAIN PAGE</a>
+                                            </div>
+                                            <div class="show_btn"><a href="projects/Elum/sub.html" target="_blank">SUB
+                                                    PAGE01</a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_bottom">
+                                            <div class="show_btn"><a href="https://github.com/songhun115/Elum"
+                                                    target="_blank">VIEW CODE</a></div>
+                                        </div>
+                                    </div>
+                                    <p class="content_detail_notice">*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다. <br>
+                                        개인적인 작업물로 해당기업과는 관련 없습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content_img content_img2"></div>
+                        </div>
+                        <div class="swiper-slide main_project_bg3">
+                            <div class="project_content_wrap">
+                                <h2 class="content_title">Portfolio</h2>
+                                <p class="content_name"><b>JUNG</b>SUNGHUN</p>
+                                <div class="content_detail">
+                                    <span>#01</span>
+                                    <h1 class="content_title_name3">THE HOME</h1>
+                                    <span>RESPONSIVE WEBSITE</span>
+                                    <ul class="content_detail_list">
+                                        <li class="content_detail_item">반응형 웹</li>
+                                        <li class="content_detail_item">퍼블리싱 100%</li>
+                                        <li class="content_detail_item">Main Page, Sub Pag1</li>
+                                        <li class="content_detail_item">OutoPlay 비주얼 슬라이드 <br>
+                                            깔끔하고 세련된 분위기의 홈페이지</li>
+                                    </ul>
+                                    <div class="view_btn">
+                                        <div class="btn_top">
+                                            <div class="show_btn">
+                                                <a href="projects/the_home/index.html" target="_blank"> MAIN PAGE</a>
+                                            </div>
+                                            <div class="show_btn"><a href="projects/the_home/sub01.html"
+                                                    target="_blank">SUB PAGE01</a></div>
+                                        </div>
+                                        <div class="btn_bottom">
+
+                                            <div class="show_btn"><a href="https://github.com/songhun115/the_home"
+                                                    target="_blank">VIEW CODE</a></div>
+                                        </div>
+                                    </div>
+                                    <p class="content_detail_notice">*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다. <br>
+                                        개인적인 작업물로 해당기업과는 관련 없습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content_img content_img3"></div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container-main', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                speed: 500,
+                loop: true,
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        </section> -->
+        <section class="project-container">
+            <div class="project-content project-content01 ">
+                <div class="project-bg"></div>
+                <div class="project-content-box">
+                    <div class="project-img">
+                        <img src="img/mockUpImg.png" alt="">
+                    </div>
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h3>우주편의점</h3>
+                            <h1>“놀아 버는” 편의점 <br /> 지구에 없던 FUN의점</h1>
+                            <div class="project-btn">
+                                <span><a href="#">자세히 보기</a></span>
+                                <div class="plus-ico"><img src="img/plus-ico.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="out-line-wrap">
+                            <span>앱 다운로드</span>
+                            <p>이마트24 신규 앱 다운로드 하세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content project-content02 ">
+                <div class="project-bg"></div>
+                <div class="project-content-box">
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h3>우주편의점</h3>
+                            <h1>“놀아 버는” 편의점 <br /> 지구에 없던 FUN의점</h1>
+                            <div class="project-btn">
+                                <span><a href="#">자세히 보기</a></span>
+                                <div class="plus-ico"><img src="img/plus-ico.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="out-line-wrap">
+                            <span>앱 다운로드</span>
+                            <p>이마트24 신규 앱 다운로드 하세요!</p>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="img/mockUpImg.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="project-content project-content01 ">
+                <div class="project-bg"></div>
+                <div class="project-content-box">
+                    <div class="project-img">
+                        <img src="img/mockUpImg.png" alt="">
+                    </div>
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h3>우주편의점</h3>
+                            <h1>“놀아 버는” 편의점 <br /> 지구에 없던 FUN의점</h1>
+                            <div class="project-btn">
+                                <span><a href="#">자세히 보기</a></span>
+                                <div class="plus-ico"><img src="img/plus-ico.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="out-line-wrap">
+                            <span>앱 다운로드</span>
+                            <p>이마트24 신규 앱 다운로드 하세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content project-content02 ">
+                <div class="project-bg"></div>
+                <div class="project-content-box">
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h3>우주편의점</h3>
+                            <h1>“놀아 버는” 편의점 <br /> 지구에 없던 FUN의점</h1>
+                            <div class="project-btn">
+                                <span><a href="#">자세히 보기</a></span>
+                                <div class="plus-ico"><img src="img/plus-ico.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="out-line-wrap">
+                            <span>앱 다운로드</span>
+                            <p>이마트24 신규 앱 다운로드 하세요!</p>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="img/mockUpImg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="pf-silde" id="wrapper">
+                <div id="contents">
+                    <div id="main">
+                        <!--------------- H매거진 --------------->
+                        <section class="sect_magazine">
+                            <div class="layout1">
+                                <h2 class="sect_tit">작업물</h2>
+                                <!-- tab -->
+                                <div class="slide_tab_align">
+                                    <div class="main_slide_tabmenu">
+                                        <div class="swiper-container magTabSwiper">
+                                            <ul class="swiper-wrapper">
+                                                <li class="swiper-slide tab active">레퍼런스1</li>
+                                                <li class="swiper-slide tab ">레퍼런스2</li>
+                                                <li class="swiper-slide tab ">레퍼런스3</li>
+                                                <li class="swiper-slide tab ">레퍼런스4</li>
+                                                <li class="swiper-slide tab ">레퍼런스5</li>
+                                                <li class="swiper-slide tab ">레퍼런스6</li>
+                                                <li class="swiper-slide tab ">레퍼런스7</li>
+                                                <li class="swiper-slide tab ">레퍼런스8</li>
+                                                <li class="swiper-slide tab ">레퍼런스9</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 썸네일 -->
+                                <div class="mag_thumbnail">
+                                    <div class="swiper-container magThumbSwiper">
+                                        <ul class="swiper-wrapper">
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000494', '006016', '0')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg2.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg2.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000502', '006018', '1')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg1.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000494', '006016', '3')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg2.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg2.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000502', '006018', '4')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg1.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000494', '006016', '5')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg2.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg2.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000502', '006018', '6')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg1.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000494', '006016', '7')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg2.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg2.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000502', '006018', '8')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg1.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:mgzDtl('0000000502', '006018', '9')">
+                                                    <figure class="thumbnail">
+                                                        <img class="ratio" src="img/bg2.png" alt="">
+                                                        <span class="img"
+                                                            style="background-image:url('bg1.png');"></span>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 텍스트 -->
+                                <div class="mag_text">
+                                    <div class="swiper-container magTextSwiper">
+                                        <ul class="swiper-wrapper">
+                                            <li class="swiper-slide swiper-slide-active">
+                                                <a href="javascript:mgzDtl('0000000494', '006016', '0')">
+                                                    <div class="inner">
+                                                        <p class="tit" id="title_0">[소리여행] 잠으로 떠나는 유럽 기차 여행🚂</p>
+                                                        <p class="desc">[소리여행] 잠으로 떠나는 유럽 기차 여행🚂</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-active">
+                                                <a href="javascript:mgzDtl('0000000502', '006018', '1')">
+                                                    <div class="inner">
+                                                        <p class="tit" id="title_1">[H_Artist : 취하다]
+                                                            아티스트, ＇선Line＇에 취하다</p>
+                                                        <p class="desc"></p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-active">
+                                                <a href="javascript:mgzDtl('0000000296', '006022', '2')">
+                                                    <div class="inner">
+                                                        <p class="tit" id="title_2">사운드 코치와 스트레칭하고 생활 속 활력 찾아보아요!
+                                                        </p>
+                                                        <p class="desc">H.Point 사운드핏과 스트레칭하고
+                                                            생활속 활력 찾아볼까요~</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-active">
+                                                <button type="button" onclick="openVideo('3',this);"
+                                                    data-pop="pop_video">
+                                                    <div class="inner">
+                                                        <p class="tit" id="title_3">[야외정찬]제철 새우 한 가득, 흰다리새우 편백찜</p>
+                                                        <p class="desc">[야외정찬]제철 새우 한 가득, 흰다리새우 편백찜</p>
+                                                    </div>
+                                                </button>
+                                                <a class="mo_video_link" href="https://youtu.be/kLgCVzAkfWg"
+                                                    id="videoUrl_3"></a>
+                                            </li>
+
+                                            <li class="swiper-slide swiper-slide-active">
+                                                <button type="button" onclick="openVideo('4',this);"
+                                                    data-pop="pop_video">
+                                                    <div class="inner">
+                                                        <p class="tit" id="title_4">[한섬]청바지 한 장 만드는데, 물 000리터나
+                                                            사용된다?!?</p>
+                                                        <p class="desc">누구나 가지고 있는 옷장 속 필수템, 청바지.
+                                                            그런데 청바지 생김새가 모두 다른 이유 알고 계신가요?!</p>
+                                                    </div>
+                                                </button>
+                                                <a class="mo_video_link" href="https://youtu.be/WQueQILfIQs"
+                                                    id="videoUrl_4"></a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-active">
+                                                <button type="button" onclick="openVideo('5',this);"
+                                                    data-pop="pop_video">
+                                                    <div class="inner">
+                                                        <p class="tit" id="title_5">Test2</p>
+                                                        <p class="desc">Test2</p>
+                                                    </div>
+                                                </button>
+                                                <a class="mo_video_link" href="" id="videoUrl_5"></a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-active">
+                                                <button type="button" onclick="openVideo('6',this);"
+                                                    data-pop="pop_video">
+                                                    <div class="inner">
+                                                        <p class="tit" id="title_6">더현대 서울에서 LP로 듣는 1990 서울 플레이리스트
+                                                        </p>
+                                                        <p class="desc"></p>
+                                                    </div>
+                                                </button>
+                                                <a class="mo_video_link"
+                                                    href="https://www.youtube.com/watch?v=-8iKztUhfzw"
+                                                    id="videoUrl_6"></a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-active">
+                                                <a href="javascript:mgzDtl('0000000499', '006003', '7')">
+                                                    <div class="inner">
+                                                        <p class="tit" id="title_7">평범하듯 특별하게, 내추럴 하우스를 꿈꾸다</p>
+                                                        <p class="desc">일상의 소소한 즐거움을 소망하며 완성한 집. </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--// 텍스트 -->
+
+                                <!-- PC용 화살표 버튼 -->
+                                <div class="slide_navi mo_none">
+                                    <div class="swiper-button-prev type2"></div>
+                                    <div class="swiper-button-next type2"></div>
+                                </div>
+
+                                <!-- 모바일용 swiper pagination -->
+                                <div class="swiper-tools mo_only">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-count">
+                                        <span class="active_num"></span>
+                                        <span>-</span>
+                                        <span class="all_num"></span>
+                                    </div>
+                                    <button type="button" class="btn-swiper-play paused"><span>재생/정지</span></button>
+                                </div>
+                            </div>
+                        </section>
+                        <!---------------// H매거진 --------------->
+                        <script>
+                            page.main.onLoad();
+                            page.main.onScroll(); // 211103 퍼블수정 메인 onScroll 추가
+                            $("#wrapper").addClass("mainWrapper");
+                            $('#notTodaybrowserPop').on('click', function () {
+                                setCookie("browserUpdate", "IE9", 1);
+                                commonPub.layerPopClose($(".pop_browser_update"));
+                            })
+                            $(function () {
+                                setTimeout(function () {
+                                    $(window).on('scroll', function () {
+                                        page.main.onScroll();
+                                    })
+                                }, 350);
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <div class="progress">
+            <span class="bar"></span>
+            <p class="txt">
+                0%
+            </p>
+        </div>
+        <div class="contact_container">
+            <div class="inner">
+                <div class="contact_wrap">
+                    <div class="txt_box">
+                        <div class="txt_wrap">
+                            <div class="tit">
+                                <p>프로젝트 의뢰를 원하시면</p>
+                                <p>챗봇 또는 상담게시판을 이용해 주세요.</p>
+                            </div>
+                            <div class="txt">
+                                <p>순차적으로 담당자가 배정되어 연락 드립니다.</p>
+                            </div>
+                            <a href="/?p=41" class="contact_btn">프로젝트 의뢰 <i></i></a>
+                        </div>
+                        <div class="img">
+                            <img src="/inc/img/main/contact_char.png" alt="프로젝트 의뢰 캐릭터">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="">
+            <div class="footer">
+                <div class="f_desc">
+                    <p>소이정은 <strong>여성기업인증, 벤처기업승인, 산업디자인전문인증</strong> 기업입니다.</p>
+                </div>
+                <div class="f_bottom">
+                    <div class="f_sns">
+                        <a href="https://www.instagram.com/power_strongboy/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" target="_blank"><i class="fa-solid fa-blog"></i></a>
+                        <a class="call ft_mo" href="tel: 070-4473-6846" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        
+                        <!--<a href="https://pf.kakao.com/_lUlxlxl" target="_blank"><i class="xi-kakaotalk"></i></a>-->
+                    </div>
+                    <div class="cp"><img src="inc/img/common/soijeong_logo_w.svg" alt="소이정"> ©SOIJEONG</div>
+                </div>
+                <div class="f_info">
+                    <p class="left"><strong>Add.</strong> 경기도 수원시 권선구 호매실로90번길 27 굿프라임2빌딩 505호 </p>
+                    <p class="right"><span class="box ml0"> <span class="box"><strong>E.</strong> <span>hoho77113@gmail.com</span></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+<script>
+    $(function () {
+
+        var text = $('.progress .txt'); //퍼센트 값을 담을 엘리먼트
+        var progressBar = $('.progress .bar'); //퍼센트 게이지 엘리먼트f
+
+        function getPercent() {
+
+            var scrollHeight = $('.main').height(); //스크롤 거리를 구합니다
+            var scrollRealHeight = (scrollHeight - $(window).height()); //스크롤 할 실제 거리를 구합니다
+            var winScrollTop = $(window).scrollTop(); //스크롤 위치를 구합니다
+            var scrollPercent = (winScrollTop / scrollRealHeight) * 100; //백분율을 구합니다
+            var textPercent = Math.round(scrollPercent); //텍스트에 삽입될 값은 소수점을 버려줍니다
+
+            render(textPercent, scrollPercent);
+        };
+
+        function render(textPercent, scrollPercent) {
+            text.text(textPercent + '%'); //텍스트 값을 업데이트합니다
+
+            progressBar.css({ //게이지 값을 업데이트합니다
+                width: scrollPercent + '%'
+            });
+        };
+
+        function init() {
+            getPercent();
+        };
+
+        $(window).scroll(function () { //스크롤 이벤트를 추가합니다.
+
+            getPercent();
+        });
+
+        init(); //초기화
+    });
+</script>
+
+</html>

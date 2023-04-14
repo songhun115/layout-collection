@@ -1,0 +1,5095 @@
+ <!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>현대백화점그룹 통합멤버십 | H.Point</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Pragma"        content="no-Cache" />
+		<meta http-equiv="Cache-Control" content="no-Cache" />
+		<meta name="viewport"    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, target-densitydpi=medium-dpi" />
+		<meta name="keywords"    content="H.Point,현대백화점,통합멤버십,h포인트,hpoint" />
+		<meta name="description" content="현대백화점그룹 통합멤버십 H.Point! 쇼핑부터 여행/문화 혜택까지 고객님의 라이프스타일을 케어합니다." />
+		<meta name="name" content="현대백화점그룹 통합 멤버십" />
+		<meta name="format-detection" content = "telephone=no"/>
+		<meta property="og:type"      content="article" />
+		<meta property="og:site_name" content="현대백화점그룹 통합 멤버십" />
+		<meta property="og:title"     content="현대백화점그룹 통합 멤버십" />
+		<meta property="og:description" content="현대백화점그룹 통합 멤버십" />
+		<meta property="og:image"       content="https://www.h-point.co.kr/images_customer/logo/invite_201127.png" />
+
+
+		<link rel="stylesheet" href="/assets/app/css/swiper.min.css"><!-- RENEWAL 2021 -->
+		<link rel="stylesheet" href="/assets/app/css/screen.ui.css?version=202202170001" /><!-- RENEWAL 2021 -->
+		<link rel="shortcut icon" href="https://www.h-point.co.kr/favicon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		
+		<script type="text/javascript" src="/assets/app/js/jquery-3.3.1.min.js"></script><!-- RENEWAL 2021 -->
+		<script type="text/javascript" src="/assets/app/js/jquery-migrate-1.4.1.js"></script><!-- RENEWAL 2021 -->
+		<script type="text/javascript" src="/assets/app/js/gsap.min.js"></script><!-- RENEWAL 2021 -->
+		<script type="text/javascript" src="/assets/app/js/ScrollTrigger.min.js"></script><!-- RENEWAL 2021 -->
+		<script type="text/javascript" src="/js/jquery/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="/js/jquery/prefixfree.min.js"></script>
+		<script type="text/javascript" src="/js/jquery/TweenMax.js"></script>
+		<script type="text/javascript" src="/js/jquery/EasePack.js"></script>
+		<script type="text/javascript" src="/js/common.js?ver=1"></script><!-- [18.03.12][wool][추가]:웹접근성 대응(0-9) -->
+		<script type="text/javascript" src="/js/jquery/jquery.touchSlider.js"></script>
+		<script type="text/javascript" src="/js/hdgm/init.js"></script>
+		<script type="text/javascript" src="/js/hdgm/util.js"></script>
+		<script type="text/javascript" src="/js/hdgm/str_lib.js"></script>
+		<script type="text/javascript" src="/js/sso/SsoAjax.js"></script>
+		<script type="text/javascript" src="/js/sso/SsoHttpRequest.js"></script>
+		<script type="text/javascript" src="/js/hdgm/cookie.js"></script>
+		<script type="text/javascript" src="/js/hdgm/validation.js?ver=211202"></script><!-- 유효성체크 -->
+		<script type="text/javascript" src="/js/hdgm/message.js"></script>
+		<script type="text/javascript" src="/assets/app/js/swiper.min.js"></script><!-- RENEWAL 2021 -->
+		<script type="text/javascript" src="/assets/app/js/common-pub.js"></script><!-- RENEWAL 2021 -->
+		<script type="text/javascript" src="/assets/app/js/page-pub.js"></script><!-- RENEWAL 2021 -->
+
+		<script type="text/javascript" >
+			$(function(){
+
+    			commonPub.common();
+			})
+		</script>
+
+		
+		<script>	
+			var AndroidWebview = 'GA_Android';			// Android userAgent
+			var iOS_Webview_WK = 'GA_iOS_WK';			// WKWebView userAgent
+			var CommonData = new Object;
+			var isMoveFlag = false;
+			var browserInfo = navigator.userAgent;
+			
+			function Convert_Element(RemoveValue){
+			  var return_Value = new Object();
+			  for(key in RemoveValue){
+			    if(RemoveValue[key] === "" || RemoveValue[key] === undefined ||  RemoveValue[key] === null){
+			      delete RemoveValue[key]
+			    }
+			  }
+			  return_Value = RemoveValue;
+			  return return_Value
+			}
+			
+			function Hybrid(GADATA){
+			  var emptyObject = JSON.parse(JSON.stringify(Convert_Element(CommonData)));
+			  emptyObject = $.extend(emptyObject, Convert_Element(GADATA))
+			  if (browserInfo.indexOf(AndroidWebview) > -1) window.gascriptAndroid.GA_DATA(JSON.stringify(emptyObject));
+			  else if (browserInfo.indexOf(iOS_Webview_WK) > -1) webkit.messageHandlers.gascriptCallbackHandler.postMessage(JSON.stringify(emptyObject));  
+			}
+			
+			
+			function GADataScreen(Object){
+			  CommonData = Object;
+			  if(browserInfo.indexOf('GA_iOS_WK') > -1 || browserInfo.indexOf('GA_Android') > -1){ 
+			    CommonData.type = "screen"
+			    Hybrid(CommonData); 
+			  }
+			  else{ 
+			    dataLayer = [CommonData]; 
+			    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			    })(window,document,'script','dataLayer','GTM-K6VWF95');
+			  }
+			}
+						  
+				
+			function GA_Event(category, action, label){
+			  if(browserInfo.indexOf('GA_iOS_WK') > -1 || browserInfo.indexOf('GA_Android') > -1){ 
+			    var GAData = new Object();
+			    GAData.Event_name = "event_click";
+			    GAData.category = category;
+			    GAData.action = action;
+			    GAData.label = label;
+			    GAData.type = "event"
+			    Hybrid(GAData); 
+			  }else{
+			    dataLayer.push({
+			      "event" : "ga_event",
+			      "event_name" : "event_click",
+			      "category" : category,
+			      "action" : action,
+			      "label" : label
+			    });
+			  }
+			}
+
+			$(window).load(function(){
+				
+				var pageviewObj = new Object();
+				var url_string = window.location.href;			
+				
+				var gaTitle = '';
+				if(gaTitle == null || gaTitle == "" || gaTitle == "undefined"){
+					gaTitle = document.title;
+				}
+
+				pageviewObj.title = gaTitle;	
+				
+				
+				
+				
+				pageviewObj.dimension12 = 'PC_WEB';	
+				pageviewObj.dimension13 = 'H.Point';
+				pageviewObj.dimension14 = 'N';
+
+				console.log("GADataScreen[["+JSON.stringify(pageviewObj)+"]]");
+				GADataScreen(pageviewObj);
+			});			
+
+
+		</script>
+		
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99661495-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-99661495-2');
+		</script>
+		
+		<!-- Google Tag Manager -->
+		<script>
+		  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		  })(window,document,'script','dataLayer','GTM-NVHNPTS');
+		</script>
+		<!-- End Google Tag Manager -->
+		
+		<!-- RENEWAL : S -->
+		<script type="text/javascript" src="/js/jquery/iscroll.js"></script>
+		<script type="text/javascript" src="/js/jquery/swiper.min.js"></script>
+		<script type="text/javascript" src="/js/entry.js"></script>
+		<!-- RENEWAL : E -->
+
+		<!-- [20.06.08][수정][shw]:Google Analytics 제거 -->
+		<!-- <script>
+		   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		 
+		   ga('create', 'UA-99671548-3', 'auto');
+		   ga('send', 'pageview');
+
+		 </script> -->
+		  
+		<script type="application/ld+json">
+
+	{ 
+		"@context": "http://schema.org", 
+		"@type": "Organization", "name": "현대백화점그룹 통합멤버십", 
+		"url": "https://www.h-point.co.kr", 
+		"sameAs": [
+			"https://www.instagram.com/h.point_official", 
+			"https://apps.apple.com/kr/app/h-point/id1255389331", 
+			"https://play.google.com/store/apps/details?id=kr.co.hpoint.hdgm", 
+			"https://www.youtube.com/channel/UC9HMGL9EvqGHYSwe8MA_efQ"
+		] 
+	}
+		</script>
+
+
+
+<!-- <script language="javascript" src="/js/wiseScriptLogging/makePCookie.js"></script-->
+
+<script type="text/javascript">
+(function() {
+var nl = document.createElement('script'); nl.type = 'text/javascript';
+//nl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dev.h-point.co.kr/js/wl6.js';
+//nl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'localhost:8080/js/wiseScriptLogging/wl6.js';
+nl.src = '/js/wiseScriptLogging/wl6.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nl, s);
+var done = false;
+nl.onload = nl.onreadystatechange = function() {
+ if ( !done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+	 done = true;
+	 
+	 _n_sid = "hpoint_pcweb";         //웹과 앱을 분기처리할 수 있도록 처리해 주시기 바랍니다.
+	 
+	 _n_uid_cookie = "UID"; //사용자ID 쿠키명을 입력하여 주시기 바랍니다.
+	 //n_logging();
+
+	 //_n_p7='WEB_LG0011';
+     //_n_sid=”www.h-point.co.kr”;
+	 //_n_p4="";   // 무의미하고 실제 호출한 URL은 별도 로깅되고 있음
+	 
+	 _n_p7="메인";
+	 n_logging();
+	
+	 nl.onload = nl.onreadystatechange = null;
+ }
+}
+})();
+
+
+</script> 
+
+<!-- 메인페이지 -->
+		<!--[if lt IE 9]>
+			<script src="/js/jquery/IE9.js"></script>
+			<script src="/js/jquery/html5shiv.js"></script>
+			<script src="/js/jquery/respond.min.js"></script>
+		<![endif]-->
+	
+
+
+<script type="text/javascript">
+(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking qrCode".split(" "), 0);
+branch.init('key_live_miY5jmfm0tpyOOJ9wFFxpfeisyo10yH0', function(err, data) {});
+</script>
+
+<nav>
+	<div class="branch-journeys-top" style="display:none;"></div>
+</nav>
+
+	</head>
+	<body>
+		
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVHNPTS" height="0" width="0" style="display:dotted;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+		<div id="wrapper">
+			<!-- [18.03.07][서한울][추가]:웹접근성대응(0-14) -->  
+<!-- <style>
+.skipToContent {position:relative;}
+.skipToContent a {display:block; height:1px; width:1px; margin-bottom:-1px; overflow:hidden; text-align:center; color:#000; white-space:nowrap;}
+.skipToContent a:focus,
+.skipToContent a:active {height:auto; width:100%; padding:5px; margin-bottom:10px;}
+</style> -->
+ 
+
+
+
+
+
+
+<!-- INDEX : 2QiMdS1+j0JGaB7YZTuSxlnhMb/UttphSkV8FWQaYoQ= -->
+
+
+<script type="text/javascript" src="/js/jquery/jquery-barcode.js"></script> <!-- [#63805][19.07.08][shw] : 바코드 추가 -->
+
+<form id="ssoLogin" name="ssoLogin" method="post" action="/cu/login/submitJsSsoMcust.nhd">
+	<input type="hidden" name="mcustNo" id="mcustNo" />
+	<input type="hidden" name="hmallRetUrl">
+		<input type="hidden" name="hmallRetPage">
+		<input type="hidden" name="hmallHtmlYn">
+	
+		<input type="hidden" name="targetUrl" id="targetUrl" value="/cu/main/index.nhd"/>
+	
+	
+</form>
+
+<!------- 모바일앱으로 보기 팝업 ------->
+<!-- <div class="pop_watch_app">
+	<div class="wrap">
+		<img src="/assets/app/img/main/img_watch_app.png" alt="H.Point APP 설치시 1분만에 최대 7,000P 적립">
+		<div class="inner">
+			<a href="/cma/invite.nhd?scheme=appMain" class="btn_typeA2"><span>H.Point APP으로 보기</span></a>
+			<button type="button" class="btn_close" onclick="watchAppHide();"><span>괜찮습니다. 모바일웹으로 볼게요.</span></button>
+		</div>
+	</div>
+</div>
+<script>
+	var watchAppHide = function(){
+		$('.pop_watch_app').hide();
+	}
+</script> -->
+<!-------// 모바일앱으로 보기 팝업 ------->
+ 
+<!-- <div class="skipToContent"><a href="#content">본문 바로가기</a></div> -->
+
+	
+
+
+
+
+<div class="skipToContent"><a href="#contents">본문 바로가기</a></div> <!-- 2022-09-30 웹 접근성 (공통 영역) -->
+
+<div id="headerDim"></div> <!-- 211110 headerDim 추가 -->
+<header id="header">	
+	<div class="wrap_header">
+		<h1 class="logo"><a href="/"><span class="hidden">H.Point</span></a></h1>
+
+		<!--[S] gnb -->
+		<nav id="gnb">
+			<ul class="clear">
+				<li class="introduce">
+					<div class="depth1"><a href="/introduce/intro.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '소개_H.Point소개');">소개</a></div>
+					<ul class="depth2">
+						<li><a href="/introduce/intro.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '소개_H.Point소개');">H.Point소개</a></li>
+						<li><a href="/introduce/shopping.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '소개_사용처안내');">사용처안내</a></li>
+						<li><a href="/introduce/benefit.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '소개_가입혜택');">가입혜택</a></li>
+					</ul>
+				</li>
+				<li class="collect">
+					<div class="depth1"><a href="/stack/joy.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_즐길거리');">쌓기</a></div>
+					<ul class="depth2">
+						<li><a href="/stack/joy.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_즐길거리');">즐길거리</a></li>
+						<li><a href="/stack/change.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_전환하기');">전환하기</a></li>
+						<li><a href="/stack/charge.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_충전하기');">충전하기</a></li>
+						<li><a href="/stack/coupon.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쌓기_영수증쿠폰');">영수증/쿠폰</a></li>
+					</ul>
+				</li>
+				<li class="use">
+					<div class="depth1"><a href="/friend/point.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쓰기_포인트샵');">쓰기</a></div>
+					<ul class="depth2">
+						<li><a href="/friend/point.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쓰기_포인트샵');">포인트샵</a></li>
+						<li><a href="/friend/gift.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쓰기_선물하기');">선물하기</a></li>
+						<li><a href="/friend/donate.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '쓰기_기부하기');">기부하기</a></li>
+					</ul>
+				</li>
+				<li class="benefit">
+					<div class="depth1"><a href="/benefit/evntList.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '혜택_이벤트');">혜택</a></div>
+					<ul class="depth2">
+						<li><a href="/benefit/evntList.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '혜택_이벤트');">이벤트</a></li>
+						<li><a href="/benefit/copnList.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '혜택_쿠폰');">쿠폰</a></li>
+						<li><a href="/benefit/plsPntList.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '혜택_플러스포인트');">플러스포인트</a></li>
+						<li><a href="/friend/mission.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '혜택_미션');">미션</a></li>
+						<!-- <li><a href="/benefit/hMagazin.nhd">H매거진</a></li> -->
+						<li><a href="/benefit/alliCrd.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '혜택_제휴카드안내');">제휴카드안내</a></li>
+						<li><a href="/benefit/hook.nhd">후크체험단</a></li> 
+					</ul>
+				</li>
+				<li class="club">
+					<div class="depth1"><a href="/benefit/clubFriend.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '클럽_프렌즈');">클럽</a></div>
+					<ul class="depth2">
+						<li><a href="/benefit/clubFriend.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '클럽_프렌즈');">클럽프렌즈</a></li>
+						<li><a href="/benefit/clubWedding.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '클럽_클럽웨딩');">클럽웨딩</a></li>
+						<li><a href="/benefit/clubMoms.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '클럽_맘스클럽');">맘스클럽</a></li>
+						<li><a href="/benefit/clubBeauty.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '클럽_헤이마이뷰티');">헤이, 마이 뷰티</a></li>
+						<li><a href="/benefit/clubAdidas.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '클럽_클럽아디다스');">클럽아디다스</a></li>
+						<li><a href="/benefit/clubTravel.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '클럽_클럽트래블');">클럽트래블</a></li>
+						<li><a href="/benefit/clubMeat.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '클럽_클럽육학다식');">클럽육학다식</a></li>
+					</ul>
+				</li>
+				<li class="hpay">
+					<div class="depth1"><a href="/benefit/hPay.nhd" onclick="GA_Event('PC_메뉴', '메뉴', 'H.Pay_H.Pay');">H.Point Pay</a></div>
+				</li>				
+				<li class="hmagazine">
+					<div class="depth1"><a href="/benefit/hMagazin.nhd">H.매거진</a></div>
+					<ul class="depth2">						
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006022&tabIndex=0">사운드핏</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006002&tabIndex=1">패션</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006003&tabIndex=2">리빙</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006021&tabIndex=3">Hip Tok</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006005&tabIndex=4">푸드</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006011&tabIndex=5">트렌드</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006018&tabIndex=6">Edit.H</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006015&tabIndex=7">소리여행</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006016&tabIndex=8">소리여행</a></li>
+												
+					</ul>					
+				</li>				
+				<li class="customer">
+					<div class="depth1"><a href="/cu/cmct/faqDtlList.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '고객센터_FAQ');">고객센터</a></div>
+					<ul class="depth2">
+						<li><a href="/cu/cmct/faqDtlList.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '고객센터_FAQ');">FAQ</a></li>
+						<li><a href="/cu/cmct/mtmInqrWrite.shd" onclick="GA_Event('PC_메뉴', '메뉴', '고객센터_1:1문의');">1:1문의</a></li>
+						<li><a href="/cu/cmct/ancmDtlList.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '고객센터_공지사항');">공지사항</a></li>
+						<!-- <li><a href="https://api.happytalk.io/api/kakao/chat_open?yid=%40%ED%98%84%EB%8C%80%EB%B0%B1%ED%99%94%EC%A0%90%EA%B7%B8%EB%A3%B9hpoint&site_id=4000000675&category_id=82707&division_id=82714&parameter1=$" target="_blank">상담톡 문의</a></li> -->
+						<!-- <li><a href="/cu/cmct/cnslChat.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '고객센터_상담톡문의');">상담톡 문의</a></li> -->
+						<li><a href="/cu/cmct/pntAlli.nhd" onclick="GA_Event('PC_메뉴', '메뉴', '고객센터_제휴문의');">제휴문의</a></li>					
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!--[E] gnb -->
+
+		<div class="hd_util_pc">
+			<ul>
+				
+					<li><a href="/cu/login.nhd" onclick="GA_Event('PC_공통', '헤더', '로그인')">로그인</a></li>
+					<li><a href="/cu/join/start.nhd" onclick="GA_Event('PC_메인', '헤더', '회원가입')">회원가입</a></li>
+					<!-- <li><a href="/cu/cmct/faqDtlList.nhd">고객센터</a></li> -->
+
+
+											
+				
+				
+											
+				<li><button type="button" class="app_down mo_none" onclick="commonPub.modalPopOpen(this); GA_Event('PC_메뉴', '헤더', '앱다운로드');" data-pop="pop_app_download">APP</button></li>				
+			</ul>
+		</div>
+	</div>
+	<div class="gnb_menu_layer">		
+		<div class="menu_bg"></div>
+		<div class="gnb_banner">
+										
+				<a href="https://www.h-point.co.kr/introduce/benefit.nhd" onclick="GA_Event('PC_메뉴', 'GNB하단배너', '좌측배너');">
+													
+						<span class="img" style="background-image: url('/cma/image/1000468698.nhd');"></span>
+																							
+				</a>
+							
+				
+		</div>
+	</div>
+
+	
+		
+		<!----- 모바일 util ----->
+		<div class="hd_util_mo">
+			<ul>
+				<li><a href="/cu/login.nhd" onclick="GA_Event('MO_메뉴', '헤더', '로그인');">로그인</a></li>
+				<li>
+					<a href="/cu/join/start.nhd" onclick="GA_Event('MO_메뉴', '헤더', '회원가입');">회원가입</a>
+					
+						
+					
+				</li>
+			</ul>
+		</div>
+	
+	
+</header>
+
+<!----- 모바일 메뉴버튼 ----->
+<button class="btn_hd_menu" type="button"><span></span></button>
+
+<!----- [S] 모바일 lnb ----->
+<div id="lnb">
+	<div class="dim"></div>
+	<div class="container">
+		<div class="top_area">
+			<a href="/cu/main/index.nhd" class="logo"><span class="hidden">H.Point</span></a>
+			<div class="util">
+				<ul class="clear">
+					
+						<li><a href="/cu/login.nhd" onclick="GA_Event('MO_메뉴', '헤더', '로그인');">로그인</a></li>					
+					
+													
+					<!-- <li><button type="button" class="app_down" onclick="commonPub.modalPopOpen(this);" data-pop="pop_app_download">APP</button></li> -->
+					<li>
+						<a class="app_down" href="/cma/invite.nhd?scheme=appMain" onclick="GA_Event('MO_메뉴', '헤더', '앱다운로드');" target="_blank">APP</a>						
+					</li>					
+				</ul>
+			</div>
+		</div>
+		<div class="my_area">
+			
+				<!-- 로그인 전 -->
+				<div class="guest">
+					<p class="txt"><a class="c_bl" href="/cu/login.nhd" onclick="GA_Event('MO_메뉴', '헤더', '로그인');">로그인</a>하고 쉽고 편한 <br>포인트혜택을 누려보세요.</p>
+				</div>
+				<!--// 로그인 전 -->		
+			
+			
+		</div>
+		<div class="app_area">
+			<a href="/cma/invite.nhd?scheme=appMain" target="_blank" onclick="GA_Event('MO_메뉴', '헤더', '앱다운로드');"><span>포인트의 모든것! H.Point APP 다운받기</span></a>			
+		</div>
+
+		<!-- 모바일 메뉴 -->
+		<nav id="mobileGnb">
+			<ul>
+				<li class="introduce">
+					<div class="depth1"><span>소개</span></div>
+					<ul class="depth2">
+						<li><a href="/introduce/intro.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '소개_H.Point소개');">H.Point소개</a></li>
+						<li><a href="/introduce/shopping.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '소개_사용처안내');">사용처안내</a></li>
+						<li><a href="/introduce/benefit.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '소개_가입혜택');">가입혜택</a></li>
+					</ul>
+				</li>
+				<li class="collect">
+					<div class="depth1"><span>쌓기</span></div>
+					<ul class="depth2">
+						<li><a href="/stack/joy.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쌓기_즐길거리');">즐길거리</a></li>
+						<li><a href="/stack/change.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쌓기_전환하기');">전환하기</a></li>
+						<li><a href="/stack/charge.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쌓기_충전하기');">충전하기</a></li>
+						<li><a href="/stack/coupon.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쌓기_영수증쿠폰');">영수증/쿠폰</a></li>
+					</ul>
+				</li>
+				<li class="use">
+					<div class="depth1"><span>쓰기</span></div>
+					<ul class="depth2">
+						<li><a href="/friend/point.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쓰기_포인트샵');">포인트샵</a></li>
+						<li><a href="/friend/gift.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쓰기_선물하기');">선물하기</a></li>
+						<li><a href="/friend/donate.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '쓰기_기부하기');">기부하기</a></li>
+					</ul>
+				</li>
+				<li class="benefit">
+					<div class="depth1"><span>혜택</span></div>
+					<ul class="depth2">
+						<li><a href="/benefit/evntList.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '혜택_이벤트');">이벤트</a></li>
+						<li><a href="/benefit/copnList.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '혜택_쿠폰');">쿠폰</a></li>
+						<li><a href="/benefit/plsPntList.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '혜택_플러스포인트');">플러스포인트</a></li>
+						<li><a href="/friend/mission.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '혜택_미션');">미션</a></li>
+						<!-- <li><a href="/benefit/hMagazin.nhd">H매거진</a></li> -->
+						<li><a href="/benefit/alliCrd.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '혜택_제휴카드안내');">제휴카드안내</a></li>
+						<li><a href="/benefit/hook.nhd">후크체험단</a></li>
+					</ul>
+				</li>
+				<li class="club">
+					<div class="depth1"><span>클럽</span></div>
+					<ul class="depth2">
+						<li><a href="/benefit/clubFriend.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽프렌즈');">클럽프렌즈</a></li>
+						<li><a href="/benefit/clubWedding.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽웨딩');">클럽웨딩</a></li>
+						<li><a href="/benefit/clubMoms.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '클럽_맘스클럽');">맘스클럽</a></li>
+						<li><a href="/benefit/clubBeauty.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '클럽_헤이마이뷰티');">헤이, 마이 뷰티</a></li>
+						<li><a href="/benefit/clubAdidas.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽아디다스');">클럽아디다스</a></li>
+						<li><a href="/benefit/clubTravel.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽트래블');">클럽트래블</a></li>
+						<li><a href="/benefit/clubMeat.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '클럽_클럽트래블');">클럽육학다식</a></li>
+					</ul>
+				</li>				
+				<li class="hpay">
+					<div class="depth1"><a href="/benefit/hPay.nhd" onclick="GA_Event('MO_메뉴', '메뉴', 'H.Pay_H.Pay');">H.Point Pay</a></div>
+				</li>
+				<li class="hmagazine">
+					<div class="depth1"><span>H.매거진</span></div>
+					<ul class="depth2">
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006022&tabIndex=0">사운드핏</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006002&tabIndex=1">패션</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006003&tabIndex=2">리빙</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006021&tabIndex=3">Hip Tok</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006005&tabIndex=4">푸드</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006011&tabIndex=5">트렌드</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006018&tabIndex=6">Edit.H</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006015&tabIndex=7">소리여행</a></li>
+													
+							<li><a href="/benefit/hMagazin.nhd?ctgrId=006016&tabIndex=8">소리여행</a></li>
+												
+					</ul>
+				</li>
+				<li class="customer">
+					<div class="depth1"><span>고객센터</span></div>
+					<ul class="depth2">
+						<li><a href="/cu/cmct/faqDtlList.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_FAQ');">FAQ</a></li>
+						<li><a href="/cu/cmct/mtmInqrWrite.shd" onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_1:1문의');">1:1문의</a></li>
+						<li><a href="/cu/cmct/ancmDtlList.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_공지사항');">공지사항</a></li>
+						<!-- <li><a href="https://api.happytalk.io/api/kakao/chat_open?yid=%40%ED%98%84%EB%8C%80%EB%B0%B1%ED%99%94%EC%A0%90%EA%B7%B8%EB%A3%B9hpoint&site_id=4000000675&category_id=82707&division_id=82714&parameter1=$" target="_blank">상담톡 문의</a></li> -->
+						<!-- <li><a href="/cu/cmct/cnslChat.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_상담톡문의');"></a></li> -->
+						<li><a href="/cu/cmct/pntAlli.nhd" onclick="GA_Event('MO_메뉴', '메뉴', '고객센터_제휴문의');">제휴문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!--// 모바일 메뉴 -->
+
+		<div class="bnr_area">
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+												
+						<li class="swiper-slide">
+							<a href="https://www.h-point.co.kr/introduce/benefit.nhd" onclick="GA_Event('MO_메뉴', 'GNB하단배너', '좌측배너');">
+																									
+									<img src="/cma/image/1000468699.nhd" alt="GNB 배너 1번 이미지">
+																										
+							</a>
+						</li>
+																			
+												
+						<li class="swiper-slide">
+							<a href="https://www.h-point.co.kr/stack/joy.nhd" onclick="GA_Event('MO_메뉴', 'GNB하단배너', '우측배너');">
+																									
+									<img src="/cma/image/1000468700.nhd" alt="GNB 배너 2번 이미지">
+																										
+							</a>
+						</li>
+							
+				</ul>
+				<div class="swiper-pagination type1"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!----- [E] 모바일 lnb ----->
+<!--// header/gnb -->
+
+<!-- 플로팅 퀵메뉴 -->
+<div id="quickMenu">
+	<div class="container">
+		<div class="box">
+			<!-- 211103 퍼블수정 QUICK > Quick -->
+			<div class="btn_quick">Quick</div>
+			<ul class="quick_list">
+					
+				<li class="join"><a href="/cu/join/start.nhd" onclick="GA_Event('PC_메인', '플로팅', '회원가입')">Join</a></li>
+				
+				
+				<li class="app pc_only"><a onclick="commonPub.modalPopOpen(this); GA_Event('PC_메인', '플로팅', '앱다운로드');" data-pop="pop_app_download">앱다운</a></li>
+				<li class="app pc_none"><a href="/cma/invite.nhd?scheme=appMain" onclick="GA_Event('MO_메인', '플로팅', '앱다운로드');" target="_blank">앱다운</a></li>
+				<li class="event"><a href="/benefit/evntList.nhd">이벤트</a></li>
+				<li class="customer"><a href="/cu/cmct/faqDtlList.nhd">고객센터</a></li>
+				<!-- <li class="customer"><a href="https://bizmessage.kakao.com/chat/open/@현대백화점그룹hpoint?extra=">상담톡</a></li> -->				
+			</ul>
+		</div>
+	</div>
+</div>
+<!--// 플로팅 퀵메뉴 -->
+
+<!-- <div id="quickTalk">
+    <a href="https://bizmessage.kakao.com/chat/open/@현대백화점그룹hpoint?extra=" class="container">
+      <div class="box">  -->
+        <!-- 211103 퍼블수정 QUICK > Quick -->
+        <!-- <div class="btn_talk">상담톡</div>
+      </div>
+    </a>
+</div>  -->
+
+<!-- <div class="appPop" style="display:none" tabindex="0">
+	<div class="container">
+		<form name="sendUrlForm" id="sendUrlForm" method="post" action="/cu/cma/sendAppUrl.nhd">			
+			<p class="popTit" tabindex="0"><img src="/images_customer/icon/pop_logo.jpg" alt="H포인트">APP 다운로드</p>
+			<p class="txt">편리하게 현대백화점그룹을 즐기는 방법 H.Point와 함께하세요!</p>
+			<div class="appDown">
+				<div class="left">
+					<p class="tit">Android OS</p>
+					<a href="javascript:mvGglStrUrl();"><img src="/images_customer/btn/app_bt1.gif" alt="구글플레이"></a>
+				</div>
+				<div class="right">
+					<p class="tit">IOS OS</p>
+					<a href="https://itunes.apple.com/kr/app/h-point/id1255389331?l=ko&amp;ls=1&amp;mt=8" target="_blank" onclick="n_click_logging('https://www.h-point.co.kr/ds/screen?_n_p3=App다운로드&amp;_n_p4=IOS링크&amp;_n_p7=WEB_LG0009'); n_click_logging('https://www.h-point.co.kr/ds/appdownload?_n_m1=인바이트&amp;_n_m2=iOs&amp;_n_m3=&amp;_n_m4=clickevent&amp;_n_m7=WEB_LG0021');"><img src="/images_customer/btn/app_bt2.gif" alt="앱스토어"></a>
+				</div>
+				<div class="bottom">
+					<p class="tit">APP 설치 URL 보내기</p>
+					<div class="inputD">
+						<input type="tel" name="mblNo" id="mblNo" placeholder="휴대폰 번호 입력" onkeyup="autoHypenMblNo('mblNo');" onkeydown="if( event.keyCode == 13) return false;" maxlength="13">
+						<a href="javascript:sendUrl();" onclick="n_click_logging('https://www.h-point.co.kr/ds/screen?_n_p3=App다운로드&amp;_n_p4=전송버튼클릭&amp;_n_p7=WEB_LG0010');">동의 후 전송</a>
+					</div>
+					
+					<p style="font-size:13px; color:#000; text-align:left;  margin-top:10px;">APP설치 URL 전송을 위해 고객님 휴대폰 번호를 수집합니다.</p>
+					<p style="font-size:13px; color:#000; text-align:left">수집된 정보는 문자 발송 완료 후 즉시 삭제됩니다.</p>
+				</div>
+			</div>
+			<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기"></a>
+		</form>
+	</div>	
+</div> -->
+<!-- appPop//end -->
+	
+<input type="hidden" name="pwdMcustNo" id="pwdMcustNo">
+<input type="hidden" name="pwdMcustId" id="pwdMcustId">
+
+
+<!-- 비밀번호 변경 팝업 -->
+<!-- <div class="pwChgPop" style="display:none;">
+	<div class="container">
+		<p class="popTit">비밀번호 변경</p>
+		<p class="txt">
+			3개월 이상 동일한 비밀번호 사용 중입니다.<br />회원님의 소중한 개인정보보호를 위해 주기적으로 비밀번호를 변경해주시기 바랍니다.
+		</p>
+		<p class="inputL mt30">
+			<label for="pw1">현재 비밀번호</label><span class="capslock"><input type="password" id="currentPwd"  autocomplete="off" maxlength="30" /><span class="img caps"  style="display:none;"><img src="/images_customer/icon/capslock_img.png" alt="캡스락이 켜져있습니다." /></span></span>
+		</p>
+		<p id="curPwdMsg2" class="error" style="display:none">현재 비밀번호를 입력해주세요.</p>
+		<p class="inputL">
+			<label for="pw2">새 비밀번호</label><span class="capslock"><input type="password" id="newPwd2"  autocomplete="off" maxlength="30" /><span class="img caps"  style="display:none;"><img src="/images_customer/icon/capslock_img.png" alt="캡스락이 켜져있습니다." /></span></span>
+		</p>
+		<p class="inputL">
+			<label for="pw3">새 비밀번호 확인</label><span class="capslock"><input type="password" id="cfnNewPwd2"  autocomplete="off" maxlength="30" /><span class="img caps"  style="display:none;"><img src="/images_customer/icon/capslock_img.png" alt="캡스락이 켜져있습니다." /></span></span>
+		</p>
+		<p id="newPwdMsg2" class="error" style="display:none">비밀번호와 비밀번호 확인이 일치하지 않습니다.</p>
+		<p class="notice">
+			* 영문, 숫자, 특수문자를 포함하여 8~30 자리로 입력해주세요.<br />
+			* 연속된 3자리 이상의 숫자, 문자는 사용할 수 없습니다.
+		</p>
+		<div class="btnArea">
+			
+			<a href="javascript:delayUpdateUserPwd();" class="gryBt notBt">다음에 하기</a>
+			<a href="javascript:updateCustPwd();" class="blkBt">비밀번호 변경</a>
+		</div>
+		<a href="javascript:closeCustPwdPup();" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div> -->
+<!-- // pwChgPop -->
+
+<!-- 팝업 : 비밀번호 변경 팝업 -->
+<div class="pwChgPop popup_ui type_modal pop_periodic_pw_change" style="display: none;">
+	<div class="dim_full"></div>
+	<div class="pop_container">
+		<div class="pop_layer">
+			<div class="pop_tit2">비밀번호 변경</div>
+			<div class="pop_body">
+				<p class="con_txt">3개월 이상 동일한 비밀번호를 사용 중입니다.<br>회원님의 소중한 개인정보보호를 위해 주기적으로 비밀번호를 변경해주시기 바랍니다.</p>
+									
+				<fieldset>
+					<legend>새 비밀번호 입력</legend>
+					<!-- 비밀번호 -->
+					<div class="wrap_inp type2">
+						<label for="currentPwd" class="inp_tit">현재 비밀번호</label>
+						<div class="inp_bundle">
+							<input type="password" id="currentPwd"  autocomplete="off" maxlength="30" class="inp flex" />
+						</div>		
+						<p class="t_error error" id="curPwdMsg2" style="display:none">현재 비밀번호를 입력해주세요.</p>				
+					</div>
+					<!--// 비밀번호 -->
+
+					<!-- 비밀번호 -->
+					<div class="wrap_inp type2">
+						<label for="newPwd2" class="inp_tit">새 비밀번호</label>
+						<div class="inp_bundle">
+							<input type="password" id="newPwd2" autocomplete="off" maxlength="30" class="inp flex" />
+						</div>
+						<ul class="bullet_type1 mark1 inp_mt">
+							<li>영문, 숫자, 특수문자를 포함 8~30 자리로 입력해주세요.</li>
+							<li>연속된 3자리 이상의 숫자, 문자는 사용할 수 없습니다.</li>
+						</ul>
+					</div>
+					<!--// 비밀번호 -->
+
+					<!-- 비밀번호 확인 -->
+					<div class="wrap_inp type2">
+						<label for="cfnNewPwd2" class="inp_tit">새 비밀번호 확인</label>
+						<div class="inp_bundle">
+							<input type="password" id="cfnNewPwd2"  autocomplete="off" maxlength="30" class="inp flex" />
+						</div>
+						<p class="t_error error" id="newPwdMsg2" style="display:none">동일한 값을 입력해주시기 바랍니다.</p>
+					</div>
+					<!--// 비밀번호 확인 -->
+				</fieldset>
+				
+				<div class="btn_area btn_ac">
+					<button type="button" class="btn_typeA1" onclick="delayUpdateUserPwd();"><span>다음에 하기</span></button>
+					<button type="button" class="btn_typeA2" onclick="updateCustPwd();"><span>확인</span></button>
+				</div>
+				
+			</div>
+			<button class="btn_pop_close" type="button" onclick="closeCustPwdPup(); commonPub.layerPopClose(this);"><span class="hidden">레이어 닫기</span></button>
+		</div>
+	</div>
+</div>
+<!--// 팝업 : 비밀번호 변경 팝업 -->
+
+
+<!-- 회원가입시 화면 비활성화 -->
+<div class="joinDisabled" style="display:none">
+</div>
+
+<!-- 팝업 : H.Point APP 이동하기 -->
+<div class="popup_ui type_modal pop_app_download" style="display: none;">
+    <div class="dim_full"></div>
+    <div class="pop_container">
+        <div class="pop_layer">
+			<form name="sendUrlForm" id="sendUrlForm" method="post" action="/cu/cma/sendAppUrl.nhd">
+				<div class="pop_tit">H.Point APP 이동하기</div>
+				<div class="pop_body">
+					<p class="desc1">편리하게 현대백화점그룹을 즐기는 방법 H.Point와 함께하세요!</p>
+					<ul class="qr_list clear">
+						<li>
+							<img src="/assets/app/img/common/img_android_qr.jpg" alt="안드로이드 QR">
+							<p class="tit1">Android OS</p>
+						</li>
+						<li>
+							<img src="/assets/app/img/common/img_ios_qr.jpg" alt="IOS QR">
+							<p class="tit1">iOS</p>
+						</li>
+					</ul>
+					<div class="send_url">
+						<p class="tit1">APP 설치 URL 보내기</p>
+						<div class="inp_bundle">
+							<input type="text" name="mblNo" id="mblNo" placeholder="휴대폰 번호 입력" onkeyup="autoHypenMblNo('mblNo');" onkeydown="if( event.keyCode == 13) return false;" maxlength="13" class="inp flex" placeholder="휴대폰 번호 입력" inputmode="numeric">
+							<button type="button" class="btn_right btn_typeC2" onclick="sendUrl();n_click_logging('https://www.h-point.co.kr/ds/screen?_n_p3=App다운로드&amp;_n_p4=전송버튼클릭&amp;_n_p7=WEB_LG0010');"><span>동의 후 전송</span></button>
+						</div>
+						<ul class="bullet_type1 mark1">
+							<li>APP 설치 URL 전송을 위해 고객님 휴대폰 번호를 수집합니다.</li>
+							<li>수집된 정보는 문자 발송 완료 후 즉시 삭제됩니다.</li>
+						</ul>
+					</div>
+				</div>
+				<button class="btn_pop_close" type="button" onclick="commonPub.layerPopClose(this);"><span class="hidden">레이어 닫기</span></button>
+			</form>
+        </div>
+		
+    </div>
+</div>
+<!--// 팝업 : H.Point APP 이동하기 -->
+
+<!-- 
+	211215 퍼블수정
+	바코드 상세 팝업 추가
+ -->
+<!-- 팝업 : 바코드 상세 -->
+<div class="popup_ui type_full pop_barcode" style="display: none;">
+	<div class="pop_container">
+		<div class="pop_layer">
+			<div class="pop_body">
+				<div class="con_top">
+					<p class="txt"><em></em>님의 포인트</p>
+					<div class="pt"><em></em>P</div>
+				</div>
+				<div class="con_bottom">
+					<div class="tit">
+						<p class="txt1">H.Point</p>
+						<p class="txt2">바코드</p>
+					</div>
+
+					<!-- 
+						211207 퍼블수정
+						팝업 pop_barcode : barcode와 barcode_num을 div.wrap_barcode로 감싸기
+					 -->
+					<div class="wrap_barcode">
+						<div class="barcode">
+							<div class="clear">
+								<div id="bcTargetPop"></div>
+							</div>
+						</div>
+						<div class="barcode_num"><span></span></div>
+					</div>
+				</div>
+			</div>
+			<button class="btn_pop_close" type="button" onclick="commonPub.layerPopClose(this);"><span class="hidden">레이어 닫기</span></button>
+		</div>
+	</div>
+</div>
+<!--// 팝업 : 바코드 상세 -->
+
+<script>
+	$("#bcTargetPop").barcode("", "code128",{barWidth:2, barHeight:50});
+</script>
+			 
+
+
+
+
+
+
+
+<script language="javascript">
+	$(function(){		
+		if(document.documentMode != undefined && document.documentMode <10 && getCookie("browserUpdate") != "IE9") {			
+			// 레이어팝업 제이 쿼리    
+			// var agreePopHeight = $(".layerPop.updatePop").height() / 2;
+			// var agreePopWidth  = $(".layerPop.updatePop").width() / 2;
+			// var scrollNum =0;
+			
+			// $(".layerPop.updatePop").css({
+			// 	display: "block",
+			// 	top: (jQuery(window).height() / 2) - agreePopHeight + scrollNum,
+			// 	left: (jQuery(window).width() / 2) - agreePopWidth
+			// });
+			// $(".blackBg").height(jQuery(document).height());
+			// $(".blackBg").fadeIn(300);
+			
+			// $(window).resize(function(){
+			// 	$(".layerPop.updatePop").css({
+			// 		top: (jQuery(window).height() / 2) - agreePopHeight + scrollNum,
+			// 		left: (jQuery(window).width() / 2) - agreePopWidth
+			// 	});
+			// })
+			
+			
+			// $(".popClose, .blackBg").click(function(){
+			// 	if($("#notView").is(":checked")) {
+			// 		setCookie("browserUpdate", "IE9", 1);
+			// 	}
+				
+			// 	$(".layerPop").css("display", "none");
+			// 	$(".blackBg").fadeOut(300);
+			// 	//focusThis.focus();
+			// });
+
+			commonPub.modalPopOpenSelf('pop_browser_update');
+			
+			var openCertPopup = function(certType) {
+				var width = 420;
+				var height = 600;
+				var isIOS = $("input[name=isIOS]").val();
+				var actionUrl = "/cu/cert/requestTelecomCert.nhd?isPopup=Y&isIOS=" + isIOS;
+				
+				if(certType == "ipin") {
+					width = 445;
+					height = 550;
+					var certPurpose = $("input[name=certPurpose]").val();
+					actionUrl = "/cu/cert/requestIpinCert.nhd?certPurpose="+certPurpose + "&isPopup=Y&isIOS=" + isIOS;
+				}
+				
+				certPopupOpenYn = window.open(actionUrl, "certPopup", "width="+width+",height="+height+",scrollbars=no,toolbar=no,location=no,directories=no,status=no");
+			};
+		}
+		
+		var allHide = true;
+		$(".ancmLayer div.mainPop").each(function() {
+			if( $(this).css("display") != "none")
+			{
+				allHide = false;
+			}
+	    });
+		if( allHide)
+		{
+			$(".ancmLayer").fadeOut(0);
+		}
+		
+		
+		var width;
+		var height;
+		var top;
+		var left;
+		var param;
+		
+		
+	});
+	
+	function closeLayer( index, ancmSeq)
+	{
+		$("#ancmLayer"+index).fadeOut(0);
+		
+		var allHide = true;
+		$(".ancmLayer div.mainPop").each(function() {
+			if( $(this).css("display") != "none")
+			{
+				allHide = false;
+			}
+	    });
+		
+		if( $("#mainPopChk"+index).prop( "checked"))
+		{	
+			var nPeriod = $("#mainPopChk"+index).val();
+			if( nPeriod != 0)
+			{
+				setCookie( "mainPop_" + ancmSeq, "Y", nPeriod);
+			}
+		}
+		
+		if( allHide)
+		{
+			$(".ancmLayer").fadeOut(0);
+		}
+	}
+
+
+	function GA_Event1(category, action, label) {
+				
+		var browserInfo1 = navigator.userAgent;
+		if (browserInfo1.indexOf('GA_iOS_WK') > -1 || browserInfo1.indexOf('GA_Android') > -1) {
+			var GAData = new Object();
+			GAData.Event_name = "event_click";
+			GAData.category = category;
+			GAData.action = action;
+			GAData.label = label;
+			GAData.type = "event"
+			Hybrid(GAData);
+		} else {
+			dataLayer.push({
+				"event": "ga_event",
+				"event_name": "event_click",
+				"category": category,
+				"action": action,
+				"label": label
+			});
+		}
+
+		return true;
+	}
+
+	// video 오픈
+	function openVideo(index, _this){
+		$("#title").html($("#title_" + index).html());
+
+		var videoUrl = $("#videoUrl_" + index).attr('href');
+		var youtubeUrl = "https://www.youtube.com/embed/"
+		var substrTarget = "watch?v="
+		if(videoUrl.indexOf("youtube.com") > -1){
+			if(videoUrl.indexOf("watch?v=") > -1){
+				videoUrl = youtubeUrl + videoUrl.substr(videoUrl.indexOf(substrTarget)+substrTarget.length, videoUrl.length).replace("&", "?");
+			}
+		} else if (videoUrl.indexOf("youtu.be/") > -1) {
+			videoUrl = videoUrl.replace("youtu.be/", "www.youtube.com/embed/");
+		}
+		
+		document.getElementById('videoContainer').innerHTML = '<iframe id="videoUrl" src="'+ videoUrl +'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+		$("#videoUrl").attr('src', videoUrl);
+
+		GA_Event1('메인', 'H.매거진컨텐츠', 'H.매거진_'+$("#title_" + index).html());
+
+		commonPub.modalPopOpen(_this);
+	}
+
+	function closeVideo(_this){
+		document.getElementById('videoContainer').innerHTML = '';
+		commonPub.layerPopClose(_this);
+	}
+
+	function mgzDtl(id, ctgrId, index){
+
+		GA_Event1('메인', 'H.매거진컨텐츠', 'H.매거진_'+$("#title_" + index).html());
+
+		location.href = '/benefit/hMagazinDtl.nhd?mgzId='+id+'&ctgrId='+ctgrId;
+		
+	}
+
+</script>
+
+<style>
+			
+</style>
+
+
+
+	<!------- 팝업 배너 ------->
+	<div class="popup_ui type_modal pop_mobal_banner" style="display: none;">
+		<div class="dim_full"></div>
+		<div class="pop_container">
+			<div class="pop_layer">
+				<div class="pop_body">
+					
+					
+					
+					
+						
+							
+						
+						
+							
+						
+						
+					
+					
+					<!-- slide -->
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							
+								<li class="swiper-slide">
+									<a href='https://www.h-point.co.kr/introduce/benefit.nhd' target='_blank'>
+										
+																						
+												<img src="/cma/image/1000469048.nhd" alt="">												
+											
+										
+										
+									</a>
+								</li>
+							
+							
+							
+						</ul>
+					</div>
+					<!-- slide -->
+					<div class="swiper-pagination type1"></div>
+
+					<!-- 
+						211112 퍼블수정
+						pop_mobal_banner > swiper-button-prev,swiper-button-next 추가
+					-->
+					<div class="swiper-button-prev type1 mo_none"></div>
+					<div class="swiper-button-next type1 mo_none"></div>
+				</div>
+				<span class="btn_not_today">
+					<input type="checkbox" id="mainNotToday">
+					<label for="mainNotToday">오늘 다시보지 않기</label>
+				</span>
+				<button class="btn_pop_close" type="button" id="closeMainBtmBnr"><span class="hidden">레이어 닫기</span></button>
+			</div>
+		</div>
+	</div>
+	<script>
+		// 모달 오픈
+		/* $("#mainNotToday").change(function(){
+			setCookie("mainNotToday", "mainNotToday", 1);
+			commonPub.layerPopClose($('.pop_mobal_banner'));
+		}) */
+		
+		if(getCookie("mainNotToday") != "mainNotToday") {
+			commonPub.modalPopOpenSelf('pop_mobal_banner');
+			page.banner.popBannerSlide();
+		}
+
+		$('#closeMainBtmBnr').on('click', function(){				
+			commonPub.layerPopClose($('.pop_mobal_banner'));
+			if($("#mainNotToday").is(":checked")){
+				setCookie("mainNotToday", "mainNotToday", 1);
+			}
+		})
+	</script>
+	<!-------// 팝업 배너 ------->
+
+
+<div id="contents">
+	<div id="main">
+		
+		<!--------------- 메인 비주얼 --------------->
+		
+			<section class="sect_visual">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">						
+						
+														
+							
+								
+									
+																
+							
+							
+							<!-- set -->
+							
+							<div class="swiper-slide">
+								<a href='https://www.h-point.co.kr/introduce/shopping.nhd' onclick="GA_Event('메인', '메인배너', '키비주얼')">
+									<div class="slide_inner">
+										<div class="slide_bg">
+											
+												<div class="mo_none" style="background-image: url('/cma/image/1000532070.nhd');"></div>
+											
+											
+												<div class="mo_only" style="background-image: url('/cma/image/1000532071.nhd');"></div>
+											
+										</div>
+										<div class="wrap_txt">
+											<p class="b_txt" data-swiper-parallax="400" id="dispNm0">현대백화점그룹의<br>
+다양한 제휴사를 만나보세요!</p>
+											<p class="s_txt" data-swiper-parallax="450" id="dispSub0">다양한 브랜드에서 적립하고 사용하는<br>
+즐거운 일상의 H.Point!</p>
+										</div>
+									</div>
+								</a>
+								</div>
+							
+							
+							<!--// set -->
+						
+														
+							
+								
+									
+																
+							
+							
+							<!-- set -->
+							
+							<div class="swiper-slide">
+								<a href='https://www.h-point.co.kr/introduce/intro.nhd' onclick="GA_Event('메인', '메인배너', '키비주얼')">
+									<div class="slide_inner">
+										<div class="slide_bg">
+											
+												<div class="mo_none" style="background-image: url('/cma/image/1000468651.nhd');"></div>
+											
+											
+												<div class="mo_only" style="background-image: url('/cma/image/1000468652.nhd');"></div>
+											
+										</div>
+										<div class="wrap_txt">
+											<p class="b_txt" data-swiper-parallax="400" id="dispNm1">새롭게 달라진 H.Point Web 사이트!!</p>
+											<p class="s_txt" data-swiper-parallax="450" id="dispSub1">Web에서 만나는 더 트랜디한 매거진,<br>
+핫이슈를 만나고 즐거운 혜택을 받아보세요</p>
+										</div>
+									</div>
+								</a>
+								</div>
+							
+							
+							<!--// set -->
+						
+														
+							
+								
+									
+																
+							
+							
+							<!-- set -->
+							
+							<div class="swiper-slide">
+								<a href='https://www.h-point.co.kr/stack/joy.nhd' onclick="GA_Event('메인', '메인배너', '키비주얼')">
+									<div class="slide_inner">
+										<div class="slide_bg">
+											
+												<div class="mo_none" style="background-image: url('/cma/image/1000468654.nhd');"></div>
+											
+											
+												<div class="mo_only" style="background-image: url('/cma/image/1000468655.nhd');"></div>
+											
+										</div>
+										<div class="wrap_txt">
+											<p class="b_txt" data-swiper-parallax="400" id="dispNm2">일상을 바꾸는<br>
+즐거운 소비습관</p>
+											<p class="s_txt" data-swiper-parallax="450" id="dispSub2">쇼핑이 미션이되고, 걸음이 포인트가되는<br>
+즐거운 일상으로 초대합니다.</p>
+										</div>
+									</div>
+								</a>
+								</div>
+							
+							
+							<!--// set -->
+						
+														
+							
+								
+									
+																
+							
+							
+							<!-- set -->
+							
+							<div class="swiper-slide">
+								<a href='https://www.h-point.co.kr/benefit/evntList.nhd' onclick="GA_Event('메인', '메인배너', '키비주얼')">
+									<div class="slide_inner">
+										<div class="slide_bg">
+											
+												<div class="mo_none" style="background-image: url('/cma/image/1000468657.nhd');"></div>
+											
+											
+												<div class="mo_only" style="background-image: url('/cma/image/1000468658.nhd');"></div>
+											
+										</div>
+										<div class="wrap_txt">
+											<p class="b_txt" data-swiper-parallax="400" id="dispNm3">쿠폰 받고 할인 받는<br>
+혜택 이벤트!</p>
+											<p class="s_txt" data-swiper-parallax="450" id="dispSub3">혼자 알기 아쉬운 이벤트, 친구에게 공유해보세요!</p>
+										</div>
+									</div>
+								</a>
+								</div>
+							
+							
+							<!--// set -->
+												
+					</div>
+					<div class="wrap_swiper_tools">
+						<div class="swiper-tools v2">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-count">
+								<span class="active_num"></span>
+								<span>-</span>
+								<span class="all_num"></span>
+							</div>
+							<button type="button" class="btn-swiper-play paused"><span>재생/정지</span></button>
+						</div>
+					</div>
+					<!-- 
+						211110 퍼블수정
+						메인 비쥬얼 슬라이드 swiper-button-next,swiper-button-prev 의 클래스 type1 -> type4 로 변경
+					-->
+					<div class="wrap_swiper_navi">
+						<div class="swiper-button-next type4"></div>
+						<div class="swiper-button-prev type4"></div>
+					</div>
+
+					<!-- 
+						211207 퍼블수정
+						div.scroll_down 추가
+					-->
+					<!-- 스크롤 유도 -->
+					<div class="scroll_down">scroll</div>
+					<!--// 스크롤 유도 -->
+				</div>
+			</section>
+		
+		<!---------------// 메인 비주얼 --------------->
+
+
+											
+		<!--------------- 가입혜택 (로그인 전 노출) --------------->
+		<section class="sect_benefit">
+			<div class="layout1 inner">
+				<div class="left_box">
+					<div class="img_box">
+						<img src="/assets/app/img/main/img_sign_benefit0.png" alt="" class="img_mockup1">
+						<img src="/assets/app/img/main/img_sign_benefit1.png" alt="" class="img_mockup2 on">
+						<img src="/assets/app/img/main/img_sign_benefit2.png" alt="" class="img_mockup2">
+						<img src="/assets/app/img/main/img_sign_benefit3.png" alt="" class="img_mockup2">
+						<img src="/assets/app/img/main/img_sign_benefit4.png" alt="" class="img_mockup2">
+						<img src="/assets/app/img/introduce/img_benefit_obj1.png" alt="" class="img_obj obj1 pc_only">
+						<img src="/assets/app/img/introduce/img_benefit_obj2.png" alt="" class="img_obj obj2 pc_only">
+						<img src="/assets/app/img/introduce/img_benefit_obj3.png" alt="" class="img_obj obj3 pc_only">
+						<img src="/assets/app/img/introduce/img_benefit_obj4.png" alt="" class="img_obj obj4 pc_only">
+						<img src="/assets/app/img/introduce/mo/img_benefit_obj1.png" alt="" class="img_obj obj1 pc_none">
+						<img src="/assets/app/img/introduce/mo/img_benefit_obj2.png" alt="" class="img_obj obj2 pc_none">
+						<img src="/assets/app/img/introduce/mo/img_benefit_obj3.png" alt="" class="img_obj obj3 pc_none">
+						<img src="/assets/app/img/introduce/mo/img_benefit_obj4.png" alt="" class="img_obj obj4 pc_none">
+					</div>
+					<ul class="qr_list clear pc_only">
+						<li class="android">
+							<div class="img_qr">
+								<img src="/assets/app/img/introduce/img_qr_android.jpg" alt="안드로이드 QR">
+							</div>
+						</li>
+						<li class="ios">
+							<div class="img_qr">
+								<img src="/assets/app/img/introduce/img_qr_ios.jpg" alt="IOS QR">
+							</div>
+						</li>						
+					</ul>
+				</div>
+				<div class="right_box">
+					<p class="tit">H.Point APP 다운받고<br><em>1분만에 <span>7,000P</span>를 겟!</em></p>
+					<ul class="point_list clear">
+						<li class="on">
+							APP 첫 로그인<br>
+							<em>1,000P</em>
+						</li>
+						<li>
+							평생회원 동의<br>
+							<em>1,000P</em>
+						</li>
+						<li>
+							Push ON<br>
+							<em>2,000P</em>
+						</li>
+						<li>
+							첫 적립 이벤트 참여<br>
+							<em>3,000P</em>
+						</li>
+					</ul>										
+					<button type="button" class="btn_typeB2 pc_only" onclick="commonPub.modalPopOpen(this); GA_Event('PC_메인', 'APP설치유도', '앱다운로드 바로가기');" data-pop="pop_app_download"><span>앱다운로드 바로가기</span></button>					
+					<button type="button" class="btn_typeB2 pc_none" onclick="location.href='/cma/invite.nhd?scheme=appMain'; GA_Event('MO_메인', 'APP설치유도', '앱다운로드 바로가기');"><span>앱다운로드 바로가기</span></button>					
+				</div>
+			</div>
+		</section>
+		<!---------------// 가입혜택 (로그인 전 노출) --------------->
+		
+
+
+		
+
+		<!--------------- H매거진 --------------->
+		<section class="sect_magazine">
+			<div class="layout1">
+				<h2 class="sect_tit">H.매거진</h2>
+
+				<!-- tab -->
+				<div class="slide_tab_align">
+					<div class="main_slide_tabmenu">
+						<div class="swiper-container magTabSwiper">
+							<ul class="swiper-wrapper">
+								
+									<li class="swiper-slide tab active">소리여행</li>									
+								
+									<li class="swiper-slide tab ">Edit.H</li>									
+								
+									<li class="swiper-slide tab ">사운드핏</li>									
+								
+									<li class="swiper-slide tab ">푸드</li>									
+								
+									<li class="swiper-slide tab ">패션</li>									
+								
+									<li class="swiper-slide tab ">Hip Tok</li>									
+								
+									<li class="swiper-slide tab ">트렌드</li>									
+								
+									<li class="swiper-slide tab ">리빙</li>									
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--// tab -->
+
+				<!-- 썸네일 -->
+				<div class="mag_thumbnail">
+					<div class="swiper-container magThumbSwiper">
+						<ul class="swiper-wrapper">
+							
+								
+									
+										
+										
+											
+												<li class="swiper-slide">
+													<a href="javascript:mgzDtl('0000000494', '006016', '0')">
+														<figure class="thumbnail">
+															<img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">												
+															<span class="img" style="background-image:url('https://www.h-point.co.kr:443/cma/imgAtfl/1000755559.nhd');"></span>
+														</figure>
+													</a>
+												</li>					
+											
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								
+									
+										
+										
+											
+												<li class="swiper-slide">
+													<a href="javascript:mgzDtl('0000000502', '006018', '1')">
+														<figure class="thumbnail">
+															<img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">												
+															<span class="img" style="background-image:url('https://www.h-point.co.kr:443/cma/imgAtfl/1000774912.nhd');"></span>
+														</figure>
+													</a>
+												</li>					
+											
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								
+									
+										
+										
+											
+												<li class="swiper-slide">
+													<a href="javascript:mgzDtl('0000000296', '006022', '2')">
+														<figure class="thumbnail">
+															<img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">												
+															<span class="img" style="background-image:url('https://www.h-point.co.kr:443/cma/imgAtfl/1000776537.nhd');"></span>
+														</figure>
+													</a>
+												</li>					
+											
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								
+									
+										
+										
+											
+											
+												<li class="swiper-slide video">
+													<button type="button" onclick="openVideo('3',this);" data-pop="pop_video">
+														<figure class="thumbnail">
+															<img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">												
+															<span class="img" style="background-image:url('https://www.h-point.co.kr:443/cma/imgAtfl/1000716821.nhd');"></span>
+														</figure>
+													</button>
+													<a class="mo_video_link" href="https://youtu.be/kLgCVzAkfWg" id="videoUrl_3"></a>
+												</li>					
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								
+									
+										
+										
+											
+											
+												<li class="swiper-slide video">
+													<button type="button" onclick="openVideo('4',this);" data-pop="pop_video">
+														<figure class="thumbnail">
+															<img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">												
+															<span class="img" style="background-image:url('https://www.h-point.co.kr:443/cma/imgAtfl/1000742174.nhd');"></span>
+														</figure>
+													</button>
+													<a class="mo_video_link" href="https://youtu.be/WQueQILfIQs" id="videoUrl_4"></a>
+												</li>					
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								
+									
+										
+										
+											
+											
+												<li class="swiper-slide video">
+													<button type="button" onclick="openVideo('5',this);" data-pop="pop_video">
+														<figure class="thumbnail">
+															<img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">												
+															<span class="img" style="background-image:url('https://www.h-point.co.kr:443/cma/imgAtfl/1000777419.nhd');"></span>
+														</figure>
+													</button>
+													<a class="mo_video_link" href="" id="videoUrl_5"></a>
+												</li>					
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								
+									
+										
+										
+											
+											
+												<li class="swiper-slide video">
+													<button type="button" onclick="openVideo('6',this);" data-pop="pop_video">
+														<figure class="thumbnail">
+															<img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">												
+															<span class="img" style="background-image:url('https://www.h-point.co.kr:443/cma/imgAtfl/1000612956.nhd');"></span>
+														</figure>
+													</button>
+													<a class="mo_video_link" href="https://www.youtube.com/watch?v=-8iKztUhfzw" id="videoUrl_6"></a>
+												</li>					
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+								
+									
+										
+										
+											
+												<li class="swiper-slide">
+													<a href="javascript:mgzDtl('0000000499', '006003', '7')">
+														<figure class="thumbnail">
+															<img class="ratio" src="/assets/app/img/common/ratio_mag.gif" alt="">												
+															<span class="img" style="background-image:url('https://www.h-point.co.kr:443/cma/imgAtfl/1000772545.nhd');"></span>
+														</figure>
+													</a>
+												</li>					
+											
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+							
+						</ul>
+					</div>
+				</div>
+				<!--// 썸네일 -->
+
+				<!-- 텍스트 -->
+				<div class="mag_text">
+					<div class="swiper-container magTextSwiper">
+						<ul class="swiper-wrapper">
+							
+								
+									
+										
+										
+											
+												<li class="swiper-slide swiper-slide-active">
+													<a href="javascript:mgzDtl('0000000494', '006016', '0')">
+														<div class="inner">															
+															<p class="tit" id="title_0">[소리여행] 잠으로 떠나는 유럽 기차 여행🚂</p>
+															<p class="desc">[소리여행] 잠으로 떠나는 유럽 기차 여행🚂</p>
+														</div>
+													</a>
+												</li>
+											
+											
+														
+																
+								
+																
+								
+																
+								
+																
+										
+							
+								
+									
+										
+										
+											
+												<li class="swiper-slide swiper-slide-active">
+													<a href="javascript:mgzDtl('0000000502', '006018', '1')">
+														<div class="inner">															
+															<p class="tit" id="title_1">[H_Artist : 취하다]
+아티스트, ＇선Line＇에 취하다</p>
+															<p class="desc"></p>
+														</div>
+													</a>
+												</li>
+											
+											
+														
+																
+								
+																
+								
+																
+								
+																
+										
+							
+								
+									
+										
+										
+											
+												<li class="swiper-slide swiper-slide-active">
+													<a href="javascript:mgzDtl('0000000296', '006022', '2')">
+														<div class="inner">															
+															<p class="tit" id="title_2">사운드 코치와 스트레칭하고 생활 속 활력 찾아보아요!</p>
+															<p class="desc">H.Point 사운드핏과 스트레칭하고
+생활속 활력 찾아볼까요~</p>
+														</div>
+													</a>
+												</li>
+											
+											
+														
+																
+								
+																
+								
+																
+								
+																
+										
+							
+								
+									
+										
+										
+											
+											
+												<li class="swiper-slide swiper-slide-active">
+													<button type="button" onclick="openVideo('3',this);" data-pop="pop_video">
+														<div class="inner">															
+															<p class="tit" id="title_3">[야외정찬]제철 새우 한 가득, 흰다리새우 편백찜</p>
+															<p class="desc">[야외정찬]제철 새우 한 가득, 흰다리새우 편백찜</p>
+														</div>
+													</button>
+													<a class="mo_video_link" href="https://youtu.be/kLgCVzAkfWg" id="videoUrl_3"></a>
+												</li>
+											
+														
+																
+								
+																
+								
+																
+								
+																
+										
+							
+								
+									
+										
+										
+											
+											
+												<li class="swiper-slide swiper-slide-active">
+													<button type="button" onclick="openVideo('4',this);" data-pop="pop_video">
+														<div class="inner">															
+															<p class="tit" id="title_4">[한섬]청바지 한 장 만드는데, 물 000리터나 사용된다?!?
+- 핸써미와 함께하는 ESG EP.03</p>
+															<p class="desc">누구나 가지고 있는 옷장 속 필수템, 청바지.
+그런데 청바지 생김새가 모두 다른 이유 알고 계신가요?!
+바로, ＇데님 워싱＇ 가공을 통해 새롭게 디자인 되기 때문입니다.
+
+그런데, 데님 워싱 과정에서 약품처리된 많은 양의 물이 사용되고 이에 따라 폐수도 발생하는데요!
+한섬은 정화설비인 ＇분리막＇ 설치 지원 사업을 통해 
+폐수는 줄이고! 물 재활용량은 늘리는! 친환경 노력을 하고 있습니다.
+  
+내가 입는 청바지에 과연 얼마나 많은 물이 필요한지, 영상을 통해 확인하고
+한섬의 ESG를 직접 경험해보세요!</p>
+														</div>
+													</button>
+													<a class="mo_video_link" href="https://youtu.be/WQueQILfIQs" id="videoUrl_4"></a>
+												</li>
+											
+														
+																
+								
+																
+								
+																
+								
+																
+										
+							
+								
+									
+										
+										
+											
+											
+												<li class="swiper-slide swiper-slide-active">
+													<button type="button" onclick="openVideo('5',this);" data-pop="pop_video">
+														<div class="inner">															
+															<p class="tit" id="title_5">Test2</p>
+															<p class="desc">Test2</p>
+														</div>
+													</button>
+													<a class="mo_video_link" href="" id="videoUrl_5"></a>
+												</li>
+											
+														
+																
+								
+																
+								
+																
+								
+																
+										
+							
+								
+									
+										
+										
+											
+											
+												<li class="swiper-slide swiper-slide-active">
+													<button type="button" onclick="openVideo('6',this);" data-pop="pop_video">
+														<div class="inner">															
+															<p class="tit" id="title_6">더현대 서울에서 LP로 듣는 1990 서울 플레이리스트</p>
+															<p class="desc"></p>
+														</div>
+													</button>
+													<a class="mo_video_link" href="https://www.youtube.com/watch?v=-8iKztUhfzw" id="videoUrl_6"></a>
+												</li>
+											
+														
+																
+								
+																
+								
+																
+								
+																
+										
+							
+								
+									
+										
+										
+											
+												<li class="swiper-slide swiper-slide-active">
+													<a href="javascript:mgzDtl('0000000499', '006003', '7')">
+														<div class="inner">															
+															<p class="tit" id="title_7">평범하듯 특별하게, 내추럴 하우스를 꿈꾸다</p>
+															<p class="desc">일상의 소소한 즐거움을 소망하며 완성한 집. </p>
+														</div>
+													</a>
+												</li>
+											
+											
+														
+																
+								
+																
+								
+																
+								
+																
+										
+												
+						</ul>
+					</div>
+				</div>
+				<!--// 텍스트 -->
+
+				<!-- PC용 화살표 버튼 -->
+				<div class="slide_navi mo_none">
+					<div class="swiper-button-prev type2"></div>
+					<div class="swiper-button-next type2"></div>
+				</div>
+
+				<!-- 모바일용 swiper pagination -->
+				<div class="swiper-tools mo_only">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-count">
+						<span class="active_num"></span>
+						<span>-</span>
+						<span class="all_num"></span>
+					</div>
+					<button type="button" class="btn-swiper-play paused"><span>재생/정지</span></button>
+				</div>
+			</div>
+		</section>
+		<!---------------// H매거진 --------------->
+
+	
+		<!--------------- 이벤트 --------------->
+		<section class="sect_event">
+			<div class="layout1">
+				<h2 class="sect_tit c_wh">지금 가장 인기 있는<br class="pc_none"> 이벤트 TOP5</h2>				
+				<!-- slide -->
+				<div class="wrap_event_slide">
+					<div class="swiper-container eventSwiper">
+						<ul class="swiper-wrapper">
+							
+								<li class="swiper-slide">
+									<a href="/benefit/evntDtl.nhd?evntId=153906" onclick="GA_Event('메인', '인기이벤트TOP5', '인기이벤트_'+'');">
+										<figure class="thumbnail">
+											<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+											<span class="img"
+												style="background-image:url('https://www.h-point.co.kr:443/images_share/mb/mb0012/2022/1129/0929/20221129092935384.png');"></span>
+										</figure>
+										<div class="wrap_txt">
+											<p class="tit">[H.Point] 함께해서 행복한 크리스마스 스탬프 미션</p>
+											<!--<p class="sub_tit">신규가입 회원을 위한 다양한 쿠폰 혜택</p>-->
+										</div>
+									</a>
+								</li>
+							
+								<li class="swiper-slide">
+									<a href="/benefit/evntDtl.nhd?evntId=153905" onclick="GA_Event('메인', '인기이벤트TOP5', '인기이벤트_'+'');">
+										<figure class="thumbnail">
+											<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+											<span class="img"
+												style="background-image:url('https://www.h-point.co.kr:443/images_share/mb/mb0012/2022/1129/0927/20221129092726164.png');"></span>
+										</figure>
+										<div class="wrap_txt">
+											<p class="tit">[H.Point] 12월 친구초대 이벤트</p>
+											<!--<p class="sub_tit">신규가입 회원을 위한 다양한 쿠폰 혜택</p>-->
+										</div>
+									</a>
+								</li>
+							
+								<li class="swiper-slide">
+									<a href="/benefit/evntDtl.nhd?evntId=153904" onclick="GA_Event('메인', '인기이벤트TOP5', '인기이벤트_'+'');">
+										<figure class="thumbnail">
+											<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+											<span class="img"
+												style="background-image:url('https://www.h-point.co.kr:443/images_share/mb/mb0012/2022/1129/0925/20221129092533111.png');"></span>
+										</figure>
+										<div class="wrap_txt">
+											<p class="tit">[H.Point] 띵동~! 12월 광고PUSH 최초 동의 이벤트</p>
+											<!--<p class="sub_tit">신규가입 회원을 위한 다양한 쿠폰 혜택</p>-->
+										</div>
+									</a>
+								</li>
+							
+								<li class="swiper-slide">
+									<a href="/benefit/evntDtl.nhd?evntId=153903" onclick="GA_Event('메인', '인기이벤트TOP5', '인기이벤트_'+'');">
+										<figure class="thumbnail">
+											<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+											<span class="img"
+												style="background-image:url('https://www.h-point.co.kr:443/images_share/mb/mb0012/2022/1129/0924/20221129092422444.png');"></span>
+										</figure>
+										<div class="wrap_txt">
+											<p class="tit">[H.Point] 12월 첫 적립 이벤트</p>
+											<!--<p class="sub_tit">신규가입 회원을 위한 다양한 쿠폰 혜택</p>-->
+										</div>
+									</a>
+								</li>
+							
+								<li class="swiper-slide">
+									<a href="/benefit/evntDtl.nhd?evntId=152805" onclick="GA_Event('메인', '인기이벤트TOP5', '인기이벤트_'+'');">
+										<figure class="thumbnail">
+											<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+											<span class="img"
+												style="background-image:url('https://www.h-point.co.kr:443/images_share/mb/mb0012/2022/1122/1704/20221122170415044.png');"></span>
+										</figure>
+										<div class="wrap_txt">
+											<p class="tit">[H.Point] 2022 홈ㆍ테이블 데코페어 무료 입장</p>
+											<!--<p class="sub_tit">신규가입 회원을 위한 다양한 쿠폰 혜택</p>-->
+										</div>
+									</a>
+								</li>
+								
+							<li class="swiper-slide">
+								<a href="/benefit/evntList.nhd">
+									<figure class="thumbnail">
+										<img class="ratio" src="/assets/app/img/common/ratio_event.gif" alt="">
+										<div class="shortcut"><span>더 많은 이벤트 보러가기</span></div>
+									</figure>
+								</a>
+							</li>													
+						</ul>
+					</div>
+				</div>
+				<!--// slide -->
+
+				<div class="swiper-tools v2">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-count">
+						<span class="active_num">1</span>
+						<span>-</span>
+						<span class="all_num">3</span>
+					</div>
+					<button type="button" class="btn-swiper-play paused"><span>재생/정지</span></button>
+				</div>
+			</div>
+
+			<div class="wrap_swiper_navi">
+				<div class="swiper-button-prev type1"></div>
+				<div class="swiper-button-next type1"></div>
+			</div>
+		</section>
+		<!---------------// 이벤트 --------------->
+
+
+		<!--------------- 핫이슈 --------------->
+		<section class="sect_hotissue">
+			<div class="layout1">
+				<h2 class="sect_tit">제휴사 핫이슈</h2>
+
+				<!------ PC, Tablet ------>
+				<div class="v_pc mo_none">
+					<!-- tab -->
+					<div class="slide_tab_align">
+						<div class="main_slide_tabmenu">
+							<div class="swiper-container issueTabSwiperPC">
+								<ul class="swiper-wrapper">
+									
+										<li class="swiper-slide tab active">EQL</li>									
+									
+										<li class="swiper-slide tab ">더현대닷컴</li>									
+									
+										<li class="swiper-slide tab ">그리팅몰</li>									
+									
+										<li class="swiper-slide tab ">현대백화점</li>									
+									
+										<li class="swiper-slide tab ">현대식품관</li>									
+									
+										<li class="swiper-slide tab ">현대홈쇼핑</li>									
+									
+										<li class="swiper-slide tab ">현대면세점</li>									
+																		
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--// tab -->
+
+					<!-- 탭별 카드 슬라이드 영역 -->
+					<div class="wrap_issue_slide">
+						<div class="swiper-container tabConSwiperPC">							
+							
+							<ul class="swiper-wrapper">
+																	
+									<!------ set ------>
+									<li class="swiper-slide tab_con_slide active">
+										<!-- 내부 카드 슬라이드 -->
+										<div class="swiper-container cardSwiper">
+											<ul class="swiper-wrapper">
+												
+													<li class="swiper-slide">
+														<a href="https://www.eqlstore.com/event/singleEvent/EV202211290004017/2022/box/luckyDraw_2211?utm_source=app&utm_medium=hpoint&utm_campaign=hotissue1202" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'77 LUCKY DRAW');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1014/20221130101409726.png"
+																alt="77 LUCKY DRAW">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://www.eqlstore.com/special/8297/view?utm_source=app&utm_medium=hpoint&utm_campaign=hotissue1201" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'CYBER MONDAY WEEK');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1012/20221130101248858.png"
+																alt="CYBER MONDAY WEEK">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://www.eqlstore.com/event/EV202107210001615/view?utm_source=app&utm_medium=hpoint&utm_campaign=hotissue1203" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'EQL BENEFIT GUIDE');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1017/20221130101753844.png"
+																alt="EQL BENEFIT GUIDE">
+														</a>
+													</li>																									
+																								
+											</ul>
+										</div>
+										<!--// 내부 카드 슬라이드 -->
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide tab_con_slide active">
+										<!-- 내부 카드 슬라이드 -->
+										<div class="swiper-container cardSwiper">
+											<ul class="swiper-wrapper">
+												
+													<li class="swiper-slide">
+														<a href="https://m.thehyundai.com/front/dpa/searchSpexSectItem.thd?sectId=202690" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'프리미엄 배송 서비스 오픈');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1122/1219/20221122121909394.png"
+																alt="프리미엄 배송 서비스 오픈">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://m.thehyundai.com/front/dpa/searchSpexSectItem.thd?sectId=197897" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'궁금한 쇼룸 상품');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1122/1344/20221122134413555.png"
+																alt="궁금한 쇼룸 상품">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://m.thehyundai.com/front/dpa/searchSpexSectItem.thd?sectId=201235" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'더현대닷컴 Culture H');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1122/1344/20221122134446783.png"
+																alt="더현대닷컴 Culture H">
+														</a>
+													</li>																									
+																								
+											</ul>
+										</div>
+										<!--// 내부 카드 슬라이드 -->
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide tab_con_slide active">
+										<!-- 내부 카드 슬라이드 -->
+										<div class="swiper-container cardSwiper">
+											<ul class="swiper-wrapper">
+												
+													<li class="swiper-slide">
+														<a href="https://www.greating.co.kr/display/displayDetail?dpDisplayId=21785&companyType=G&utm_source=hpoint&utm_medium=app&utm_campaign=202211_hpoint&utm_content=202211_kimchi_Hissue" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'[그리팅] 김장김치 집밥백서');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1125/1334/20221125133441566.png"
+																alt="[그리팅] 김장김치 집밥백서">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://www.greating.co.kr/display/displayDetail?dpDisplayId=21987&utm_source=hpoint&utm_medium=app&utm_campaign=202212_hpoint&utm_content=202212_redhyang_Hissue" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'[그리팅] 충주 유기농 레드향');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1740/20221130174051152.png"
+																alt="[그리팅] 충주 유기농 레드향">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://www.greating.co.kr/event/eventReview?evEventId=9498&utm_source=hpoint&utm_medium=app&utm_campaign=202212_hpoint&utm_content=202212_990_Hissue#page1" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'[그리팅] 12월 990원');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1739/20221130173935005.png"
+																alt="[그리팅] 12월 990원">
+														</a>
+													</li>																									
+																								
+											</ul>
+										</div>
+										<!--// 내부 카드 슬라이드 -->
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide tab_con_slide active">
+										<!-- 내부 카드 슬라이드 -->
+										<div class="swiper-container cardSwiper">
+											<ul class="swiper-wrapper">
+												
+													<li class="swiper-slide">
+														<a href="http://www.ehyundai.com/mobile/event/EV/detail.do?eventNo=25397&eventCd=B0349900" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'현대백화점 리사이클 캠페인');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1123/0936/20221123093646024.png"
+																alt="현대백화점 리사이클 캠페인">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="hpoint://evntPtc?eventId=153004" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'카페H 이달의 음료');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1123/1227/20221123122736800.png"
+																alt="카페H 이달의 음료">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="hpoint://evntPtc?eventId=154104" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'[현대백화점] Edit.GOLF Vol.2');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1344/20221130134441167.png"
+																alt="[현대백화점] Edit.GOLF Vol.2">
+														</a>
+													</li>																									
+																								
+											</ul>
+										</div>
+										<!--// 내부 카드 슬라이드 -->
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide tab_con_slide active">
+										<!-- 내부 카드 슬라이드 -->
+										<div class="swiper-container cardSwiper">
+											<ul class="swiper-wrapper">
+												
+													<li class="swiper-slide">
+														<a href="https://tohome.thehyundai.com/front/goToHome.do?tc=204_0000000018_0000374214" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'현대식품관 투홈_H.Point Pay Day');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1128/1018/20221128101810854.PNG"
+																alt="현대식품관 투홈_H.Point Pay Day">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://tohome.thehyundai.com/front/goToHome.do?tc=204_0000000018_0000375005" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'현대식품관 투홈_12월 신규혜택');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/0930/1554/20220930155441235.png"
+																alt="현대식품관 투홈_12월 신규혜택">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://tohome.thehyundai.com/front/goToHome.do?tc=204_0000000018_0000375006" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'현대식품관 투홈_출석룰렛');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/0930/1558/20220930155810902.png"
+																alt="현대식품관 투홈_출석룰렛">
+														</a>
+													</li>																									
+																								
+											</ul>
+										</div>
+										<!--// 내부 카드 슬라이드 -->
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide tab_con_slide active">
+										<!-- 내부 카드 슬라이드 -->
+										<div class="swiper-container cardSwiper">
+											<ul class="swiper-wrapper">
+												
+													<li class="swiper-slide">
+														<a href="https://www.hmall.com/m/dpa/searchSpexSectItem.do?PlanSaleSectID=2718492&eventCode=HHS37" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'현대홈쇼핑 현대카드 혜택');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/0831/1449/20220831144925067.png"
+																alt="현대홈쇼핑 현대카드 혜택">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="http://www.hmall.com/m/dpk/plPlanSaleL.do?PlanSaleSectID=2824822&pReferCode=042" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'[쇼핑라이브] 하트 인증 이벤트 ★');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1129/1326/20221129132643946.png"
+																alt="[쇼핑라이브] 하트 인증 이벤트 ★">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://www.hmall.com/m/dpa/searchSpexSectItem.do?PlanSaleSectID=2811083&pReferCode=042" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'[현대Hmall] 상생상점 with 소상공인');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/0920/1325/20220920132502152.png"
+																alt="[현대Hmall] 상생상점 with 소상공인">
+														</a>
+													</li>																									
+																								
+											</ul>
+										</div>
+										<!--// 내부 카드 슬라이드 -->
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide tab_con_slide active">
+										<!-- 내부 카드 슬라이드 -->
+										<div class="swiper-container cardSwiper">
+											<ul class="swiper-wrapper">
+												
+													<li class="swiper-slide">
+														<a href="https://m.hddfs.com/event/op/evnt/evntDetail.do?evntId=0003752" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'에어프레미아 항공권 할인');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1104/0859/20221104085916734.png"
+																alt="에어프레미아 항공권 할인">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://m.hddfs.com/event/op/evnt/evntDetail.do?evntId=0003753" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'골프 라운지 음료 할인권');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1104/0901/20221104090149588.png"
+																alt="골프 라운지 음료 할인권">
+														</a>
+													</li>																									
+												
+													<li class="swiper-slide">
+														<a href="https://m.hddfs.com/event/op/evnt/evntDetail.do?evntId=0003751" target="_blank" onclick="GA_Event('메인', '제휴사핫이슈컨텐츠', '제휴사핫이슈_'+'트리플 5% 숙박 할인 혜택');">
+															<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1104/0900/20221104090030476.png"
+																alt="트리플 5% 숙박 할인 혜택">
+														</a>
+													</li>																									
+																								
+											</ul>
+										</div>
+										<!--// 내부 카드 슬라이드 -->
+									</li>
+									<!------// set ------>
+									
+							</ul>
+						</div>
+						<!-- 화살표 버튼 -->
+						<div class="slide_navi mo_none">
+							<div class="swiper-button-prev type2"></div>
+							<div class="swiper-button-next type2"></div>
+						</div>
+					</div>
+					<!--// 탭별 카드 슬라이드 영역 -->
+				</div>
+				<!------// PC, Tablet ------>
+
+
+				<!------ Mobile ------>
+				<div class="v_mo mo_only">
+					<!-- tab -->
+					<div class="slide_tab_align">
+						<div class="main_slide_tabmenu">
+							<div class="swiper-container issueTabSwiperMO">
+								<ul class="swiper-wrapper">
+									
+										<li class="swiper-slide tab active">EQL</li>									
+									
+										<li class="swiper-slide tab ">더현대닷컴</li>									
+									
+										<li class="swiper-slide tab ">그리팅몰</li>									
+									
+										<li class="swiper-slide tab ">현대백화점</li>									
+									
+										<li class="swiper-slide tab ">현대식품관</li>									
+									
+										<li class="swiper-slide tab ">현대홈쇼핑</li>									
+									
+										<li class="swiper-slide tab ">현대면세점</li>									
+																		
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--// tab -->
+
+					<!-- 탭별 카드 슬라이드 영역 -->
+					<div class="wrap_issue_slide">
+						<div class="swiper-container tabConSwiperMO">
+							<ul class="swiper-wrapper">
+																	
+									<!------ set ------>
+									<li class="swiper-slide active">								
+																											
+											<a href="https://www.eqlstore.com/event/singleEvent/EV202211290004017/2022/box/luckyDraw_2211?utm_source=app&utm_medium=hpoint&utm_campaign=hotissue1202" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1014/20221130101409726.png" alt="77 LUCKY DRAW">												
+											</a>												
+																											
+											<a href="https://www.eqlstore.com/special/8297/view?utm_source=app&utm_medium=hpoint&utm_campaign=hotissue1201" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1012/20221130101248858.png" alt="CYBER MONDAY WEEK">												
+											</a>												
+																											
+											<a href="https://www.eqlstore.com/event/EV202107210001615/view?utm_source=app&utm_medium=hpoint&utm_campaign=hotissue1203" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1017/20221130101753844.png" alt="EQL BENEFIT GUIDE">												
+											</a>												
+																														
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide active">								
+																											
+											<a href="https://m.thehyundai.com/front/dpa/searchSpexSectItem.thd?sectId=202690" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1122/1219/20221122121909394.png" alt="프리미엄 배송 서비스 오픈">												
+											</a>												
+																											
+											<a href="https://m.thehyundai.com/front/dpa/searchSpexSectItem.thd?sectId=197897" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1122/1344/20221122134413555.png" alt="궁금한 쇼룸 상품">												
+											</a>												
+																											
+											<a href="https://m.thehyundai.com/front/dpa/searchSpexSectItem.thd?sectId=201235" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1122/1344/20221122134446783.png" alt="더현대닷컴 Culture H">												
+											</a>												
+																														
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide active">								
+																											
+											<a href="https://www.greating.co.kr/display/displayDetail?dpDisplayId=21785&companyType=G&utm_source=hpoint&utm_medium=app&utm_campaign=202211_hpoint&utm_content=202211_kimchi_Hissue" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1125/1334/20221125133441566.png" alt="[그리팅] 김장김치 집밥백서">												
+											</a>												
+																											
+											<a href="https://www.greating.co.kr/display/displayDetail?dpDisplayId=21987&utm_source=hpoint&utm_medium=app&utm_campaign=202212_hpoint&utm_content=202212_redhyang_Hissue" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1740/20221130174051152.png" alt="[그리팅] 충주 유기농 레드향">												
+											</a>												
+																											
+											<a href="https://www.greating.co.kr/event/eventReview?evEventId=9498&utm_source=hpoint&utm_medium=app&utm_campaign=202212_hpoint&utm_content=202212_990_Hissue#page1" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1739/20221130173935005.png" alt="[그리팅] 12월 990원">												
+											</a>												
+																														
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide active">								
+																											
+											<a href="http://www.ehyundai.com/mobile/event/EV/detail.do?eventNo=25397&eventCd=B0349900" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1123/0936/20221123093646024.png" alt="현대백화점 리사이클 캠페인">												
+											</a>												
+																											
+											<a href="hpoint://evntPtc?eventId=153004" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1123/1227/20221123122736800.png" alt="카페H 이달의 음료">												
+											</a>												
+																											
+											<a href="hpoint://evntPtc?eventId=154104" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1130/1344/20221130134441167.png" alt="[현대백화점] Edit.GOLF Vol.2">												
+											</a>												
+																														
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide active">								
+																											
+											<a href="https://tohome.thehyundai.com/front/goToHome.do?tc=204_0000000018_0000374214" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1128/1018/20221128101810854.PNG" alt="현대식품관 투홈_H.Point Pay Day">												
+											</a>												
+																											
+											<a href="https://tohome.thehyundai.com/front/goToHome.do?tc=204_0000000018_0000375005" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/0930/1554/20220930155441235.png" alt="현대식품관 투홈_12월 신규혜택">												
+											</a>												
+																											
+											<a href="https://tohome.thehyundai.com/front/goToHome.do?tc=204_0000000018_0000375006" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/0930/1558/20220930155810902.png" alt="현대식품관 투홈_출석룰렛">												
+											</a>												
+																														
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide active">								
+																											
+											<a href="https://www.hmall.com/m/dpa/searchSpexSectItem.do?PlanSaleSectID=2718492&eventCode=HHS37" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/0831/1449/20220831144925067.png" alt="현대홈쇼핑 현대카드 혜택">												
+											</a>												
+																											
+											<a href="http://www.hmall.com/m/dpk/plPlanSaleL.do?PlanSaleSectID=2824822&pReferCode=042" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1129/1326/20221129132643946.png" alt="[쇼핑라이브] 하트 인증 이벤트 ★">												
+											</a>												
+																											
+											<a href="https://www.hmall.com/m/dpa/searchSpexSectItem.do?PlanSaleSectID=2811083&pReferCode=042" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/0920/1325/20220920132502152.png" alt="[현대Hmall] 상생상점 with 소상공인">												
+											</a>												
+																														
+									</li>
+									<!------// set ------>
+																	
+									<!------ set ------>
+									<li class="swiper-slide active">								
+																											
+											<a href="https://m.hddfs.com/event/op/evnt/evntDetail.do?evntId=0003752" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1104/0859/20221104085916734.png" alt="에어프레미아 항공권 할인">												
+											</a>												
+																											
+											<a href="https://m.hddfs.com/event/op/evnt/evntDetail.do?evntId=0003753" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1104/0901/20221104090149588.png" alt="골프 라운지 음료 할인권">												
+											</a>												
+																											
+											<a href="https://m.hddfs.com/event/op/evnt/evntDetail.do?evntId=0003751" target="_blank">
+												<img class="img" src="https://www.h-point.co.kr:443/images_share/mb/mb0037/2022/1104/0900/20221104090030476.png" alt="트리플 5% 숙박 할인 혜택">												
+											</a>												
+																														
+									</li>
+									<!------// set ------>
+									
+								
+								
+							</ul>
+						</div>
+					</div>
+					<!--// 탭별 카드 슬라이드 영역 -->
+				</div>
+				<!------ Mobile ------>
+
+			</div>
+		</section>
+		<!---------------// 핫이슈 --------------->
+
+
+		<!--------------- 배너 --------------->
+		<section class="sect_banner">
+				
+			
+			
+			
+			
+				
+					
+				
+				
+					
+				
+				
+					
+				
+			
+			
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+					
+						<li class="swiper-slide">
+							<a href='https://www.h-point.co.kr/benefit/clubFriend.nhd' target='_blank' onclick="GA_Event('메인', '서브배너', '서브배너_'+'오픈_메인중간베너');">
+								
+									<div class="pc_bnr mo_none">
+										<img class="ratio" src="/assets/app/img/main/ratio_bnr.gif">
+										<span class="img" style="background-image: url('/cma/image/1000468687.nhd');"></span>
+									</div>
+								
+								
+									<img class="mo_bnr mo_only" src="/cma/image/1000574858.nhd" alt="">
+								
+							</a>
+						</li>
+					
+					
+						<li class="swiper-slide">
+							<a href='https://www.h-point.co.kr/cu/bnft/evntDtl.nhd?evntId=105106' target='_blank' onclick="GA_Event('메인', '서브배너', '서브배너_'+'오픈_메인중간베너');">
+								
+									<div class="pc_bnr mo_none">
+										<img class="ratio" src="/assets/app/img/main/ratio_bnr.gif">
+										<span class="img" style="background-image: url('/cma/image/1000574837.nhd');"></span>
+									</div>
+								
+								
+									<img class="mo_bnr mo_only" src="/cma/image/1000574857.nhd" alt="">
+								
+							</a>
+						</li>
+					
+					
+						<li class="swiper-slide">
+							<a href='https://www.h-point.co.kr/introduce/benefit.nhd' target='_blank' onclick="GA_Event('메인', '서브배너', '서브배너_'+'오픈_메인중간베너');">
+								
+									<div class="pc_bnr mo_none">
+										<img class="ratio" src="/assets/app/img/main/ratio_bnr.gif">
+										<span class="img" style="background-image: url('/cma/image/1000468689.nhd');"></span>
+									</div>
+								
+								
+									<img class="mo_bnr mo_only" src="/cma/image/1000468692.nhd" alt="">
+								
+							</a>
+						</li>
+					
+					
+				</ul>
+			</div>
+			<div class="swiper-pagination type3"></div>							
+			
+		</section>
+		<!---------------// 배너 --------------->
+
+
+		<!--------------- 포인트 쌓기 --------------->
+		<section class="sect_collect">
+			<div class="layout1">
+				<div class="sect_tit_area">
+					<h2 class="sect_tit">포인트 쌓기</h2>
+					<p class="sect_desc">즐거움이 매일매일 쌓이는 포인트 플레이</p>
+				</div>
+			</div>
+
+			<!-- slide -->
+			<div class="wrap_collect_slide">
+				<div class="swiper-container collectSwiper">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="/stack/joy.nhd" onclick="GA_Event('메인', '포인트쌓기', '출첵룰렛');">
+								<img class="img mo_none" src="/assets/app/img/main/img_sect_collect1.png" alt="">
+								<img class="img mo_only" src="/assets/app/img/main/mo/img_sect_collect1.png" alt="">
+								<div class="wrap_txt">
+									<p class="tit">출첵룰렛</p>
+									<p class="desc">매일 돌리면 포인트와 알파벳이 쏟아져요</p>
+								</div>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="/stack/joy.nhd" onclick="GA_Event('메인', '포인트쌓기', '알파벳');">
+								<img class="img mo_none" src="/assets/app/img/main/img_sect_collect2.png" alt="">
+								<img class="img mo_only" src="/assets/app/img/main/mo/img_sect_collect2.png" alt="">
+								<div class="wrap_txt">
+									<p class="tit">알파벳</p>
+									<p class="desc">조합하고 완성하는 재미</p>
+								</div>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="/stack/joy.nhd" onclick="GA_Event('메인', '포인트쌓기', '포인트워크');">
+								<img class="img mo_none" src="/assets/app/img/main/img_sect_collect3.png" alt="">
+								<img class="img mo_only" src="/assets/app/img/main/mo/img_sect_collect3.png" alt="">
+								<div class="wrap_txt">
+									<p class="tit">포인트워크</p>
+									<p class="desc">귀여운 강아지와 함께 일일 걷기 미션</p>
+								</div>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="/stack/joy.nhd" onclick="GA_Event('메인', '포인트쌓기', '오늘의퀴즈');">
+								<img class="img mo_none" src="/assets/app/img/main/img_sect_collect4.png" alt="">
+								<img class="img mo_only" src="/assets/app/img/main/mo/img_sect_collect4.png" alt="">
+								<div class="wrap_txt">
+									<p class="tit">오늘의퀴즈</p>
+									<p class="desc">간단한 퀴즈풀고 포인트 받자!</p>
+								</div>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="/stack/joy.nhd" onclick="GA_Event('메인', '포인트쌓기', 'H.설문');">
+								<img class="img mo_none" src="/assets/app/img/main/img_sect_collect5.png" alt="">
+								<img class="img mo_only" src="/assets/app/img/main/mo/img_sect_collect5.png" alt="">
+								<div class="wrap_txt">
+									<p class="tit">H.설문</p>
+									<p class="desc">간단한 설문에 혜택이 팡팡!</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 화살표 버튼 -->
+				<div class="slide_navi">
+					<div class="swiper-button-prev type2"></div>
+					<div class="swiper-button-next type2"></div>
+				</div>
+			</div>
+			<!--// slide -->
+		</section>
+		<!---------------// 포인트 쌓기 --------------->
+
+
+		<!--------------- 포인트 쓰기 --------------->
+		<section class="sect_use">
+			<div class="layout1">
+				<div class="sect_tit_area">
+					<h2 class="sect_tit">포인트 쓰기</h2>
+					<p class="sect_desc">의미있게 사용하는 가치있는 소비생활</p>
+				</div>
+
+				<div class="wrap_use_slide">
+					<div class="swiper-container useSwiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="/friend/point.nhd" onclick="GA_Event('메인', '포인트쓰기', '포인트샵');">
+									<div class="thumbnail">
+										<img class="img" src="/assets/app/img/main/img_sect_use1.jpg" alt="">
+									</div>
+									<div class="wrap_txt">
+										<p class="tit">포인트샵</p>
+										<p class="desc">H.Point로 하는 즐거운 소비생활</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="/friend/donate.nhd" onclick="GA_Event('메인', '포인트쓰기', '포인트기부');">
+									<div class="thumbnail">
+										<img class="img" src="/assets/app/img/main/img_sect_use2.jpg" alt="">
+									</div>
+									<div class="wrap_txt">
+										<p class="tit">포인트기부</p>
+										<p class="desc">기부하는 당신이 세상의 영웅 </p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="/friend/gift.nhd" onclick="GA_Event('메인', '포인트쓰기', '포인트선물');">
+									<div class="thumbnail">
+										<img class="img" src="/assets/app/img/main/img_sect_use3.jpg" alt="">
+									</div>
+									<div class="wrap_txt">
+										<p class="tit">포인트선물</p>
+										<p class="desc">친구끼리 포인트 선물 어때요?</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 모바일용 -->
+					<div class="wrap_swiper_tools mo_only">
+						<div class="swiper-tools">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-count">
+								<span class="active_num"></span>
+								<span>-</span>
+								<span class="all_num"></span>
+							</div>
+							<button type="button" class="btn-swiper-play paused"><span>재생/정지</span></button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!---------------// 포인트 쓰기 --------------->
+	</div>
+</div>
+
+<!-- 팝업 : ie9이하 안내 팝업 -->
+<div class="popup_ui type_modal pop_browser_update" style="display: none;">
+    <div class="dim_full"></div>
+    <div class="pop_container">
+        <div class="pop_layer">
+            <div class="pop_tit2">H.Point 브라우저 업데이트 안내</div>
+            <div class="pop_body">
+                <p class="txt1">현재 H.Point 홈페이지는 <span class="under">인터넷 익스플로러 9버전 이상에 최적화</span> 되어있습니다.<br>익스플로러 9이하 버전의 사용자께서는 아래 방법으로 호환성보기 설정을 추가하여 사용하거나 새로운 버전으로 업그레이드 해주세요.</p>
+									
+                <p class="tit1">호환성보기 설정</p>
+                <p class="txt1">인터넷 익스플로러 [도구] 메뉴의 호환성보기 설정에서 [이 웹사이트 추가]에서<br>http://을 추가하여 서비스 이용</p>
+                <img class="ex_img" src="/assets/app/img/main/img_ie9_pop.jpg" alt="">
+                <p class="cmt_guide1 mark1">호환성보기 설정 후에도 정상 작동을 하지 않거나 익스플로러 버전 다운이 어려울 경우에는 <br>크롬 브라우저 사용을 부탁드립니다.</p>
+
+                <p class="tit1">브라우저 다운로드</p>
+                <div class="wrap_btn clear">
+                    <a href="https://support.microsoft.com/ko-kr/help/17621/internet-explorer-downloads" class="btn_down ie" target="_blank"><span>익스플로러</span></a>
+                    <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank" class="btn_down chrome"><span>구글 크롬</span></a>
+                </div>
+                
+            </div>
+            <button class="btn_pop_close" type="button" id="notTodaybrowserPop"><span class="hidden">레이어 닫기</span></button>
+        </div>
+    </div>
+</div>
+<!--// 팝업 : ie9이하 안내 팝업 -->
+
+
+<!-- 팝업 : H매거진 동영상 팝업 -->
+<div class="popup_ui type_modal pop_video" style="display: none;">
+    <div class="dim_full"></div>
+    <div class="pop_container">
+        <div class="pop_layer">
+            <div class="pop_tit" id="title"></div>
+            <div class="pop_body">
+                
+                <!-- 영상 -->
+                <div class="video_container" id="videoContainer">
+                    <!-- <iframe id="youtube_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+					<!-- <iframe id="videoUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                </div>
+                <!--// -->
+                
+            </div>
+            <button class="btn_pop_close" type="button" onclick="closeVideo(this);"><span class="hidden">레이어 닫기</span></button>
+        </div>
+    </div>
+</div>
+<!-- // 팝업 : H매거진 동영상 팝업 -->
+
+<script>
+	page.main.onLoad();
+	page.main.onScroll(); // 211103 퍼블수정 메인 onScroll 추가
+	$("#wrapper").addClass("mainWrapper");
+	$('#notTodaybrowserPop').on('click', function(){								
+		setCookie("browserUpdate", "IE9", 1);			
+		commonPub.layerPopClose($(".pop_browser_update"));
+	})
+
+	// 211103 퍼블수정 메인 onScroll 추가
+	$(function(){
+		setTimeout(function(){
+			$(window).on('scroll', function(){
+				page.main.onScroll();
+			})
+
+		}, 350);
+	})
+
+</script>
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/icon/brand_img55.gif" alt="현대백화점 면세점"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대백화점면세점</p>
+				<p class="per">결제금액의 0.2% 적립</p>
+				<p class="btns">
+					<a href="https://www.hddfs.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=쇼핑&_n_m3=[]현대백화점면세점&_n_m4=clickevent&_n_m5=현대백화점면세점');"">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li> 
+				<p class="tit">&middot; 적립</p>
+				- 결제금액의 0.2% 적립(인터넷면세점/오프라인 매장 동일)<br />
+				&nbsp;&nbsp;&nbsp;※ 2021년 11월 2일 부, 한국 국적의 회원만 면세점 결제금액 대상 적립 가능<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(외국 국적 또는 교포 회원 제외)<br>
+				<font style ="font-weight:bold;">- 적립시기 : 온라인(인도일 기준 2일뒤 적립)/오프라인(구매즉시)</font><br />
+				- 적립제외 : 일부 브랜드, 임대매장 제외
+			</li>
+			<li>
+				<p class="tit">&middot; 사용</p>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<font style ="font-weight:bold;">- 인터넷면세점 : 100P 이상 보유시, 1P 단위로 사용 가능</font><br />
+				<font style ="font-weight:bold;">- 오프라인매장 : 100P 이상 보유시, 10P 단위로 사용 가능</font>
+			</li>
+		</ul>
+		<a href="javascript:" class="close popupClose"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/thehyundai.png" alt="더 현대"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대백화점</p> <!-- [18.03.02][서한울][추가]:웹접근성 대응(0-9), 브랜드팝업 -->
+				<p class="per">결제금액의 0.2%/0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.ehyundai.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=쇼핑&_n_m3=[]현대백화점&_n_m4=clickevent&_n_m5=현대백화점');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 2020년 현대백화점 우대적립 안내</p>
+				- 0.2% : 현대백화점카드로 구매 시<br />
+				- 0.1% : 그 외 시재로 구매 시(타사카드, 현금, 상품권 등)<br />
+				※ 우대적립 제외 : 명품, 준보석, SPA, 가전, 식품 등(0.1% 적립)<br />
+				- 적립제외 : 일부매장(수선실, 영화관, 스포츠센터, 안경점, 임대매장 등)<br />
+				문화센터 여행강좌 및 재료비, e슈퍼, 결제금액 일부 해사상품 및 수선비용<br />
+				- 적용기간 : 2020년 2월 1일 부<br />
+				※ 문화센터 적립안내<br />
+				- 문화센터 영수증은 H.Point APP 에서 사후적립이 되지않으며, 현대백화점카드 결제시 우대적립과 무관하게 0.1% 적립됩니다.<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<br />
+			
+			</li>
+			<li>
+				<p class="tit">&middot; 현대백화점 카드로 구매시 <a href="javascript:alert('H.Point 회원대상 서비스 입니다.');" onclick=" style="font-weight:bold; color:#0089CF">H.Point 자동적립 서비스 신청하기</a></p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 2 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundaioutlet.png" alt="현대아울렛"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대아울렛</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.ehyundai.com/newPortal/outlet/main.do" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=쇼핑&_n_m3=[]현대아울렛&_n_m4=clickevent&_n_m5=현대아울렛');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+
+				<p class="tit">&middot; 현대아울렛</p>
+				- 현대프리미엄아울렛(김포점/송도점)<br />
+				- 현대시티아울렛(가산점/동대문점/가든파이브점/대구점)<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 적립제외 : 임대매장(세차장, 수선실, 키즈카페, 여행사, 롯데시네마, F&B일부, 교보문고, 아웃백, CU 편의점 등)<br />
+				- 아울렛 內 고객 안내 데스크에서 사후 적립 가능(구매일로부터 7일 內)
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<br />
+	
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 5 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/thehyundaicom.png" alt="더현대닷컴"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>더현대닷컴</p>
+				<p class="per">결제금액의 0.2% 적립</p>
+				<p class="btns">
+					<a href="https://www.thehyundai.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=쇼핑&_n_m3=[]더현대닷컴&_n_m4=clickevent&_n_m5=더현대닷컴');">홈페이지</a>
+					<!-- 개발임시  -->
+					<!-- <a href="http://hdmalldev.thehyundai.com/Home.html" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=쇼핑&_n_m3=[]더현대닷컴&_n_m4=clickevent&_n_m5=더현대닷컴');">홈페이지</a> -->
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.2% 적립</p>
+				- 적립제외 : 렌탈, 준보석, 상품권, 기프티콘, 가전/가구 등<br />
+				- 일부 상품군 차등 적립 적용<br />
+				- 출고일로부터 7일 후 포인트 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 6 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundaihomeshopping.png" alt="현대홈쇼핑"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대홈쇼핑</p>
+				<p class="per">결제금액의 0.3% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundaihmall.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=쇼핑&_n_m3=[]현대홈쇼핑&_n_m4=clickevent&_n_m5=현대홈쇼핑');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.3% 적립</p>
+				- 적립제외 : 휴대폰, 여행, 렌탈, 보험, 금, 상품권, 가전 등<br />
+				- 일부 상품군 차등 적립 적용<br />
+				- 출고일로부터 7일 후 포인트 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 7 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hmall.png" alt="현대Hmall"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대Hmall</p>
+				<p class="per">결제금액의 0.1% 적립</p><!-- [18.04.23][wool][수정]:0.15 → 0.1 -->
+				<p class="btns">
+					<a href="https://www.hyundaihmall.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=쇼핑&_n_m3=[]현대Hmall&_n_m4=clickevent&_n_m5=현대Hmall');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li><!-- [18.04.23][wool][수정]:문구수정 -->
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 4/30(월)부 적립률 변경<br />
+				* 0.08~0.15%(변경 전) → 0.1%(변경 후)<br />
+				- 적립제외 : 휴대폰, 여행, 렌탈, 보험, 상품권 등<br />
+				- 출고일로부터 7일 후 포인트 적립<br />
+				- 특정 프로모션은 고객이 포인트 받기 처리 후 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundaiweekmall.png" alt="현대위크몰"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대위크몰</p>
+				<p class="per"> </p>
+			<!-- 	<p class="btns">
+					[18.07.12][wool][수정]:위크몰 url 수정
+					<a href="http://www.hweekmall.com" target="_blank">홈페이지</a>
+					<a href="http://mgift.e-hyundai.com/hphweekmall.html " target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=쇼핑&_n_m3=[]현대위크몰&_n_m4=clickevent&_n_m5=현대위크몰');">홈페이지</a>
+				</p> -->
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- [20.07.16][1906202][추가]:현대식품관 투홈  -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/tohome.png" alt="현대식품관 투홈"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대식품관 투홈</p>
+				<p class="per">구매 시 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://pctohome.thehyundai.com/" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]현대식품관 투홈&_n_m4=clickevent&_n_m5=현대식품관 투홈');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 구매 시 0.1% 적립</p>
+				- 상품 구매 후 상품 텍스트 리뷰 작성시 50P,<br />
+				&nbsp;&nbsp;포토 리뷰 작성 시 150P 적립<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- [18.06.28][wool][추가]:e수퍼마켓 추가 -->
+<!-- 브랜드 팝업 54 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundaiesuper.png" alt="e슈퍼마켓"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>e슈퍼마켓</p>
+				<p class="per">기본 적립 없음(이벤트성 한시적 적립)</p>
+				<p class="btns">
+					<a href="https://esuper.ehyundai.com/esuper/main.do" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]e슈퍼마켓&_n_m4=clickevent&_n_m5=e슈퍼마켓');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 기본 적립 없음(이벤트성 한시적 적립)</p>
+				- 상품 구매 후 상품 리뷰 작성시 10P 적립<br />
+				- 5만원 이상 정기구매 10회 진행시 2,500P 적립<br />
+				(*배송비 제외한 실제 구매가 기준 / 40개월 도래시 누적 회수 순차적 소멸)<br />
+				- 매월 25일 이후 순차적 포인트 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+				<!-- [20.02.07][pms][수정]: 포인트  문구 수정  -->
+				<br />
+			
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+
+<!-- 브랜드 팝업 12 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/greatingmall.png" alt="그리팅몰"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>그리팅몰</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.greating.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]그리팅몰&_n_m4=clickevent&_n_m5=그리팅몰');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 구매 등급별 차등 적립 (0.1~0.5%)</p>
+				- 그리팅몰 자체 포인트(Spoon) 5,000 P 적립 시, 100P 단위로 H.point로 전환하여 사용 가능
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+<!-- // brandPop -->
+
+
+
+<div class="brandPop popupLayer" style="display:none">
+ <div class="container" style="top: 1289px;">
+  <div class="top">
+   <div class="logo">
+    <img src="https://www.h-point.co.kr/images_share/mb/mb0035/2021/0511/1017/210825_oera_logo3.png" alt="오에라">
+   </div>
+   <div class="txtArea">
+   <p class="name" tabindex="0">
+   한섬라이프앤 오에라
+   </p><p class="per">결제금액의 0.1% 적립
+   </p><p class="btns">
+   <a href="https://www.oera.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&amp;_n_m2=생활&amp;_n_m3=[]한섬라이프앤&amp;_n_m4=clickevent&amp;_n_m5=한섬라이프앤');">홈페이지</a>
+   </p></div>
+  </div>
+  <ul>
+   <li>
+   <p class="tit">· 적립 : 오에라 입점된 오프라인 매장 및 온라인 채널의 적립율 적용</p>- 적립일은 입접
+   온라인몰의 적립일 기준 적용 (더한섬닷컴, H몰, 더현대닷컴 각각 상이)
+   </li>
+   <li>
+   <p class="tit">· 사용 : 입점된 오프라인 매장 및 온라인 채널의 사용 시 최소 포인트 기준 적용</p>
+   (현대백화점 및 온라인 채널 : 100P 이상 보유시 1P 단위 사용 가능, 그 외 오프라인 매장은 각 매장 기준 적용
+   </li>
+  </ul>
+  <a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기"></a>
+ </div>
+</div>
+
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundairental.png" alt="현대렌탈케어"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대렌탈케어</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundairentalcare.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]현대렌탈케어&_n_m4=clickevent&_n_m5=현대렌탈케어');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 적립제외 : 등록비, 설치비, 위약금<br />
+				- 결제일로부터 7일 후 포인트 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 10 -- hcn 히든 2021.07.06
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundaihcn.png" alt="현대HCN"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대HCN</p>
+				<p class="per">이용요금의 0.5% 적립</p>
+				<p class="btns">
+					<a href="https://www.hcn.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]현대HCN&_n_m4=clickevent&_n_m5=현대HCN');">홈페이지</a>
+				</p>
+			</div>
+		</div> 
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 이용요금의 0.5% 적립</p>
+				- 적립제외 : 위약금, 연체료, 법인고객, 단체요금, 보증금<br />
+				- 입금 완료 익일 포인트 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 500P 이상, 10P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+ -->
+
+<!-- 브랜드 팝업 11 리바트는 18년 참여예정 -->
+<!-- [18.10.24][hwseo][수정] 리바트 문구 수정  -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundailivart.png" alt="현대리바트"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대리바트</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundailivart.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]현대리바트&_n_m4=clickevent&_n_m5=현대리바트');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립(웨딩고객은 0.5% 적립)</p>
+				- 현대백화점, 현대아울렛 입점매장은 해당사 기준적립<br />
+				- 적립제외 : 주방제휴점, 주방대리점, 추가서비스 이용료(사다리차)
+			</li>
+			<li>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<p class="tit">&middot; 사용 : 100P 이상 보유시, 100P 단위로 사용 가능</p>
+			</li>
+			<!-- [19.01.11][hwseo][수정] : 리바트 오픈으로 문구 주석처리 -->
+			<!--
+					<li>
+						<p class="tit"><font style ="color:#fa4156">※ 리바트에서 H.Point 사용은 12월 中 가능</font></p>
+					</li>
+					 -->
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/livart.png" alt="리바트몰"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>리바트몰</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://mall.hyundailivart.co.kr/front/index_org.lv" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]리바트몰&_n_m4=clickevent&_n_m5=리바트몰');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li> 
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립(웨딩고객은 0.5% 적립)</p>
+				- 상품 출고 완료 10일 후 적립
+			</li>
+			<li>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<!-- [21.06.18][jms][수정]: 포인트 정책 변경, 기존 100p 단위 사용 가능을 1p 사용으로 변경 -->
+				<p class="tit">&middot; 사용 : 100P 이상 보유시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/williamssonoma.png" alt="윌리엄스 소노마"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>윌리엄스 소노마</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.williams-sonoma.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]윌리엄스 소노마&_n_m4=clickevent&_n_m5=윌리엄스 소노마');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립(웨딩고객은 0.5% 적립)</p>
+				- 상품 출고 완료 10일 후 적립
+			</li>
+			<li>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<p class="tit">&middot; 사용 : 100P 이상 보유시, 100P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/westelm.png" alt="웨스트엘름"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>웨스트엘름</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="http://www.westelm.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]웨스트엘름&_n_m4=clickevent&_n_m5=웨스트엘름');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립(웨딩고객은 0.5% 적립)</p>
+				- 상품 출고 완료 10일 후 적립
+			</li>
+			<li>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<p class="tit">&middot; 사용 : 100P 이상 보유시, 100P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/potterybarn.png" alt="포터리반"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>포터리반</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="http://www.potterybarn.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]포터리반&_n_m4=clickevent&_n_m5=포터리반');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립(웨딩고객은 0.5% 적립)</p>
+				- 상품 출고 완료 10일 후 적립
+			</li>
+			<li>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<p class="tit">&middot; 사용 : 100P 이상 보유시, 100P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/potterybarnkids.png" alt="포터리반 키즈"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>포터리반 키즈</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="http://www.potterybarnkids.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]포터리반 키즈&_n_m4=clickevent&_n_m5=포터리반 키즈');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립(웨딩고객은 0.5% 적립)</p>
+				- 상품 출고 완료 10일 후 적립
+			</li>
+			<li>
+				<!-- [20.01.14][jms][수정]: 포인트 정책 변경, 기존 1000p 이상 사용을 100p 사용으로 변경 -->
+				<p class="tit">&middot; 사용 : 100P 이상 보유시, 100P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+
+<!-- 브랜드 팝업 12 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/h24.png" alt="H24+"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>H24+</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundaigreenfood.com/brand/h24plus.html" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]H24+&_n_m4=clickevent&_n_m5=H24+');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 현대그린푸드 추가 적립 제외<br />
+				- 적립제외 : 교보문고 푸드코트 h’_Kitchen, 팔래스호텔 h'garden
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 13 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hmart.png" alt="H마트"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>H마트</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundaigreenfood.com/brand/hsupermarket.html" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]H마트&_n_m4=clickevent&_n_m5=H마트');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 현대그린푸드 추가 적립 제외<br />
+				- 적립제외 : 교보문고 푸드코트 h’_Kitchen, 팔래스호텔 h'garden
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 14 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/dailyn.png" alt="N마켓"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>N마켓</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundaigreenfood.com/brand/dailynmarket.html" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]N마켓&_n_m4=clickevent&_n_m5=N마켓');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 현대그린푸드 추가 적립 제외<br />
+				- 적립제외 : 교보문고 푸드코트 h’_Kitchen, 팔래스호텔 h'garden
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 15 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/vezzly.png" alt="베즐리"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>베즐리</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundaigreenfood.com/brand/vezzly.html" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]베즐리&_n_m4=clickevent&_n_m5=베즐리');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 현대그린푸드 추가 적립 제외<br />
+				- 적립제외 : 교보문고 푸드코트 h’_Kitchen, 팔래스호텔 h'garden
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 16 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hkitchen.png" alt="H키친"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>h’_Kitchen</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundaigreenfood.com/brand/hkitchenfoodcourt.html" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]H키친&_n_m4=clickevent&_n_m5=H키친');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 현대그린푸드 추가 적립 제외<br />
+				- 적립제외 : 교보문고 푸드코트 h’_Kitchen, 팔래스호텔 h'garden
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 18 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/joethejuice.png" alt="조앤더쥬스"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>조앤더쥬스</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.instagram.com/joeandthejuicekorea" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]조앤더쥬스&_n_m4=clickevent&_n_m5=조앤더쥬스');">홈페이지</a>
+					<!--
+							<a href="http://www.hyundaigreenfood.com" target="_blank">홈페이지</a>
+						-->
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 현대그린푸드 추가 적립 제외<br />
+				- 적립제외 : 교보문고 푸드코트 h’_Kitchen, 팔래스호텔 h'garden
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 19 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/eataly.png" alt="이탈리"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>이탈리</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.instagram.com/eatalykorea/" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]이탈리&_n_m4=clickevent&_n_m5=이탈리');">홈페이지</a>
+					<!--
+							<a href="http://www.hyundaigreenfood.com" target="_blank">홈페이지</a>
+						-->
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 현대그린푸드 추가 적립 제외<br />
+				- 적립제외 : 교보문고 푸드코트 h’_Kitchen, 팔래스호텔 h'garden
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 19-1 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/venchi.png" alt="벤키"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>venchi</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.instagram.com/venchi_korea/" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]venchi&_n_m4=clickevent&_n_m5=venchi');">홈페이지</a>
+					<!--
+							<a href="http://www.hyundaigreenfood.com" target="_blank">홈페이지</a>
+						-->
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 현대그린푸드 추가 적립 제외<br />
+				- 적립제외 : 교보문고 푸드코트 h’_Kitchen, 팔래스호텔 h'garden
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 20 -->
+<!-- [18/01/08] [서한울] [제휴사 문구 수정] -->
+<!-- [19/01/24] [서한울] [전환한도 문구 주석처리] -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundailoilbank.png" alt="현대오일뱅크"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대오일뱅크</p>
+				<p class="per">현대오일뱅크 포인트를 H.Point로 전환</p>
+				<p class="btns">
+					<a href="https://www.oilbankcard.com/" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]현대오일뱅크&_n_m4=clickevent&_n_m5=현대오일뱅크');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 1:1 비율로 교환 가능하며, 1,000P 단위로 월 최대 30,000P까지 교환 가능합니다.</p>
+				<!-- <p class="tit"><font style ="color:#fa4156">※ 전환한도 상향프로모션 : 기간중 100,000P까지 교환가능(18.12.26~19.1.23)</font></p> -->
+				<p class="tit">&middot; 자세한 내용은 H.Point APP 내 전환 메뉴에서 확인하실 수 있습니다.</p><br />
+				<!-- <a href="javascript:" class="mobile">포인트 전환하러 가기 &gt;</a> -->
+				<a>포인트 전환은 H.Point APP에서 가능합니다.</a>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 50 -->
+<!-- [18/01/08] [서한울] [제휴사 문구 수정] -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/livmate.png" alt="리브메이트"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>Liiv Mate</p>
+				<p class="per">포인트리를 H.Point로 전환</p>
+				<p class="btns">
+					<a href="https://www.liivmate.com/" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]Liiv Mate&_n_m4=clickevent&_n_m5=Liiv Mate');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 1:1비율로 교환 가능하며, 1P 단위로 월 최대 100,000P까지 교환 가능합니다.</p>
+				<p class="tit">&middot; 자세한 내용은 H.Point APP 내 전환 메뉴에서 확인하실 수 있습니다.</p><br />
+				<!-- <a href="javascript:" class="mobile">포인트 전환하러 가기 &gt;</a> -->
+				<a>포인트 전환은 H.Point APP에서 가능합니다.</a>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 21 -->
+<!-- [18/01/08] [서한울] [제휴사 문구 수정] -->
+<!-- [18.10.25][hwseo][수정] 하나멤버스 독소조항 추가  -->
+<!-- [19.01.24][hwseo][수정] 최대전환한도 관련 문구 수정  -->
+<!-- [19.09.06][hwseo][수정] 하나멤버스 독소조항 수정  -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hanamembers.png" alt="하나멤버스"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>하나멤버스</p>
+				<p class="per">하나머니를 H.Point로 전환</p>
+				<p class="btns">
+					<a href="https://www.hanamembership.com/mai/mAIM9100.do" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]하나멤버스&_n_m4=clickevent&_n_m5=하나멤버스');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 1:1비율로 교환 가능하며, 100P 단위로 최소 100P부터 300,000P까지 교환 가능합니다.</p>
+				<!-- <p class="tit"><font style ="color:#fa4156">※ 2019.1.1일부 최대전환한도 10만P로 변경됩니다.</font></p> -->
+				<p class="tit">&middot; 자세한 내용은 H.Point APP 내 전환 메뉴에서 확인하실 수 있습니다.</p><br />
+				<!-- <a href="javascript:" class="mobile">포인트 전환하러 가기 &gt;</a> -->
+				<!-- <a>포인트 전환은 H.Point APP에서 가능합니다.</a> -->
+				
+				<p class="tit"><font style ="color:#fa4156">※ 포인트전환액의 2% 하나머니로 재적립</font></p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 53 -->
+<!-- [18.05.29][min][추가]제휴, 신한FAN클럽 추가  -->
+<!-- [18.10.24][hwseo][수정] 신한 FAN 클럽 → 신한플러스  -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/shinhan.png" alt="신한플러스"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>신한플러스</p>
+				<p class="per">마이신한포인트를 H.Point로 전환</p>
+				<p class="btns">
+					<a href="https://www.shinhanlife.co.kr/pbe/m/PBEM101.jsp" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]신한플러스&_n_m4=clickevent&_n_m5=신한플러스');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 1:1비율로 교환 가능하며, 1P 단위로 월 최대 100,000P까지 교환 가능합니다.</p>
+				<p class="tit">&middot; 자세한 내용은 H.Point APP 내 전환 메뉴에서 확인하실 수 있습니다.</p><br />
+				<!-- <a href="javascript:" class="mobile">포인트 전환하러 가기 &gt;</a> -->
+				<a>포인트 전환은 H.Point APP에서 가능합니다.</a>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/payco.png" alt="페이코"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>페이코</p>
+				<p class="per">PAYCO 포인트를 H.Point로 전환</p>
+				<p class="btns">
+					<a href="https://www.payco.com/" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=생활&_n_m3=[]페이코&_n_m4=clickevent&_n_m5=페이코');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 1:1비율로 교환 가능하며, 1,000P부터 1P단위로 월 최대 100,000P까지 교환 가능합니다.</p>
+				<p class="tit">&middot; 자세한 내용은 H.Point APP 내 전환 메뉴에서 확인하실 수 있습니다.</p><br />
+				<!-- <a href="javascript:" class="mobile">포인트 전환하러 가기 &gt;</a> -->
+				<a>포인트 전환은 H.Point APP에서 가능합니다.</a>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 22 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/thehandsome.png" alt="더한섬닷컴"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>더한섬닷컴</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="http://www.thehandsome.com/ko" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]더한섬닷컴&_n_m4=clickevent&_n_m5=더한섬닷컴');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 적립제외 : 시즌오프 및 일부 할인 상품<br />
+				- 배송 확정일로부터 10일 이후 포인트 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/eqlmall.png" alt="EQL몰"></p>
+			</div>
+				<div class="txtArea">
+				<p class="name" tabindex=0>EQL몰</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="https://www.eqlstore.com" target="_blank"  onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]EQL몰&_n_m4=clickevent&_n_m5=EQL몰');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 배송 확정일로부터 7일 이후 포인트 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close popupClose"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+<!-- 17.12.13 서한울 추가 (H패션몰) -->
+<!-- 브랜드 팝업 51 -->
+<!-- 브랜드 팝업 22 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hfashionmall.png" alt="H패션몰"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>H FASHION MALL</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="https://m.hfashionmall.com/sfmmbl/mbl/main.do" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]H패션몰&_n_m4=clickevent&_n_m5=H패션몰');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 배송 확정일로부터 10일 이후 포인트 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 23 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/time.png" alt="타임"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>TIME</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<!-- 2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거) -->
+					<a href="http://www.thehandsome.com/ko/c/br01/br01?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]TIME&_n_m4=clickevent&_n_m5=TIME');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 24 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/mine.png" alt="마인"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>MINE</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<!-- 2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거) -->
+					<a href="http://www.thehandsome.com/ko/c/br02/br02?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]MINE&_n_m4=clickevent&_n_m5=MINE');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 랑방 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/lanvincollection.png" alt="랑방 컬렉션"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>LANVIN COLLECTION</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="http://www.thehandsome.com/ko/b/br19" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]LANVIN COLLECTION&_n_m4=clickevent&_n_m5=LANVIN COLLECTION');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 25 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/system.png" alt="시스템"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>SYSTEM</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<!-- 2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거) -->
+					<a href="http://www.thehandsome.com/ko/c/br03/br03?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]SYSTEM&_n_m4=clickevent&_n_m5=SYSTEM');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 26 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/sjsj.png" alt="SJ SJ"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>SJ SJ</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<!-- 2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거) -->
+					<a href="http://www.thehandsome.com/ko/c/br04/br04?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]SJ SJ&_n_m4=clickevent&_n_m5=SJ SJ');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 27 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/timehomme.png" alt="타임 옴므"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>TIME HOMME</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<!-- 2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거) -->
+					<a href="http://www.thehandsome.com/ko/c/br06/br06?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]TIME HOMME&_n_m4=clickevent&_n_m5=TIME HOMME');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 28 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/systemhomme.png" alt="시스템 옴므"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>SYSTEM HOMME</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<!-- 2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거) -->
+					<a href="http://www.thehandsome.com/ko/c/br07/br07?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]SYSTEM HOMME&_n_m4=clickevent&_n_m5=SYSTEM HOMME');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 29 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/thecashmere.png" alt="더 케시미어"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>the CASHMERE</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<!-- 2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거) -->
+					<a href="http://www.thehandsome.com/ko/c/br08/br08?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]the CASHMERE&_n_m4=clickevent&_n_m5=the CASHMERE');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 30 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/lattbyt.png" alt="래트바이티"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>LATT</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<!-- 2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거) -->
+					<a href="http://www.thehandsome.com/ko/c/br31/br31?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]LATT BY T&_n_m4=clickevent&_n_m5=LATT BY T');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 31 -->
+<!-- <div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/decke.png" alt="덱케"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>DECKE</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="https://www.hfashionmall.com/display/brand?brndCtgryNo=BDMA21A04" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]DECKE&_n_m4=clickevent&_n_m5=DECKE');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div> --><!-- // brandPop -->
+
+
+<!-- 브랜드 팝업 33 -->
+<!-- <div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/fourmstudio.png" alt="폼 스튜디오"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>FOURM STUDIO</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거)
+					<a href="http://www.thehandsome.com/ko/c/br30/br30?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]FOURM STUDIO&_n_m4=clickevent&_n_m5=FOURM STUDIO');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div> --><!-- // brandPop -->
+
+
+<!-- 브랜드 팝업 35 -->
+<!-- <div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/fourmthestore.png" alt="폼 더 스토어"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>FOURM THE STORE</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거)
+					<a href="http://www.thehandsome.com/ko/c/br35/br35?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]FOURM THE STORE&_n_m4=clickevent&_n_m5=FOURM THE STORE');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div> --><!-- // brandPop -->
+
+<!-- 브랜드 팝업 36 -->
+<!-- <div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/fourmmenslounge.png" alt="폼 맨스 라운지"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>FOURM MEN's LOUNGE</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					2017.12.04 / 장민성 / 한섬, 한섬 각 브랜드 url 링크 변경 ("http://www.thehandsome.com" 제거)
+					<a href="http://www.thehandsome.com/ko/c/br32/br32?from=hpoint" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]폼 맨스 라운지&_n_m4=clickevent&_n_m5=폼 맨스 라운지');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 한섬 추가 적립 제외<br />
+				- 적립제외 : 시즌오프 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div> --><!-- // brandPop -->
+
+
+<!-- 브랜드 팝업 61 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/tommyhilfiger.png" alt="타미힐피거"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>타미힐피거</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="https://m.hfashionmall.com/display/brand/shop?brndCtgryNo=BDMA08" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]타미힐피거&_n_m4=clickevent&_n_m5=타미힐피거');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+<!-- // brandPop -->
+
+<!-- 브랜드 팝업 62 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/dkny.png" alt="DKNY"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>DKNY</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="https://m.hfashionmall.com/display/brand/shop?brndCtgryNo=BDMA09" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]DKNY&_n_m4=clickevent&_n_m5=DKNY');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+<!-- // brandPop -->
+
+<!-- 브랜드 팝업 63 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/calvinklein.png" alt="CALVIN KLEIN"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>CALVIN KLEIN</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="https://m.hfashionmall.com/display/brand/shop?brndCtgryNo=BDMA07" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]CALVIN KLEIN&_n_m4=clickevent&_n_m5=CALVIN KLEIN');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+<!-- // brandPop -->
+
+<!-- 브랜드 팝업 64 -->
+<!-- <div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/americaneagle.png" alt="AMERICAN EAGLE"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>AMERICAN EAGLE</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="http://www.hfashionmall.com/sfmweb/display/display.do?screenNumber=1104&categoryNumber=50872&SKM_CD=100006" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]AMERICAN EAGLE&_n_m4=clickevent&_n_m5=AMERICAN EAGLE');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립, 이외 백화점 및 직영점은 적립제외<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div> -->
+<!-- // brandPop -->
+
+<!-- 브랜드 팝업 65 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/rougelounge.png" alt="rouge & lounge"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>rouge & lounge</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="https://m.hfashionmall.com/display/brand/shop?brndCtgryNo=BDMA21A01" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]rouge & lounge&_n_m4=clickevent&_n_m5=rouge & lounge');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+<!-- // brandPop -->
+
+<!-- 브랜드 팝업 66 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/sjyp.png" alt="SJYP"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>SJYP</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="https://m.hfashionmall.com/display/brand/shop?brndCtgryNo=BDMA21A02" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]SJYP&_n_m4=clickevent&_n_m5=SJYP');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립<br />
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+<!-- // brandPop -->
+
+<!-- 브랜드 팝업 67 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/o2nd.png" alt="O'2nd"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>O'2nd</p>
+				<p class="per">결제금액의 0.1%적립</p>
+				<p class="btns">
+					<a href="http://www.thehandsome.com/ko/b/br45" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=패션&_n_m3=[]O'2nd&_n_m4=clickevent&_n_m5=O'2nd');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1%적립</p>
+				- 현대백화점, 현대아울렛 입점 매장은 해당사 기준 적립<br />
+				- 적립제외 : 시즌오프 및 일부 할인 상품
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 1P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div>
+<!-- // brandPop -->
+
+
+
+<!-- 브랜드 팝업 52 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/thehyundaitravel.png" alt="더현대트래블"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>더현대트래블</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.thehyundaitravel.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=여행/문화&_n_m3=[]더현대트래블&_n_m4=clickevent&_n_m5=더현대트래블');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 적립제외 : 항공(국제선) TAX 및 수수료, 변동금액 등<br />
+				- 적립시기 : 항공(국제선)_예약 당일 발권시(16시 이전) 적립<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;호텔_체크아웃 이후 30일 이내 후기 작성시 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 10P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 52 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/moka.png" alt="현대어린이책미술관"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대어린이책미술관</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hmoka.org" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=여행/문화&_n_m3=[]현대어린이책미술관&_n_m4=clickevent&_n_m5=현대어린이책미술관');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 10P 단위로 사용 가능</p>
+				<!-- [20.02.07][pms][수정]: 포인트 정책 변경 문구 변경 -->
+				<br />
+			
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 38 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hyundaidreamtour.png" alt="현대드림투어"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>현대드림투어</p>
+				<p class="per">결제금액의 0.1% 적립</p>
+				<p class="btns">
+					<a href="https://www.hyundaidreamtour.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=여행/문화&_n_m3=[]현대드림투어&_n_m4=clickevent&_n_m5=현대드림투어');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.1% 적립</p>
+				- 적립제외 : 항공권/호텔 별도구매, 항공 좌석 업그레이드, 변동금액 등<br />
+				- 적립시기 : 여행상품 출발 이후 적립
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 10P 단위로 사용 가능</p>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 39 -->
+<!-- [18/01/08] [서한울] [제휴사 문구 수정] -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/kyobo.png" alt="교보문고"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>교보문고</p>
+				<p class="per">결제금액의 0.5%적립</p>
+				<p class="btns">
+					<a href="https://www.kyobobook.co.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=여행/문화&_n_m3=[]교보문고&_n_m4=clickevent&_n_m5=교보문고');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.5%적립</p>
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 10P 단위로 사용 가능</p>
+				- 교보문고 오프라인 지점에서만 사용 가능<br />
+				- 月 최대 5만 포인트까지 사용 가능<br />
+				- 제외매장 : 핫트랙스 온라인, 중고장터, 서울대점, 전북대점<br />
+				<font style ="color:#fa4156">- 교보문고 온라인/모바일의 경우 적립은 가능하나 포인트 사용은 불가</font><br />
+				- KB제휴카드 오프라인 매장 사용시 결제 전 H.Point 적립 요청해야 적립 가능
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 40 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/hottracks.png" alt="핫트랙스"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>핫트랙스</p>
+				<p class="per">결제금액의 0.5%적립</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 적립 : 결제금액의 0.5%적립</p>
+			</li>
+			<li>
+				<p class="tit">&middot; 사용 : 100P 이상 보유 시, 10P 단위로 사용 가능</p>
+				- 月 최대 5만 포인트까지 사용 가능<br />
+				- 사용제외 : 핫트랙스 온라인, 인터넷교보문고 오픈마켓, 중고장터, 서울대점, 전북대점 제외<br />
+				- 오프라인 매장 KB제휴카드 결제시 H.Point 자동 적립 불가, 결제 전 H.Point 적립 요청시 적립 가능
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 41 -->
+<!-- [18/01/08] [서한울] [제휴사 문구 수정] -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/seoulartscenter.png" alt="예술의 전당"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>예술의 전당</p>
+				<p class="per">자체 기획 공연 10~20% 할인</p>
+				<p class="btns">
+					<a href="https://www.sac.or.kr/" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=여행/문화&_n_m3=[]예술의 전당&_n_m4=clickevent&_n_m5=예술의 전당');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 자세한 공연 내용은 H.Point APP 내 이벤트 메뉴에서 확인하실 수 있습니다.</p>
+				※ 공연 일정 및 제휴사 사정으로 인해 할인 서비스가 제공되지 않는 경우가 있으니, 양해 부탁드립니다.<br />
+				<!-- <a href="/cu/bnft/evntDtl.nhd?evntId=2305">할인 적용 공연 안내 &gt;</a> -->
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- 브랜드 팝업 42 -->
+<!-- [18/01/08] [서한울] [제휴사 문구 수정] -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/sejongculture.png" alt="세종문화회관"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>세종문화회관</p>
+				<p class="per">자체 기획 공연 10~20% 할인</p>
+				<p class="btns">
+					<a href="https://www.sejongpac.or.kr" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=여행/문화&_n_m3=[]세종문화회관&_n_m4=clickevent&_n_m5=세종문화회관');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">&middot; 자세한 공연 내용은 H.Point APP 내 이벤트 메뉴에서 확인하실 수 있습니다.</p>
+				※ 공연 일정 및 제휴사 사정으로 인해 할인 서비스가 제공되지 않는 경우가 있으니, 양해 부탁드립니다.<br />
+				<!-- <a href="/cu/bnft/evntDtl.nhd?evntId=2307">할인 적용 공연 안내 &gt;</a> -->
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+
+<!-- [17.09.28][장민성][추가]: 대한항공 브랜드소개 추가 -->
+<!-- [18/01/08] [서한울] [제휴사 문구 수정] -->
+<!-- 브랜드 팝업 49 -->
+<div class="brandPop popupLayer" style="display:none">
+	<div class="container">
+		<div class="top">
+			<div class="logo">
+				<p><img src="/images_customer/brand/koreanair.png" alt="대한항공"></p>
+			</div>
+			<div class="txtArea">
+				<p class="name" tabindex=0>대한항공</p>
+				<p class="per">H.Point를 대한항공 마일리지로 전환</p>
+				<p class="btns">
+					<a href="https://kr.koreanair.com" target="_blank" onclick="javascript:n_click_logging('https://www.h-point.co.kr/ds/brand/outlink?_n_m1=브랜드&_n_m2=여행/문화&_n_m3=[]대한항공&_n_m4=clickevent&_n_m5=대한항공');">홈페이지</a>
+				</p>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<p class="tit">※ 포인트 전환시 유의사항</p>
+				- 마일리지 전환 신청 전에 스카이패스 회원번호를 확인해주세요.<br />
+				스카이패스 회원번호는 대한항공 홈페이지에서 회원가입 후 확인하실 수 있습니다.<br />
+				(대한항공 고객센터: 1588-2001)<br />
+				- 대한항공 회원가입시, 온라인상 본인인증절차를 거치지 않으신 회원은 마일리지 전환이 불가능합니다.<br />
+				- H.Point→ 대한항공 마일리지 기본 전환 비율은 22:1입니다.<br />
+				- 전환 신청 2~3일 이후(영업일 기준) 대한항공 홈페이지 내 '마이페이지 > 마일리지 상세 조회 > 기타'에서 전환 내역을 확인하실 수 있습니다.<br />
+				- 타 제휴사에서 전환한 포인트나 타인에게 양도받은 포인트는 대한항공 마일리지로 전환이 불가능합니다.<br />
+				- 마일리지 전환 신청 후 신청 취소나 현금 환급은 불가능합니다.<br />
+				- 대한항공 마일리지는 1일 1회만 전환이 가능합니다.<br />
+				- 본인 명의의 대한항공 회원번호에 한하여 전환이 가능하며, 아닐 경우 정상 처리 되지 않습니다.<br />
+				- H.Point 관련 문의사항은 고객센터(1800-2800)로 연락 바랍니다.<br/><br/>
+				<a>포인트 전환은 H.Point APP에서 가능합니다.</a>
+			</li>
+		</ul>
+		<a href="javascript:" class="close"><img src="/images_customer/btn/popClose_bt.png" alt="팝업닫기" /></a>
+	</div>
+</div><!-- // brandPop -->
+<!-- RENEWAL : E -->
+
+			
+
+
+
+
+
+
+<!-- INDEX : 2QiMdS1+j0JGaB7YZTuSxsWvnyyLltPyiiys9o+GvwrkRFsW42Nfsak0opsE4Tzf -->
+
+ 	
+ 
+
+ <div class="pageTop">
+	<div class="wrap">
+		<button type="button" class="btn_top">top</button>
+	</div>
+</div>
+
+ <footer id="footer">
+	<div class="layout1">
+		<div class="inner">
+			<div class="logo"><span class="hidden">h.Point</span></div>
+			<ul class="ft_menu clear">
+				<li><a href="/cu/footer/terms.nhd" onclick="GA_Event('공통', '푸터', '이용약관');">이용약관</a></li>
+				<li><a href="/cu/footer/termsPosition.nhd" onclick="GA_Event('공통', '푸터', '위치기반서비스 이용약관');">위치기반서비스 이용약관</a></li>
+				<li class="emp"><a href="/cu/footer/policy.nhd"onclick="GA_Event('공통', '푸터', '개인정보처리방침');">개인정보처리방침</a></li>
+			    <!-- DEP01WORK-22351 개인정보보호센터 추가 -->
+    			<li class="footer_mobile_none"><a href="/cm/infScrty/privacy_01.nhd" onclick="GA_Event('공통', '푸터', '개인정보보호센터');">개인정보보호센터</a></li>
+			</ul>
+			<ul class="ft_sns clear">
+				<li><a href="https://www.youtube.com/channel/UC9HMGL9EvqGHYSwe8MA_efQ?view_as=subscriber" target="_blank" onclick="GA_Event('공통', '푸터', '유튜브');"><img src="/assets/app/img/common/ft_sns_youtube.png" alt="유튜브"></a></li>
+				<li><a href="https://pf.kakao.com/_xajDad" target="_blank" onclick="GA_Event('공통', '푸터', '카카오플러스');"><img src="/assets/app/img/common/ft_sns_kakao.png" alt="카카오플러스"></a></li>
+				<li><a href="https://www.instagram.com/h.point_official/" target="_blank" onclick="GA_Event('공통', '푸터', '인스타그램');"><img src="/assets/app/img/common/ft_sns_instagram.png" alt="인스타그램"></a></li>
+			</ul>
+			<div class="ft_info clear">
+				<p>주식회사 현대백화점</p>
+				<p>서울시 강남구 테헤란로98길 12</p>
+				<p>고객센터 <a href="tel:1800-2800"></a>1800-2800</p>
+			</div>
+			<p class="copyright">© HYUNDAI DEPARTMENT STORE GROUP Co. Ltd. ALL RIGHTS RESERVED</p>
+		</div>
+	</div>
+</footer>
+
+<div class="stnd_bar"></div>
+
+<script type="text/javascript"> 
+	document.msCapsLockWarningOff = true;
+	
+	$(function() {
+		//CAPS LOCK감지
+		$("input[type=password]").keypress(function( event) {
+			var keyCode = 0;
+			var shiftKey = false;
+			keyCode = event.keyCode;
+			shiftKey = event.shiftKey;
+			if( $(this).next().attr("class") == "img caps")
+			{
+				if(((keyCode>=65 && keyCode <=90) && !shiftKey) || ((keyCode >= 97 && keyCode <= 122) && shiftKey))
+				{
+					$(this).next().show();
+					//$(".capsLockImg").show();
+				}
+				else
+				{
+					$(this).next().hide();
+					//$(".capsLockImg").hide();
+				}
+			}
+		});
+		
+		
+		//CAPS LOCK감지
+		$("input[type=password]").blur(function( event) {
+			if( $(this).next().attr("class") == "img caps")
+			{
+				$(this).next().hide();
+			}
+		
+		});
+		
+	});
+	
+	
+	function updateCustPwd() {
+		$("div.pwChgPop p.error").hide();
+		if($.trim($("#currentPwd").val())=="") { 
+			$("#curPwdMsg2").text("현재 비밀번호를 입력해주세요.").show();
+			return;
+		}
+		
+		/*
+		if( $.trim($("#custPwd").val()) != $.trim($("#curPwd2").val()) ) {
+			$("#curPwdMsg").text("현재 비밀번호가 일치하지 않습니다.").show();
+			return;
+		}
+		*/
+		//입력값 유효.
+		$.post( "/cu/config/checkUserPw.nhd", 
+				{
+					custPwd : $("#currentPwd").val(), 
+					mcustNo : $("#pwdMcustNo").val()
+				},  
+				function (data) {
+					if(data.code != "0000") {
+						$("#curPwdMsg2").text(data.message).show();						
+					} else {
+						updateUserPassword();
+					}
+				}
+		);		
+	}
+	
+	function updateUserPassword() {
+		hdgm.validation.preparePasswordValidation($("#pwdMcustId").val(), $("#newPwd2").val(), $("#cfnNewPwd2").val());
+		if(hdgm.validation.isValidPassword()) {
+			$.post("/cu/config/updateUserPw.shd", 
+				{ 
+					custId  : $("#pwdMcustId").val(),
+					custPwd : $("#newPwd2").val() 
+				}, 
+			 	function (data) {
+					$("#newPwdMsg2").text(data.message).show();
+					if(data.code == "0000") {
+						location.href="/";	
+					}
+			 	}
+			 );
+		} else {
+			$("#newPwdMsg2").text(hdgm.validation.getMessage()).show();
+			
+		}
+	}
+	
+	function logoutDecdSsoToken()
+	{
+		//토큰 만료 처리
+		gfnSsoDscdToknReq(dscdCallback1);
+	}
+	// 토큰만료 콜백
+	function dscdCallback1(data){
+		//location.href = "/cu/logoutJson.shd";
+		
+		$.post( "/cu/logoutJson.shd", 
+				{
+				},  
+				function (data) {
+					if(data.code != "C000") {
+						location.href = "/cu/main/index.nhd";				
+					}
+				}
+		);
+	}
+	
+	function logoutDecdSsoToken2()
+	{
+		//토큰 만료 처리
+		gfnSsoDscdToknReq(dscdCallback2);
+	}
+	// 토큰만료 콜백
+	function dscdCallback2(data){
+		location.href = "/cu/memDrotCmpt.shd";
+	}
+	
+	//로그인 요청(휴면해지)
+	function submitSsoDormLogin() {
+		$.post( "/cu/login/submitDormMcust.nhd", 
+			{
+			},  
+			function (data) {
+				
+				if(data.code =="0000" ) {
+					// hmall(모바일 포함)에서 접근한 경우
+					if(data.redirect != 'N') {
+						$("input[name=hmallHtmlYn]").val(data.htmlYn);
+						$("input[name=hmallRetPage]").val(data.retPage);
+						$("input[name=hmallRetUrl]").val(data.retUrl);
+						$("form[name=ssoLogin]").attr("action", data.redirect);
+					}
+					if( data.ssoSuccYn == "Y") {
+						//alert( "권한코드 발급 완료 mcustNo : " + data.ssoMcustNo)
+						gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooter);
+					}
+					else
+					{
+						$("form[name=ssoLogin]").attr("action", "/cu/login/redirect.nhd");	
+						$("form[name=ssoLogin]").submit();
+					}
+					
+				} else if( data.code =="L002"){
+					$("#pwdMcustId").val(data.mcustId);
+					$("#pwdMcustNo").val(data.mcustNo);
+					
+					if( data.ssoSuccYn == "Y")
+					{
+						//alert( "권한코드 발급 완료 mcustNo : " + data.ssoMcustNo)
+						gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooterPwChgPop);
+					}
+					else
+					{	
+						/* $("div.pwChgPop").show(); */
+					    
+					}
+					
+				} else if( data.code =="L003" || data.code =="L004" || 
+						data.code =="L005" || data.code =="L006" ){
+					alert(data.message);
+				
+				} else if( data.code =="77777" ){
+					$("p.loginError > span.red").text(data.message);
+					$("p.loginError > span.fail").hide();
+					$("p.loginError").show();
+				}else {
+				}
+			}
+		)
+	}
+
+	// 페이지 조회시 항상 실행
+	// JSTL 구문 : and or 조건  2건 이상 넣으면 인식 안될 수 있음. 유의할 것.
+	
+		gfnSsoReqHttp(fnSsoCallback1);
+	
+	//SSO요청 처리 콜백
+	//alert(httpRequest.readyState);
+	function fnSsoCallback1(data) {
+		//data.mcustNo = '0000000761';
+		//alert(data);
+		//alert(data.rtnMsg);
+		//alert(data.succYn);
+		//$("#mcustNo").val(data.mcustNo);
+		//alert("해당 고객번호("+data.mcustNo + ")로 자동 로그인 시도");
+		
+		console.log("res[[["+JSON.stringify(data )+"]]]");
+		
+		
+		if( data == null || data.mcustNo == null || data.mcustNo == '')
+		{
+			
+			// 세션이 있는 상태에서 SSO토큰에 통합고객번호가 없으면 로그아웃 시킨다.
+			
+		}
+		else
+		{
+			$("#mcustNo").val(data.mcustNo);
+			//$("#ssoLogin").submit();
+			
+			$.ajax({
+				url : "/cu/login/submitJsSsoMcust.nhd"
+			  , type : "post"
+			  , data : $( "#ssoLogin").serialize()
+			  , success : function( data){
+				 if(data.code == "0000")
+				 {
+					if( data.ssoSuccYn == "Y")
+					{
+						//alert( "권한코드 발급 완료 mcustNo : " + data.ssoMcustNo)
+						gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooter);
+					}
+					else
+					{
+						$("form[name=ssoLogin]").attr("action", "/cu/login/redirect.nhd");	
+						$("form[name=ssoLogin]").submit();
+					}
+				 }
+				 else if(data.code == "S001")
+				 {						
+				 	 if( !getCookie("dormCheckYn") || getCookie("dormCheckYn") == "N")
+				 	 {
+				 		 
+				 		 if( confirm( data.message))
+				 		 {
+				 			submitSsoDormLogin();
+				 		 }
+				 		 else
+				 		 {
+				 			setCookie("dormCheckYn", "Y", 1);
+				 		 }
+				 	 }
+				 } else if( data.code =="L002"){
+					 $("#pwdMcustId").val(data.mcustId);
+					 $("#pwdMcustNo").val(data.mcustNo);
+					 
+					 if( data.ssoSuccYn == "Y")
+					 {
+						//alert( "권한코드 발급 완료 mcustNo : " + data.ssoMcustNo)
+						//gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooterPwChgPop);
+						
+						gfnReqSSoToknIssuHttp(data.ssoMcustNo, data.ssoAuthCd, fnCallbackFooter);
+					 }						
+					 else
+					 {	
+						/* $("div.pwChgPop").show(); */
+						
+					 }
+					
+				 } else if( data.code =="S100"){ // 기존세션과 같은 사용자의 경우 아무것도 액션도 하지 않는다.
+				 } else{
+				  	alert(data.message);
+				  	location.href = "/";
+				  }
+				
+			  }
+			, error : function( data)
+			  {
+			  	//alert("비정상적인 접근입니다.");
+			  	//location.href = "/";
+			  }
+			});
+		}			
+	}
+	
+	function fnCallbackFooterPwChgPop(data)
+	{
+		/* $("div.pwChgPop").show(); */
+		
+	}
+	
+	function fnCallbackFooter(data){
+		//alert(data.succYn); //'Y' 이면 토큰 정상 발급 받은 것임. 토큰 발급시에는
+		//alert("SSO로그인 테스트용 토큰발급 성공여부 : data.succYn : " +  data.succYn);
+	
+		// #DEP01WORK-1888 20.07.15 1906202
+		// 메인으로 이동되는 현상 방지하기 위해 sso처리 성공 시, redirect.nhd를 안태우도록 수정
+		if (data.succYn == null || data.succYn != "Y") {
+			$("form[name=ssoLogin]").attr("action", "/cu/login/redirect.nhd");
+			$("form[name=ssoLogin]").submit();
+		} else {		  	
+		 	location.reload(); 
+		} 
+
+	}	
+	
+	function intSms()
+	{
+		hdgm.util.cmmClearFormAll( "sendUrlForm");
+	}
+	
+	function sendUrl()	//APP 설치경로 문자 발송
+	{
+		if( !/^\d{3}-\d{3,4}-\d{4}$/.test($.trim($("#mblNo").val())))
+		{
+			alert( "휴대폰 번호를 정확히 입력해주세요.\n");
+			return;
+		}
+
+		
+		var uaCk = navigator.userAgent;
+		var chkCfm = true;
+		
+		//Android 5.0 미만 체크 추가
+		if (uaCk.indexOf("Android 1.") > 0) {
+			lowVerMove();
+		}
+		else if (uaCk.indexOf("Android 2.") > 0) {
+			lowVerMove();
+		}
+		else if (uaCk.indexOf("Android 3.") > 0) {
+			lowVerMove();
+		}
+		else if (uaCk.indexOf("Android 4.") > 0) {
+			lowVerMove();
+		}
+		else {
+			//통과
+		}
+		
+		function lowVerMove(){
+			if(confirm("안드로이드 OS 5.0 미만 버전은 APP 지원이 종료되어 설치가 불가합니다.\n(갤럭시 S3, 노트2, LG G3 등)\n휴대기기 설정메뉴에서 OS 버전을 확인하시고, 5.0 이상 업그레이드 하신 후 앱을 설치해 주시기 바랍니다.\n\n현재 접속 하신 기기는 5.0미만으로 확인 됩니다. 그래도 입력하신 번호에 대해 설치 SMS를 발송하시겠습니까?") ){
+				chkCfm = true;
+			}else{
+				chkCfm = false;
+			}
+		}
+		
+		if(chkCfm){
+			
+			//기존 발송 로직 
+			$.ajax({
+				url : "/cu/cma/sendAppUrl.nhd"
+			  , type : "post"
+			  , data : $( "#sendUrlForm").serialize()
+			  , success : function( data){
+				  if(data.code == '0000')
+				  {
+				  	alert("발송되었습니다.");
+				  	intSms();
+					commonPub.layerPopClose($(".pop_app_download"));
+				  }
+				  else
+				  {
+					  alert(data.message);
+				  }
+			  }
+			  , error : function( data){
+				  alert("발송실패했습니다.\n다시 시도해주세요.");
+			  }
+			})
+		}
+		
+	}
+	
+	//앱다운로드 팝업 OS체크 후 구글스토어 링크 이동
+	function mvGglStrUrl(){
+		
+		var uaCk2 = navigator.userAgent;
+		var chkCfm2 = true;
+		
+		//Android 5.0 미만 체크 추가
+		if (uaCk2.indexOf("Android 1.") > 0) {
+			lowVerMove2();
+		}
+		else if (uaCk2.indexOf("Android 2.") > 0) {
+			lowVerMove2();
+		}
+		else if (uaCk2.indexOf("Android 3.") > 0) {
+			lowVerMove2();
+		}
+		else if (uaCk2.indexOf("Android 4.") > 0) {
+			lowVerMove2();
+		}
+		else {
+			//통과
+		}
+		
+		function lowVerMove2(){
+			alert("안드로이드 OS 5.0 미만 버전은 APP 지원이 종료되어 설치가 불가합니다.\n(갤럭시 S3, 노트2, LG G3 등)\n휴대기기 설정메뉴에서 OS 버전을 확인하시고, 5.0 이상 업그레이드 하신 후 앱을 설치해 주시기 바랍니다.");
+			chkCfm2 = false;
+		}
+		
+		if(chkCfm2){
+			window.open("https://play.google.com/store/apps/details?id=kr.co.hpoint.hdgm", "_blank");
+			//window.location.href="https://play.google.com/store/apps/details?id=kr.co.hpoint.hdgm";
+			<!-- [20.06.08][수정][shw]:Google Analytics 제거 -->
+			n_click_logging('https://www.h-point.co.kr/ds/screen?_n_p3=App다운로드&_n_p4=Android링크&_n_p7=WEB_LG0008'); n_click_logging('https://www.h-point.co.kr/ds/appdownload?_n_m1=인바이트&_n_m2=Android&_n_m3=&_n_m4=clickevent&_n_m7=WEB_LG0021');
+		}
+
+	}
+	
+	function autoHypenMblNo( objId)
+	{
+		var mblNo = $("#" + objId).val();
+		mblNo = mblNo.replace(/[^0-9]/g, '');
+		
+		if( mblNo.length < 4)
+		{
+			mblNo = mblNo;
+		}
+		else if( mblNo.length < 7) 
+		{
+			mblNo =  mblNo.substr(0, 3) + "-" + mblNo.substr(3);
+		}
+		else if( mblNo.length < 11)
+		{
+			mblNo = mblNo.substr(0, 3) + "-" + mblNo.substr(3, 3) + "-" + mblNo.substr(6);
+		}
+		else
+		{
+			mblNo = mblNo.substr(0, 3) + "-" + mblNo.substr(3, 4) + "-" + mblNo.substr(7);
+		}
+		$("#" + objId).val( mblNo);
+	}
+	
+	function targetFocus( objId)
+	{
+		$("#" + objId).focus();
+	}
+	
+</script>
+
+		</div><!-- // wrapper -->
+	</body>
+</html>

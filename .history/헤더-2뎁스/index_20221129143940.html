@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<style>
+    .header-area{position: fixed;top: 0;left: 0;z-index: 10;width: 100%; padding: 20px 50px; box-sizing: border-box; color: #fff; }
+    .logo{width: 100%; max-width: 127px;}
+    .logo img{width: 100%;}
+    .header-area{display: flex; justify-content: space-between; align-items: center;}
+    .gnb-list{display: flex;}
+    .gnb-item{padding:0 20px; position: relative;}
+    
+    .gnb-menu-area{position: absolute;right:0; top: 0;width:50%; height: 100vh; transform: translateX(100%);transition: 0.3s; background-color: #fff; color:#000; display: flex; flex-direction: column; justify-content: center; align-items: center;} 
+    .gnb-menu-area.show{transform: translateX(0);}
+    .gnb-menu-area .gnb-menu-item{padding:10px 0; font-size: 24px; font-weight: bold;}
+    /* opacity: 0; visibility: hidden; transition: 0.3s; */
+    .gnb-area .gnb-item .dep2-gnb-list{position: absolute; top: 0; left: 50%;}
+    .gnb-area .gnb-item:hover .dep2-gnb-list{opacity: 1; visibility: visible;}
+
+    .gnb-menu-close{position: absolute; top: 50px; right: 50px; width: 30px; height: 30px; cursor: pointer;}
+    .gnb-menu-close img{width: 100%;}
+    .menu-bg{display: none; position: fixed; top: 0;left: 0; z-index: 1; width: 100vw; height: 100vh; background-color: #000; opacity: 0.5;}
+    .menu-bg.show{display: block;}
+    @media (max-width: 767px) {
+        .gnb-menu-area{width: 70%;}
+        .gnb-area{display: none;}
+        .header-area{padding: 20px;}
+    }
+
+    .visual-sec{width: 100vw; height: 100vh;}
+</style>
+
+<body>
+    <header class="header-area">
+        <h1 class="logo"><a href="#"><img src="logo.png" alt=""></a></h1>
+        <nav class="gnb-area">
+            <ul class="gnb-list">
+                <li class="gnb-item">
+                    <a href="#">GNB1</a>
+                    <ul class="dep2-gnb-list">
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <a href="#">GNB1</a>
+                    <ul class="dep2-gnb-list">
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <a href="#">GNB1</a>
+                    <ul class="dep2-gnb-list">
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <a href="#">GNB1</a>
+                    <ul class="dep2-gnb-list">
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                        <li class="dep2-gnb-item">
+                            <a href="#">dep2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="gnb-menu-btn">menu</div>
+        <div class="gnb-menu-area">
+            <div class="gnb-menu-close">
+                <img src="close.png" alt="">
+            </div>
+            <nav class="gnb-menu-wrap">
+                <ul class="gnb-menu-list">
+                    <li class="gnb-menu-item">
+                        <a href="#">GNB1</a>
+                        <ul class="dep2-menu-list">
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb-menu-item">
+                        <a href="#">GNB2</a>
+                        <ul class="dep2-menu-list">
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb-menu-item">
+                        <a href="#">GNB#</a>
+                        <ul class="dep2-menu-list">
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb-menu-item">
+                        <a href="#">GNB4</a>
+                        <ul class="dep2-menu-list">
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                            <li class="dep2-menu-item">
+                                <a href="">dep2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="menu-bg"></div>
+    <section class="visual-sec">
+        <img src="bg.png" alt="">
+    </section>
+
+    <script>
+        $(document).ready(function(){
+            $('.gnb-menu-btn').click(function(){
+                $('.gnb-menu-area').addClass('show');
+                $('.menu-bg').addClass('show');
+            })
+            $('.gnb-menu-close').click(function(){
+                $('.gnb-menu-area').removeClass('show');
+                $('.menu-bg').removeClass('show');
+            })
+            $('.menu-bg').click(function(){
+                $('.gnb-menu-area').removeClass('show');
+                $('.menu-bg').removeClass('show');
+            })
+        })
+    </script>
+</body>
+</html>

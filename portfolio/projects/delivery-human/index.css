@@ -1,0 +1,65 @@
+:root {
+  /* color */
+  --color-mint: #2ac1bc;
+
+  /* font size */
+  --font-Xsmall: 12px;
+  --font-small: 14px;
+  --font-normal: 18px;
+  --font-large: 24px;
+  --font-Xlarge: 32px;
+}
+body,
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-size: 5em;
+  font-family: arial, helvetica;
+  color: #fff;
+  margin: 0;
+}
+.intro p {
+  color: #fff;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section {
+  text-align: center;
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+  left: 50px;
+}
+.controlArrow.next {
+  right: 50px;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+}
+.section:not(:last-child) {
+  background-color: var(--color-mint);
+}
+.section:last-child() {
+  background-color: #fff;
+}
+.content_box {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
+  box-sizing: border-box;
+}

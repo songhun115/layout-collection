@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.header.active {
+  display: none;
+}
+
+.header_box {
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+}
+.sns_list {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 100px;
+}
+.sns_item:not(:last-child) {
+  margin-right: 15px;
+}
+.logo {
+  max-width: 142px;
+  display: block;
+  margin: 60px 0 0 6%;
+}
+.logo > img {
+  width: 100%;
+}
+.side_rider > a {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 191px;
+  height: 238px;
+  background: url("imgs/side_rider.png");
+  background-size: contain;
+}

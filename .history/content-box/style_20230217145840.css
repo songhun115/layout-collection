@@ -1,0 +1,7 @@
+
+.content-box{    background: linear-gradient(90deg, #fece6a 7.62%, rgba(254, 207, 106, 1.591) 1280px, #fff); width: 80vw; margin-left: auto; padding: 100px; box-sizing: border-box; border-radius: 50px 0 0 200px;}
+.menu-list{display: flex;}
+.menu-item-tit{display: flex;align-items: center;}
+.arrow-right img{width: 40px;}
+.menu-item-img img{width: 100%;}
+.content-description > h1{font-size: 48px; font-weight: bold;}

@@ -1,0 +1,88 @@
+.fb{
+
+    height: 267px;
+
+}
+
+.f_box {
+
+    width: 100%;
+    height: 267px;
+    background-color: black;
+    color: white;
+    padding-top: 25px;
+    padding-right: 83px;
+    
+
+}
+
+.f_box .container {
+
+    max-width: 1697px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.f_box .f_logo {
+
+    background: url(../img/icon/chevrolet-2-logo-pack/chevrolet-2-logo-black-and-white.png);
+    width: 311px;
+    height: 49px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position-y: 36%;
+
+}
+
+.f_find {
+
+    background: url(../img/activity/findnew.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position-y: 43%;
+
+    width: 372px;
+    height: 40px;
+
+}
+
+.f_ar1 {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.f_ar2 i {
+
+
+    font-size: 2.0rem;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.f_ar3 {
+
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.f_ar3 .sub {
+
+    display: flex;
+
+}
+
+.f_ar3 .f_sub1 {
+
+    display: flex;
+    flex-direction: column;
+}

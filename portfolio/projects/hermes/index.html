@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hermes</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo_box">
+            <a href="#">
+                <div class="logo">
+                    <img class="web_logo"
+                        src="https://www.hermes.com/sites/all/themes/custom/hermes/img/hermes-logo.svg" alt="">
+                    <img class="mobile_logo"
+                        src="https://www.hermes.com/sites/all/themes/custom/hermes/img/hermes-logo-small.svg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="header_box">
+            <nav class="nav_bar">
+                <ul class="nav_list">
+                    <li class="nav_item nav_item_menu_btn">
+                        <span><i class="fas fa-bars"></i></span>
+                        <a href="#">메뉴</a>
+                    </li>
+                    <li class="nav_item nav_item_input">
+                        <div class="form_box">
+                            <form action="">
+                                <input type="text" placeholder="검색">
+                                <span><i class="fas fa-search"></i></span>
+                            </form>
+                            <div class="search_box">
+                                <ul class="search_box_list">
+                                    <li class="search_box_item"><a href="#">추천검색</a></li>
+                                    <li class="search_box_item"><a href="#">Oran 샌들링크</a></li>
+                                    <li class="search_box_item"><a href="#">Jumping 부츠링크</a></li>
+                                    <li class="search_box_item"><a href="#">2020 프리폴 컬렉션 in 여성 (155)상품 링크</a></li>
+                                    <li class="search_box_item"><a href="#">여성복 in 여성 (155)상품 링크</a></li>
+                                    <li class="search_box_item"><a href="#">워치 in 여성 (191)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <span><i class="far fa-user"></i></span>
+                        <a href="#">로그인</a></li>
+                    <li class="nav_item">
+                        <span><i class="fas fa-shopping-bag"></i></span>
+                        <a href="#">장바구니</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="all_menu">
+            <div class="all_menu_box">
+                <div class="all_menu_content">
+                    <ul class="all_menu_list">
+                        <div class="close_btn">
+                            <span><i class="fas fa-times"></i></span>
+                            <a href="#">메뉴</a>
+                        </div>
+                        <li class="all_menu_item">
+                            <a href="#">여성
+                                <ul class="all_menu_sub_list">
+                                    <li class="li all_menu_sub_item"><a href="#">2020 프리폴 컬렉션</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">스카프와 실크 액세서리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">슈즈</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">가방과 가죽 소품</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">가죽 소품</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">가죽 액세서리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">벨트</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">모자와 글러브</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">하이 주얼리와 주얼리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">골드 주얼리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">실버 주얼리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">패션 주얼리</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="all_menu_item">
+                            <a href="#">
+                                남성
+                                <ul class="all_menu_sub_list">
+                                    <li class="li all_menu_sub_item"><a href="#">남성복</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">2020 가을/겨울 컬렉션</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">타이와 포켓 스퀘어</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">슈즈</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">가방과 가죽 소품</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">백</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">가죽 소품</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">가죽 액세서리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">벨트</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">액세서리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">주얼리와 패션 주얼리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">향수</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="all_menu_item">
+                            <a href="#">
+                                홈
+                                <ul class="all_menu_sub_list">
+
+                                    <li class="li all_menu_sub_item"><a href="#">익셉셔널 피스</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">텍스타일</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">오브제</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">게임과 스포츠</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">테이블웨어</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">비치</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="all_menu_item">
+                            <a href="#">
+                                주얼리
+                                <ul class="all_menu_sub_list">
+                                    <li class="li all_menu_sub_item"><a href="#">골드 주얼리</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">실버 주얼리</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="all_menu_item">
+                            <a href="#">
+                                워치
+                                <ul class="all_menu_sub_list">
+                                    <li class="li all_menu_sub_item"><a href="#">여성</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">남성</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">애플 워치 에르메스</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="all_menu_item">
+                            <a href="#">
+                                향수
+                                <ul class="all_menu_sub_list">
+                                    <li class="li all_menu_sub_item"><a href="#">익스클루시브</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">여성 라인</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">남성 라인</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">아트 오브 리빙</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">에르메스 기프트</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="all_menu_item">
+                            <a href="#">
+                                메이크업
+                                <ul class="all_menu_sub_list">
+                                    <li class="li all_menu_sub_item"><a href="#">립 제품</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">액세서리</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="all_menu_item">
+                            <a href="#">
+                                승마용품
+                                <ul class="all_menu_sub_list">
+                                    <li class="li all_menu_sub_item"><a href="#">새들</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">말</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">애완견</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">기수</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">마구용품</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="all_menu_item">
+                            <a href="#">
+                                기프트
+                                <ul class="all_menu_sub_list">
+                                    <li class="li all_menu_sub_item"><a href="#">여성용 기프트</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">남성용 기프트</a></li>
+                                    <li class="li all_menu_sub_item"><a href="#">베이비 기프트</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="all_menu_foot">
+                        <div class="all_menu_foot_box">
+                            <ul class="all_menu_foot_list">
+                                <li class="all_menu_foot_item">
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <a href="#">매장찾기</a>
+                                </li>
+                                <li class="all_menu_foot_item">
+                                    <span><i class="fas fa-shopping-bag"></i></span>
+                                    <a href="#">로그인</a>
+                                </li>
+                                <li class="all_menu_foot_item">
+                                    <span><i class="far fa-comment-dots"></i></span>
+                                    <a href="#">고객센터</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="section0 section">
+        <div class="section_text">
+            <h2 class="content_intro">포근한 크리스마스</h2>
+            <p class="content_text">따뜻하고 부드러운 에르메스의 오브제들과 함께 사랑하는 이들과 즐거운 크리스마스를 맞이하세요.</p>
+            <p class="content_sub_text">환상적인 크리스마스를 준비하세요</p>
+        </div>
+    </section>
+    <section class="section1 section">
+        <div class="section_img con">
+            <div class="img_box">
+                <img src="imgs/section2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section2 section">
+        <div class="section_text">
+            <h2 class="content_intro">에르메스 컬렉션</h2>
+        </div>
+        <div class="section_img">
+            <div class="img_box">
+                <ul class="section2_img_list">
+                    <li class="section2_img_item">
+                        <img src="imgs/section1_1.png" alt="">
+                        <span>남성 실크 제품</span>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section1_2.png" alt="">
+                        <span>가죽 소품</span>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section1_3.png" alt="">
+                        <span>테이블 웨어</span>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section1_4.png" alt="">
+                        <span>가방</span>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section1_2.png" alt="">
+                        <span>신발</span>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section1_6.png" alt="">
+                        <span>주얼리</span>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section1_7.png" alt="">
+                        <span>시계</span>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section1_8.png" alt="">
+                        <span>텍스타일</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3 section">
+        <div class="section_text">
+            <h2 class="aa content_intro">다채로운 스타일</h2>
+            <p class="aa content_text">그래픽한 스타일의 다채로운 매력 속에서, 탁월한 노하우를 반영한 기능적이고 우아한 면모가 드러납니다.</p>
+            <p class="aa content_sub_text">영감의 원천 찾기</p>
+        </div>
+        <div class="section_img con">
+            <div class="img_box">
+                <img src="imgs/section2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section4 sectioning section">
+        <div class="section_text">
+            <h2 class="aa content_intro">정교한 디테일</h2>
+            <p class="aa content_text">액세서리로 당신의 패션을 완성하세요.</p>
+            <p class="aa content_sub_text">새로운 컬렉션 보기</p>
+        </div>
+        <div class="section_img">
+            <div class="img_box">
+                <ul>
+                    <li>
+                        <img src="imgs/section3_1.png" alt="">
+                    </li>
+                </ul>
+                <ul class="section2_img_list">
+                    <li class="section2_img_item">
+                        <img src="imgs/section3_2.png" alt="">
+                        <span>Clic Clac H Tartan 브레이슬릿</span>
+                        <p>₩ 1,090,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section3_3.png" alt="">
+                        <span>Clic Clac H Panoplie Equestre 브레이슬릿</span>
+                        <p>₩ 1,090,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section3_4.png" alt="">
+                        <span>Clic Clac H 브레이슬릿</span>
+                        <p>₩ 1,010,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/section3_4.png" alt="">
+                        <span>Clic H 브레이슬릿</span>
+                        <p>₩ 910,000</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5 section">
+        <div class="section_text">
+            <h2 class="aa content_intro">코쿤 시즌</h2>
+            <p class="aa content_text">울, 캐시미어 또는 실크 소재를 뜨개질하거나 직조하여 완성한 에르메스 스카프가 부드러운 스타일을 완성합니다.</p>
+            <p class="aa content_sub_text">부드러운 스타일 연출하기</p>
+        </div>
+        <div class="section_img con">
+            <div class="img_box">
+                <img src="imgs/section4.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section6 sectioning section">
+        <div class="section_text">
+            <h2 class="aa content_intro">새로운 스타일</h2>
+            <p class="aa content_text">정교한 스타일과 특별한 소재가 돋보이는 에르메스 남성복은 에르메스의 다양한 노하우를 선보입니다.</p>
+            <p class="aa content_sub_text">끊임없는 혁신</p>
+        </div>
+        <div class="section_img">
+            <div class="img_box">
+                <ul>
+                    <li>
+                        <img src="imgs/sectio5_1.png" alt="">
+                    </li>
+                </ul>
+                <ul class="section2_img_list">
+                    <li class="section2_img_item">
+                        <img src="imgs/sectio5_2.png" alt="">
+                        <span>Clic Clac H Tartan 브레이슬릿</span>
+                        <p>₩ 1,090,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/sectio5_3.png" alt="">
+                        <span>Clic Clac H Panoplie Equestre 브레이슬릿</span>
+                        <p>₩ 1,090,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/sectio5_4.png" alt="">
+                        <span>Clic Clac H 브레이슬릿</span>
+                        <p>₩ 1,010,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/sectio5_5.png" alt="">
+                        <span>Clic H 브레이슬릿</span>
+                        <p>₩ 910,000</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section7 section">
+        <div class="section_text">
+            <h2 class="aa content_intro">루즈 에르메스</h2>
+            <p class="aa content_text">Beauty is a gesture </p>
+            <p class="aa content_sub_text">컬렉션을 만나보세요</p>
+        </div>
+        <div class="section_img con">
+            <div class="img_box">
+                <img src="imgs/sectio6.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section8 sectioning section">
+        <div class="section_text">
+            <h2 class="aa content_intro">새로운 스타일</h2>
+            <p class="aa content_text">정교한 스타일과 특별한 소재가 돋보이는 에르메스 남성복은 에르메스의 다양한 노하우를 선보입니다.</p>
+            <p class="aa content_sub_text">끊임없는 혁신</p>
+        </div>
+        <div class="section_img">
+            <div class="img_box">
+                <ul>
+                    <li>
+                        <img src="imgs/sectio6_1.png" alt="">
+                    </li>
+                </ul>
+                <ul class="section2_img_list">
+                    <li class="section2_img_item">
+                        <img src="imgs/sectio6_2.png" alt="">
+                        <span>Clic Clac H Tartan 브레이슬릿</span>
+                        <p>₩ 1,090,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/sectio6_3.png" alt="">
+                        <span>Clic Clac H Panoplie Equestre 브레이슬릿</span>
+                        <p>₩ 1,090,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/sectio6_4.png" alt="">
+                        <span>Clic Clac H 브레이슬릿</span>
+                        <p>₩ 1,010,000</p>
+                    </li>
+                    <li class="section2_img_item">
+                        <img src="imgs/sectio6_5.png" alt="">
+                        <span>Clic H 브레이슬릿</span>
+                        <p>₩ 910,000</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section9 section">
+        <div class="section_text">
+            <h2 class="aa content_intro">메종 에르메스 도산 파크</h2>
+            <p class="aa content_text">2006년 11월 오픈한 전세계의 네 번째 메종으로, 에르메스의 장인정신과 한국문화의 상호 교류를 증진하는 중요한 문화공간으로 자리매김해 온 메종
+                에르메스 도산 파크를 소개합니다.</p>
+            <p class="aa content_sub_text">메종 에르메스 도산 파크 방문하기</p>
+        </div>
+        <div class="section_img con">
+            <div class="img_box">
+                <img src="imgs/sectio7.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <div class="footer_intro">
+                <div class=" footer_text">
+                    <h2 class="footer_text_intro">고객의 쇼핑을 지원합니다.</h2>
+                    <p class="footer_content_text">질문이 있으신가요? 자주묻는 질문에서 답을 찾으실 수 있습니다. 필요 시 에르메스 고객센터로 문의 주십시오.</p>
+                    <p class="footer_content_sub_text">전화 (02)542-6622</p>
+                    <p class="footer_content_sub_text">월요일-일요일 오전 : 9:30 - 오후 6:30 (공휴일 제외</p>
+                    <p class="footer_content_sub_text">이메일 발송</p>
+                </div>
+                <div class=" footer_text">
+                    <h2 class="footer_text_intro">매장 찾기</h2>
+                    <p class="content_text">뷰티 제품을 구매할 수 있는 매장</p>
+                    <p class="content_sub_text">에르메스 매장</p>
+                </div>
+            </div>
+            <div class="footer_content">
+                <h2 class="footer_content_intro">대화를 계속해 볼까요?</h2>
+                <p class="content_text">에르메스의 이야기, 컬렉션, 놀라움이 가득한 뉴스레터를 받아 보세요.</p>
+                <p class="content_sub_text">뉴스레터 구독하기</p>
+            </div>
+            <div class="footer_content_list">
+                <div class="footer_list_box">
+                    <ul class="footet_list">
+                        <li class="footer_item"><a href="#">고객 서비스</a></li>
+                        <li class="footer_item"><a href="#">문의하기</a></li>
+                        <li class="footer_item"><a href="#">자주묻는 질문</a></li>
+                        <li class="footer_item"><a href="#">매장 찾기</a></li>
+                        <li class="footer_item"><a href="#">뷰티 제품을 구매할 수 있는 매장</a></li>
+                        <li class="footer_item"><a href="#">선물하기</a></li>
+                        <li class="footer_item"><a href="#">Horizon 서비스</a></li>
+                    </ul>
+                </div>
+                <div class="footer_list_box">
+                    <ul class="footet_list">
+                        <li class="footer_item"><a href="#">온라인 스토어</a></li>
+                        <li class="footer_item"><a href="#">회원가입</a></li>
+                        <li class="footer_item"><a href="#">결제</a></li>
+                        <li class="footer_item"><a href="#">배송</a></li>
+                        <li class="footer_item"><a href="#">교환 환불 정책</a></li>
+                        <li class="footer_item"><a href="#">스토어 픽업 서비스</a></li>
+                    </ul>
+                </div>
+                <div class="footer_list_box">
+                    <ul class="footet_list">
+                        <li class="footer_item"><a href="#">에르메스 기업정보</a></li>
+                        <li class="footer_item"><a href="#">지속 가능한 성장</a></li>
+                        <li class="footer_item"><a href="#">에르메스 재단</a></li>
+                        <li class="footer_item"><a href="#">채용</a></li>
+                        <li class="footer_item"><a href="#">재무정보 & 지배구조</a></li>
+                        <li class="footer_item"><a href="#">파트너 브랜드</a></li>
+                    </ul>
+                </div>
+                <div class="footer_list_box">
+                    <ul class="footet_list">
+                        <li class="footer_item"><a href="#">법적 고지</a></li>
+                        <li class="footer_item"><a href="#">이용약간</a></li>
+                        <li class="footer_item"><a href="#">기업 규칙(Binding Corporate Rules)</a></li>
+                        <li class="footer_item"><a href="#">개인정보처리방침 및 쿠키</a></li>
+                        <li class="footer_item"><a href="#">법적 고지</a></li>
+                        <li class="footer_item"><a href="#">개인정보처리법</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="animation.js"></script>
+
+</body>
+
+</html>

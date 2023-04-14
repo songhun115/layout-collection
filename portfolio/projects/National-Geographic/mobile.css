@@ -1,0 +1,147 @@
+@media (max-width: 1024px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    display: none;
+  }
+  body {
+    padding-top: 50px;
+  }
+  .channel_img_box > img:nth-child(2) {
+    float: none;
+    width: 100%;
+  }
+
+  .channel_img_box > img:first-child {
+    float: none;
+    width: 100%;
+  }
+  .text_box > h1 {
+    font-size: 20px;
+  }
+  .text_box > h4 {
+    font-size: 12px;
+  }
+  .text_box > .text_box_cj {
+    font-size: 9px;
+  }
+  .text_box {
+    padding: 0 20px 20px 20px;
+  }
+  .sections {
+    margin-bottom: 40px;
+  }
+
+  .nav_bar {
+    display: none;
+  }
+  .nav_bar_mobile {
+    display: block;
+  }
+
+  .nav_bar_mobile {
+    height: 50px;
+    display: flex;
+  }
+  .nav_bar_logo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .nav_bar_mobile_logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .mobile_logo > img {
+    width: 101px;
+    height: 30px;
+  }
+  .fas {
+    margin-right: 20px;
+  }
+  .mobile_logo {
+    margin-left: 20px;
+  }
+  .footer {
+    background-color: #151515;
+    width: auto;
+    height: auto;
+  }
+  .footer_menu_list {
+    flex-direction: column;
+    padding-left: 25px;
+  }
+  .footer_menu_list > .footer_menu_item {
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+    position: relative;
+  }
+  .contactus {
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+  }
+  .contact {
+    padding: 5px 0 5px 0;
+  }
+  .contactus_main {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 50px;
+  }
+  .sections {
+    margin-bottom: 20px;
+  }
+  .text_box {
+    padding: 0 10px 10px 10px;
+  }
+  .text_box > h1 {
+    font-size: 16px;
+  }
+  .text_box > h4 {
+    font-size: 10px;
+  }
+  .section_text {
+    font-size: 14px;
+    letter-spacing: 1;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .footer_menu_list {
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  .footer_menu_list > .footer_menu_item {
+    padding: 5px 0 5px 0;
+    font-size: 12px;
+    position: relative;
+  }
+  .contactus {
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+  }
+  .contact {
+    padding: 5px 0 5px 0;
+  }
+  .contactus_main {
+    padding-left: 10px;
+  }
+  .footer_menu > ul {
+    margin-bottom: 10px;
+  }
+  .footer_menu > .contactus_main > li {
+    font-size: 12px;
+  }
+  .contactus > .contact {
+    font-size: 9px;
+  }
+}
